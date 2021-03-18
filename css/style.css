@@ -1,0 +1,147 @@
+html, body {
+    margin: 0px;
+    height: 100%;
+/*    display: flex;    */
+    justify-content: center;
+    font-family: sans-serif;
+}
+
+/* color schemes 
+    triad with #009900 as base color
+    #084D08, #280F99, #009900, #994C04, #4D2404 
+    Shades with #009900 as base color
+    #005900, #00E600, #009900, #00A600, #008000
+
+*/
+
+.wrapper {
+    width: 900px;
+    margin: auto;
+/*    border-radius: 10px;  */
+/*    box-shadow: 0px 0px 15px rgba(0,0,0,0.5); */
+}
+
+/* HEADER, NAV MENU AND FOOTER */
+header, footer {
+    line-height: 100px;
+    width: 100%;
+    margin: 0px;
+    background-color: #006600;
+    background: linear-gradient(to bottom right, #006600, green, #009900, #00b300, #ffffff);
+    color: white;
+    text-align: center;
+/*    position: fixed;  */
+}
+
+header {
+    height: 150px;
+}
+
+header h1 {
+    margin: 0px;
+    line-height: 100px;
+/*    float: left;  */
+}
+header nav {
+    margin: 0px;
+    line-height: 50px;
+/*    float: right; */
+}
+
+header nav ul {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+
+header nav ul li {
+/*    float: left;    */
+    display: inline-block;
+}
+
+header nav a {
+    text-decoration: none;
+    color: white;
+    padding:10px;
+/*    border-bottom: solid 6px black; 
+    transition:  border-bottom 1s ease-in-out, margin-top 1s ease-in-out;   */
+}
+/*
+00A600
+*/
+header nav a.this-page {
+    background-color: #008000;
+    color: white
+}
+header nav a:hover {
+    background-color: #00E600;
+    color: white;
+}
+
+header nav a:active {
+    background-color: #005900;
+    color: white;
+/*    margin-top: 6px;  
+    border-bottom: solid 0px white; 
+    transition: border-bottom 1s ease-in-out, margin-top 1s ease-in-out;  */
+}
+
+footer {
+    height: 100px;
+}
+/* END HEADER, NAV MENU AND FOOTER */
+
+
+/* #084D08, #280F99, #009900, #994C04, #4D2404 */
+.row {
+    display: block;
+    width: 100%;
+    background-color: #994C04;
+    text-align: center;
+}
+
+.row div {
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+/*    height: 100px;    */
+    background-color: #084D08;
+}
+
+/* IMAGE GALLERY */
+.gallery {
+    height: 200px;
+    background-color: #280F99;
+}
+
+.gallery div div {
+    margin: 0px;
+    width: 100px;
+/*    height: 100px;        */
+/*    line-height: 100px;   */
+    background-color: #009900;
+}
+
+.gallery div div img {
+    margin: 0px;
+    width: 100%;
+    height: 100px;        
+/*    line-height: 10px;    */
+    background-color: #994C04;
+}
+
+.gallery a {
+    font-size: 0px;
+    margin: 0px;
+    line-height: 0px;
+    height: 0px;
+}
+
+.gallery div p {
+    margin: 0px;
+/*    height: 10px;         */
+/*    line-height: 10px;    */
+    background-color: #4D2404;
+}
+/* END IMAGE GALLERY */
+
