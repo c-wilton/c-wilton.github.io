@@ -3,7 +3,7 @@ var caption = document.getElementById('carouselCaption');
 var prev = document.getElementById('carouselPrev');
 var next = document.getElementById('carouselNext');
 
-fetch("../assets/images.json")
+fetch("https://c-wilton.github.io/assets/images.json")
 .then(function(res) {
     res.json().then(function(json) {
         json.forEach(function(el, i) {
