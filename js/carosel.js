@@ -10,9 +10,9 @@ fetch("https://s3-us-west-2.amazonaws.com/s.cdpn.io/471256/gallery.json")
         json.forEach(function(el, i) {
             
             var image = document.createElement('img');
-            image.setAttribute('src', el.image);
-            image.setAttribute('alt', el.description);
-            image.setAttribute('title', el.description);
+            image.setAttribute('src', el.url);
+            image.setAttribute('alt', el.caption);
+            image.setAttribute('title', el.caption);
 
             images.appendChild(image);
 
