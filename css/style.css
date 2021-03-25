@@ -36,6 +36,8 @@ header, footer {
 header {
     height: 150px;
     background-image: url(../img/310582_10150298576507232_4175852_n.jpg);
+    background-position: center;
+    background-size: 10%;
 }
 
 header h1 {
