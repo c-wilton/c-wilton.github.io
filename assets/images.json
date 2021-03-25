@@ -1,0 +1,30 @@
+{
+    "gallery": [
+        { 
+            "description": "Hello World!",
+            "image": "../img/brazil/" 
+        },
+        { 
+            "description": "This is another message!", 
+            "image": "../img/brazil/Hello-world.png"
+        },
+        { 
+            "description": "You get the idea...", 
+            "image": "../img/brazil/Hello-world.png"
+        }
+    ],
+    "carosel": [
+        { 
+            "description": "Hello World!",
+            "image": "../img/activities/10297710_10204134508150019_6400465394953515065_n.jpg" 
+        },
+        { 
+            "description": "This is another message!", 
+            "image": "../img/activities/11039303_10204304864008809_9132904989914344699_n.jpg"
+        },
+        { 
+            "description": "You get the idea...", 
+            "image": "../img/activities/11062075_10204134513710158_2790856273596925738_n.jpg"
+        }
+    ]
+}
