@@ -90,6 +90,8 @@ function setupCarousel(json) {
     var imageCount = images.childElementCount;
     var currentImage = 1;
     var imageWidth = images.getElementsByTagName('img')[0].clientWidth;
+
+    var imagesWidth = document.getElementsByClassName('carousel-images')[0].style.width = (imageCount * imageWidth) + 'px'; 
     // var imageWidth = 500;
 
     prev.addEventListener('click', function() {
