@@ -3,16 +3,21 @@ var caption = document.getElementById('carouselCaption');
 var prev = document.getElementById('carouselPrev');
 var next = document.getElementById('carouselNext');
 
-/* fetch("https://c-wilton.github.io/assets/images.json") */
-fetch("https://s3-us-west-2.amazonaws.com/s.cdpn.io/471256/gallery.json")
+fetch("https://c-wilton.github.io/assets/images.json")
+/* fetch("https://s3-us-west-2.amazonaws.com/s.cdpn.io/471256/gallery.json") */
 .then(function(res) {
     res.json().then(function(json) {
         json.forEach(function(el, i) {
             
             var image = document.createElement('img');
+            /*
             image.setAttribute('src', el.url);
             image.setAttribute('alt', el.caption);
             image.setAttribute('title', el.caption);
+            */
+            image.setAttribute('src', el.image);
+            image.setAttribute('alt', el.description);
+            image.setAttribute('title', el.description);
 
             images.appendChild(image);
 
@@ -29,8 +34,8 @@ function setupCarousel(json) {
     /* var imageCount = 9; */
     var imageCount = images.childElementCount;
     var currentImage = 1;
-    /* var imageWidth = images.getElementsByTagName('img')[0].clientWidth; */
-    var imageWidth = 500; 
+    var imageWidth = images.getElementsByTagName('img')[0].clientWidth;
+    /* var imageWidth = 500; */
 
     prev.addEventListener('click', function() {
         if (currentImage != 1) {
@@ -38,7 +43,8 @@ function setupCarousel(json) {
             images.style.left = imageWidth - (currentImage * imageWidth) + 'px';
         }
 
-        caption.innerText = json[currentImage - 1].caption;
+        /* caption.innerText = json[currentImage - 1].caption; */
+        caption.innerText = json[currentImage - 1].description;
 
     });
 
@@ -48,11 +54,13 @@ function setupCarousel(json) {
             images.style.left = imageWidth - (currentImage * imageWidth) + 'px';
         }
 
-        caption.innerText = json[currentImage - 1].caption;
+        /* caption.innerText = json[currentImage - 1].caption; */
+        caption.innerText = json[currentImage - 1].description;
 
     });
 
-    caption.innerText = json[currentImage - 1].caption;
+    /* caption.innerText = json[currentImage - 1].caption; */
+    caption.innerText = json[currentImage - 1].description;
 
 }
 
