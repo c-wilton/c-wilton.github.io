@@ -2,29 +2,29 @@
     "gallery": [
         { 
             "description": "Hello World!",
-            "image": "../img/brazil/" 
+            "image": "https://c-wilton.github.io/brazil/49212642_10161198364810425_8754994325533753344_n.jpg" 
         },
         { 
             "description": "This is another message!", 
-            "image": "../img/brazil/Hello-world.png"
+            "image": "https://c-wilton.github.io/img/brazil/49345133_10161198706680425_8319625082854965248_n.jpg"
         },
         { 
             "description": "You get the idea...", 
-            "image": "../img/brazil/Hello-world.png"
+            "image": "https://c-wilton.github.io/img/brazil/49662924_10156386767478802_7910088878755676160_n.jpg"
         }
     ],
     "carosel": [
         { 
             "description": "Hello World!",
-            "image": "../img/activities/10297710_10204134508150019_6400465394953515065_n.jpg" 
+            "image": "https://c-wilton.github.io/img/activities/10297710_10204134508150019_6400465394953515065_n.jpg" 
         },
         { 
             "description": "This is another message!", 
-            "image": "../img/activities/11039303_10204304864008809_9132904989914344699_n.jpg"
+            "image": "https://c-wilton.github.io/img/activities/11039303_10204304864008809_9132904989914344699_n.jpg"
         },
         { 
             "description": "You get the idea...", 
-            "image": "../img/activities/11062075_10204134513710158_2790856273596925738_n.jpg"
+            "image": "https://c-wilton.github.io/img/activities/11062075_10204134513710158_2790856273596925738_n.jpg"
         }
     ]
 }
