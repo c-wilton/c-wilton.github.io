@@ -58,7 +58,7 @@
     float: right;
 }
 
-.labCarousel-caption {
+.carousel-caption {
     position: absolute;
     z-index: 3;
     bottom: 0;
