@@ -1,9 +1,8 @@
-
-/* declare variables for carousel elements */
-var images = document.getElementById('carousel-image');
-var caption = document.getElementById('carousel-caption');
-var prev = document.getElementById('prev-button');
-var next = document.getElementById('next-button');
+/* declare variables for gallery elements */
+var frame = document.getElementById('gallery-frame');
+var row1 = document.getElementById('row1');
+var row2 = document.getElementById('row2');
+var row3 = document.getElementById('row3');
 
 /* extract objects from json file */
 //get a file from this address
@@ -19,69 +18,48 @@ fetch("https://c-wilton.github.io/assets/images.json")
         /* after the json objects from the file have been loaded, 
             go to the setupCarousel func to load the elements onto the webpage
         */
-        setupCarousel(json);
+        setupGallery(json);
     });
 });
 
 //function to set up carousel interaction
-function setupCarousel(json) {
+function setupGallery(json) {
 
     //declare an index counter
     var currentIndex = 0;
     //count the number of elements n the carousel array 
-    var imageCount = json.carosel.length;
+    var imageCount = json.gallery.length;
+    
+    for(i=0; i<3; i++) {
+        createRow(json, currentIndex, row1);
+        currentIndex++;
+    }
+    for(i=0; i<3; i++) {
+        createRow(json, currentIndex, row2);
+        currentIndex++;
+    }
+    for(i=0; i<3; i++) {
+        createRow(json, currentIndex, row3);
+        currentIndex++;
+    }
+
+    
+    //update the caption description
+    caption.innerText = currentDescription;    
+}
+
+function createRow(json, currentIndex, currentRow) {
+    //get the description and image of the element in carousel array
+    var currentDescription = json.gallery[currentIndex].description;
+    var currentImage = json.gallery[currentIndex].image;
 
     //create a variable to hold an img tag
     var image = document.createElement('img');
-            
-    //set attributes for the img tag
-    setAttributes(json, image, currentIndex);
+    //set the attributes for the current image
+    image.setAttribute('src', currentImage);
+    image.setAttribute('alt', currentDescription);
+    image.setAttribute('title', currentDescription);
     
     //add the image to the 'carousel-image' element
-    images.appendChild(image);
-
-    
-    //create an "onclick" event listener to the previous button
-    prev.addEventListener('click', function() {
-        if (currentIndex != 0) {
-            //decrement index
-            --currentIndex;
-            
-            //set the new atributes for the img tag            
-            setAttributes(json, image, currentIndex);
-        }
-    });
-
-    //create an "onclick" event listener to the previous button
-    next.addEventListener('click', function() {
-        if (currentIndex != (imageCount - 1) ) {
-            //increment index
-            ++currentIndex;
-            
-            //set the new atributes for the img tag
-            setAttributes(json, image, currentIndex);
-        }
-    });
-
-}
-
-function setAttributes(json, element, currentIndex){
-    //get the description and image of the element in carousel array
-    var currentDescription = json.carosel[currentIndex].description;
-    var currentImage = json.carosel[currentIndex].image;
-
-    //set the attributes for the current image
-    element.setAttribute('src', currentImage);
-    element.setAttribute('alt', currentDescription);
-    element.setAttribute('title', currentDescription);
-    element.style.width = 100 + '%';
-
-    /*
-    //set the buttons centered vertically
-    prev.style.margin = 'auto';
-    next.style.margin = 'auto';
-    */
-
-    //update the caption description
-    caption.innerText = currentDescription;
+    currentRow.appendChild(image);
 }
