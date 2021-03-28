@@ -112,6 +112,21 @@ footer {
 }
 
 /* IMAGE GALLERY */
+.galleryFrame {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    background-color: #994C04;
+    text-align: center;
+}
+.galleryRow {
+    padding: 10px;
+    flex-flow: row nowrap;
+    /* flex: flex-grow flex-shrink flex-basis */
+    flex: 1 100%;   /* all items same size, and 100% width */
+    
+}
+
 .gallery {
     height: 200px;
     background-color: #280F99;
