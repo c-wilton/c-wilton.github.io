@@ -124,7 +124,11 @@ footer {
     flex-flow: row nowrap;
     /* flex: flex-grow flex-shrink flex-basis */
     flex: 1 100%;   /* all items same size, and 100% width */
-    
+}
+
+.galleryRow img {
+    flex: 1 0;
+    width: 30%
 }
 
 .gallery {
