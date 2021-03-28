@@ -5,12 +5,14 @@ var caption = document.getElementById('carousel-caption');
 var prev = document.getElementById('prev-button');
 var next = document.getElementById('next-button');
 
+/*
 <div class="carousel">
     <div class="prevButton" id="prev-button">Prev</div>
     <div class="nextButton" id="next-button">Next</div>
     <div class="carouselImage" id="carousel-image">Photo</div>
     <div class="carouselCaption" id="carousel-caption">Caption</div>
 </div>
+*/
 
 /* extract objects from json file */
 //get a file from this address
