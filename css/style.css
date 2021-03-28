@@ -163,16 +163,27 @@ footer {
     flex: 1 100%;   /* all items same size, and 100% width */
 }
 
+.button:hover {
+    background-color: blue;
+    cursor: pointer;
+}
+.button:active {
+    background-color: blueviolet;
+}
+
 .prevButton {
     background-color: violet;
+    margin: auto;
 }
 
 .nextButton {
     background-color: tomato;
+    margin: auto;
 }
 
 .carouselImage {
     background-color: yellow;
+    overflow: hidden;
 }
 
 .carouselCaption {
@@ -184,7 +195,7 @@ footer {
 /* desktop and tablet*/
 @media all and (min-width:800px) {
     .wrapper { width: 90%; }
-    .carouselImage { flex: 6 0px; }
+    .carouselImage { flex: 10 0px; }
     .prevButton { flex: 1 0px; }
     .nextButton { flex: 1 0px; }
     .prevButton { order: 1; }
