@@ -53,7 +53,10 @@ function createRow(json, currentIndex, currentRow) {
     var currentDescription = json.gallery[currentIndex].description;
     var currentImage = json.gallery[currentIndex].image;
 
+    //create a div to hold the image and caption
     var imageDiv = document.createElement('div');
+    var imgDiv = document.createElement('div');
+    
     //create a variable to hold an img tag
     var image = document.createElement('img');
     //set the attributes for the current image
@@ -61,8 +64,15 @@ function createRow(json, currentIndex, currentRow) {
     image.setAttribute('alt', currentDescription);
     image.setAttribute('title', currentDescription);
     
+    //create the caption
+    var caption = document.createElement('div')
+    //set the caption text to description held in the array
+    caption.innerHTML = currentDescription;
+
     //add the image to the 'carousel-image' element
     //imageDiv.innerHTML = "image: " + currentIndex;
-    imageDiv.appendChild(image);
+    imgDiv.appendChild(image);
+    imageDiv.appendChild(imgDiv);
+    imageDiv.appendChild(caption);
     currentRow.appendChild(imageDiv);
 }

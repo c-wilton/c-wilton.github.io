@@ -126,37 +126,38 @@ footer {
 }
 
 .galleryRow {
-    display: flex;
+    display: flex; 
     flex-flow: row nowrap;
     justify-content: space-evenly;
     
     /*background-color: violet;*/
     margin: 10px 0;
-    /*
-    justify-content: space-evenly;
-    align-items: center;
-
-    padding: 10px;
-    */
+   
     /* flex: flex-grow flex-shrink flex-basis */
     /* flex: 1 0px; */    /* all items same size, and 100% width */
-    
 }
 
+/* div holding image and caption */
 .galleryRow div {
-    /*flex-flow: row nowrap;*/
     background-color: #4D2404;
-    flex: 0 30%;
     display: flex;
-    align-items: center;
+    flex: 0 30%;
+    flex-flow: column nowrap;
+    justify-content: center;
 }
 
-
-.galleryRow img {
+/* img tag */
+.galleryRow div div img {
     /* width: 100%; */
     background-color: tomato;
     /* margin: 10px; */
     width: 100%;
+}
+
+/* caption tag */
+.galleryRow div div {
+    
+    flex: 0;
 }
 
 /*
