@@ -146,17 +146,22 @@ footer {
     justify-content: center;
 }
 
+.galleryRow div:hover {
+    background-color: #084D08;
+    cursor: pointer;
+}
+
 /* img tag */
 .galleryRow div div img {
     /* width: 100%; */
-    background-color: tomato;
+    background-color: inherit;
     /* margin: 10px; */
     width: 100%;
 }
 
 /* caption tag */
 .galleryRow div div {
-    
+    background-color: inherit;
     flex: 0;
 }
 
