@@ -130,11 +130,15 @@ footer {
     
 }
 
-.galleryRow img {
+.galleryRow div {
     flex: 1 0px;
-    width: 30%
 }
 
+.galleryRow img {
+    width: 100%
+}
+
+/*
 .gallery {
     height: 200px;
     background-color: #280F99;
@@ -144,7 +148,7 @@ footer {
     margin: 0px;
     width: 100px;
 /*    height: 100px;        */
-/*    line-height: 100px;   */
+/*    line-height: 100px;   */      /*
     background-color: #009900;
 }
 
@@ -152,7 +156,7 @@ footer {
     margin: 0px;
     width: 100%;
     height: 100px;        
-/*    line-height: 10px;    */
+/*    line-height: 10px;    */      /*
     background-color: #994C04;
 }
 
@@ -166,9 +170,10 @@ footer {
 .gallery div p {
     margin: 0px;
 /*    height: 10px;         */
-/*    line-height: 10px;    */
+/*    line-height: 10px;    */      /*
     background-color: #4D2404;
 }
+*/
 /* END IMAGE GALLERY */
 
 /* IMAGE CAROUSEL */
