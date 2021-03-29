@@ -120,14 +120,18 @@ footer {
     text-align: center;
 }
 .galleryRow {
-    padding: 10px;
     flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+
+    padding: 10px;
     /* flex: flex-grow flex-shrink flex-basis */
-    flex: 1 100%;   /* all items same size, and 100% width */
+    /* flex: 1 100%; */   /* all items same size, and 100% width */
+    
 }
 
 .galleryRow img {
-    flex: 1 0;
+    flex: 1 0px;
     width: 30%
 }
 
@@ -214,6 +218,7 @@ footer {
 /* desktop and tablet*/
 @media all and (min-width:800px) {
     .wrapper { width: 90%; }
+    .galleryRow { }
     .carouselImage { flex: 10 0px; }
     .prevButton { flex: 1 0px; }
     .nextButton { flex: 1 0px; }
