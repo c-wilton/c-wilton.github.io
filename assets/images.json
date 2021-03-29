@@ -1,42 +1,42 @@
 {
     "gallery": [
         { 
-            "description": "Hello World!",
+            "description": "Getting ready to perform for a local community near Muta &aacute;",
             "image": "https://c-wilton.github.io/img/brazil/49212642_10161198364810425_8754994325533753344_n.jpg" 
         },
         { 
-            "description": "This is another message!", 
+            "description": "Gthering to perform at he Pelourinho", 
             "image": "https://c-wilton.github.io/img/brazil/49345133_10161198706680425_8319625082854965248_n.jpg"
         },
         { 
-            "description": "You get the idea...", 
+            "description": "Ready for a performance by our sister band, Cortejo Afro", 
             "image": "https://c-wilton.github.io/img/brazil/50599618_10161198945060425_4174637782838280192_n.jpg"
         },
         
 
         { 
-            "description": "Hello World!",
+            "description": "Playing for a local community near Muta",
             "image": "https://c-wilton.github.io/img/brazil/49662924_10156386767478802_7910088878755676160_n.jpg" 
         },
         { 
-            "description": "This is another message!", 
+            "description": "Me and my close friend", 
             "image": "https://c-wilton.github.io/img/brazil/50271992_10161198890815425_8397445406312628224_n.jpg"
         },
         { 
-            "description": "You get the idea...", 
+            "description": "Playing for a local community near Muta", 
             "image": "https://c-wilton.github.io/img/brazil/IMG_1895.JPG"
         },
 
         { 
-            "description": "Hello World!",
+            "description": "My favorite Samba reggae band, Dida, who were coinciently being filmed or the BBC!",
             "image": "https://c-wilton.github.io/img/brazil/IMG_2019-01-23 00-42-17_5.jpeg" 
         },
         { 
-            "description": "This is another message!", 
+            "description": "The UK contingency in Brazil", 
             "image": "https://c-wilton.github.io/img/brazil/IMG_1337.JPG"
         },
         { 
-            "description": "You get the idea...", 
+            "description": "Our monkey friends who visited at the accommodaton frequently", 
             "image": "https://c-wilton.github.io/img/brazil/IMG_2019-01-14 19-24-46_2.jpeg"
         }
     ],

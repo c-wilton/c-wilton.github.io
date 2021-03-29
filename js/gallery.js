@@ -75,4 +75,9 @@ function createRow(json, currentIndex, currentRow) {
     imageDiv.appendChild(imgDiv);
     imageDiv.appendChild(caption);
     currentRow.appendChild(imageDiv);
+
+    //add listener to imageDiv
+    imageDiv.addEventListener('click', function() {
+        window.open(currentImage, '_blank');
+    });
 }
