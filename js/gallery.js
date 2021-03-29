@@ -45,7 +45,7 @@ function setupGallery(json) {
 
     
     //update the caption description
-    caption.innerText = currentDescription;    
+    //caption.innerText = currentDescription;    
 }
 
 function createRow(json, currentIndex, currentRow) {
@@ -53,7 +53,7 @@ function createRow(json, currentIndex, currentRow) {
     var currentDescription = json.gallery[currentIndex].description;
     var currentImage = json.gallery[currentIndex].image;
 
-    var div = document.createElement('div');
+    var imageDiv = document.createElement('div');
     //create a variable to hold an img tag
     var image = document.createElement('img');
     //set the attributes for the current image
@@ -62,6 +62,7 @@ function createRow(json, currentIndex, currentRow) {
     image.setAttribute('title', currentDescription);
     
     //add the image to the 'carousel-image' element
-    div.appendChild(div);
-    currentRow.appendChild(div);
+    //imageDiv.innerHTML = "image: " + currentIndex;
+    imageDiv.appendChild(image);
+    currentRow.appendChild(imageDiv);
 }
