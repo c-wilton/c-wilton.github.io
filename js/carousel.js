@@ -43,7 +43,7 @@ function setupCarousel(json) {
     
     //create an "onclick" event listener to the previous button
     prev.addEventListener('click', function() {
-        if (currentIndex != 0) {
+        if (currentIndex !== 0) {
             //decrement index
             --currentIndex;
             
@@ -54,7 +54,7 @@ function setupCarousel(json) {
 
     //create an "onclick" event listener to the previous button
     next.addEventListener('click', function() {
-        if (currentIndex != (imageCount - 1) ) {
+        if (currentIndex !== (imageCount - 1) ) {
             //increment index
             ++currentIndex;
             
