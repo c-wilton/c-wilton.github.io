@@ -1,5 +1,5 @@
 html, body {
-    margin: 0px;
+    margin: 5px;
     height: 100%;
 /*    display: flex;    */
     justify-content: center;
@@ -29,12 +29,14 @@ header, footer {
     background-color: #006600;
     background: linear-gradient(to bottom right, #006600, green, #009900, #00b300, #ffffff);
     color: white;
+    font-weight: bold;
     text-align: center;
 /*    position: fixed;  */
 }
 
 header {
-    height: 150px;
+    height: 200px;
+    line-height: 150;
     /*background-image: url(../img/310582_10150298576507232_4175852_n.jpg);*/
     background-image: url(../img/background.png);
     background-position: center;
@@ -44,7 +46,7 @@ header {
 
 header h1 {
     margin: 0px;
-    line-height: 100px;
+    line-height: 150px;
 /*    float: left;  */
 }
 header nav {
@@ -68,6 +70,8 @@ header nav ul li {
 header nav a {
     text-decoration: none;
     color: white;
+    font-weight: bold;
+    text-transform: capitalize;
     padding:10px;
 /*    border-bottom: solid 6px black; 
     transition:  border-bottom 1s ease-in-out, margin-top 1s ease-in-out;   */
@@ -213,6 +217,8 @@ footer {
     flex-flow: row wrap;
     width: 100%;
     background-color: #994C04;
+    color: white;
+    font-weight: bold;
     text-align: center;
 }
 
