@@ -38,6 +38,7 @@ header {
     /*background-image: url(../img/310582_10150298576507232_4175852_n.jpg);*/
     background-image: url(../img/background.png);
     background-position: center;
+    background-repeat: no-repeat;
     background-size: 10%;
 }
 
@@ -49,6 +50,7 @@ header h1 {
 header nav {
     margin: 0px;
     line-height: 50px;
+    background-color: #009900; 
 /*    float: right; */
 }
 
