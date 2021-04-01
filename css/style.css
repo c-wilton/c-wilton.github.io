@@ -207,6 +207,7 @@ footer {
 /* END IMAGE GALLERY */
 
 /* IMAGE CAROUSEL */
+/* #084D08, #280F99, #009900, #994C04, #4D2404 */
 .carousel {
     display: flex;
     flex-flow: row wrap;
@@ -222,30 +223,32 @@ footer {
 }
 
 .button:hover {
-    background-color: blue;
+    background-color: #009900;
     cursor: pointer;
 }
 .button:active {
-    background-color: blueviolet;
+    background-color: #084D08;
 }
 
-.prevButton {
-    background-color: violet;
+.prevButton, .nextButton {
+    background-color: #4D2404;
     margin: auto;
 }
 
+/*
 .nextButton {
     background-color: tomato;
     margin: auto;
 }
+*/
 
 .carouselImage {
-    background-color: yellow;
+    background-color: #084D08;
     overflow: hidden;
 }
 
 .carouselCaption {
-    background-color: teal;
+    background-color: #4D2404;
 }
 /* END IMAGE CAROUSEL */
 
