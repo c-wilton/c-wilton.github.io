@@ -1,11 +1,11 @@
 {
     "gallery": [
         { 
-            "description": "Getting ready to perform for a local community near Muta &aacute;",
+            "description": "Getting ready to perform for a local community near Mut&aacute;",
             "image": "https://c-wilton.github.io/img/brazil/jpg/49212642_10161198364810425_8754994325533753344_n.jpg" 
         },
         { 
-            "description": "Gthering to perform at he Pelourinho", 
+            "description": "Gathering to perform at the Pelourinho, the home of Samba Reggae", 
             "image": "https://c-wilton.github.io/img/brazil/jpg/49345133_10161198706680425_8319625082854965248_n.jpg"
         },
         { 
@@ -15,7 +15,7 @@
         
 
         { 
-            "description": "Playing for a local community near Muta",
+            "description": "Playing for a local community near Mut&aacute;",
             "image": "https://c-wilton.github.io/img/brazil/jpg/49662924_10156386767478802_7910088878755676160_n.jpg" 
         },
         { 
@@ -23,12 +23,12 @@
             "image": "https://c-wilton.github.io/img/brazil/jpg/50271992_10161198890815425_8397445406312628224_n.jpg"
         },
         { 
-            "description": "Playing for a local community near Muta", 
+            "description": "Playing for a local community near Mut&aacute;", 
             "image": "https://c-wilton.github.io/img/brazil/jpg/IMG_1895.JPG"
         },
 
         { 
-            "description": "My favorite Samba reggae band, Dida, who were coinciently being filmed or the BBC!",
+            "description": "My favorite Samba reggae band, Did&aacute;, who were coincidently being filmed or the BBC!",
             "image": "https://c-wilton.github.io/img/brazil/jpg/IMG_2019-01-23 00-42-17_5.jpeg" 
         },
         { 
@@ -77,9 +77,15 @@
             "description": "Me and my bike",
             "image": "https://c-wilton.github.io/img/activities/jpg/20170511_174441.jpg" 
         },
+        /* climbing */
         { 
-            "description": "Finding a cave along a walk in Holyhead",
-            "image": "https://c-wilton.github.io/img/activities/jpg/20161030_122031.jpg" 
+            "description": "Belaying my sister as she leads a climb",
+            "image": "https://c-wilton.github.io/img/activities/jpg/IMG_1095.JPG" 
+        },
+        /* rollerblading */
+        { 
+            "description": "Rollerblading at the local skatepark",
+            "image": "https://c-wilton.github.io/img/activities/jpg/IMG_1096.JPG" 
         },
         { 
             "description": "Top of the mountain in Lancaster",
@@ -97,22 +103,21 @@
             "description": "Rowing on the Hudson river in NYC",
             "image": "https://c-wilton.github.io/img/activities/jpg/20150516_131125.jpg" 
         },
+        /* beach2 */
         { 
-            "description": "Day out in nature with friends",
-            "image": "https://c-wilton.github.io/img/activities/jpg/lamp.jpg" 
+            "description": "At the beach, playing on the sand",
+            "image": "https://c-wilton.github.io/img/activities/jpg/IMG_1097.JPG" 
         },
+        /* swings */
         { 
-            "description": "Walking with family",
-            "image": "https://c-wilton.github.io/img/activities/jpg/20180408_142616.jpg" 
+            "description": "Climbing the swings",
+            "image": "https://c-wilton.github.io/img/activities/jpg/IMG_1098.JPG" 
         },
-        { 
-            "description": "Devils Kitchen",
-            "image": "https://c-wilton.github.io/img/activities/jpg/20161030_124253.jpg" 
-        },
-        { 
-            "description": "Waiting for the bus under cover of nature",
-            "image": "https://c-wilton.github.io/img/activities/jpg/20150903_171250.jpg" 
-        },
+
+        /* lamb */
+        /* family */
+        /* devils kitchen */
+        /* bus */
         { 
             "description": "Graduation day",
             "image": "https://c-wilton.github.io/img/activities/jpg/20180720_142412.jpg" 
@@ -125,13 +130,34 @@
             "description": "Playing the guitar",
             "image": "https://c-wilton.github.io/img/activities/jpg/1470339520056.jpg" 
         },
-        { 
-            "description": "Me at the local beach",
-            "image": "https://c-wilton.github.io/img/activities/jpg/20180624_132201.jpg" 
-        },
+        /* beach */
         { 
             "description": "Completed Oppy Club at the local sailing club",
             "image": "https://c-wilton.github.io/img/activities/jpg/20180710_160930.jpg" 
         }
     ]
 }
+
+/* archieved */
+/* 
+        { 
+            "description": "Waiting for the bus under cover of nature",
+            "image": "https://c-wilton.github.io/img/activities/jpg/20150903_171250.jpg" 
+        },
+        { 
+            "description": "Me at the local beach",
+            "image": "https://c-wilton.github.io/img/activities/jpg/20180624_132201.jpg" 
+        },
+        { 
+            "description": "Devils Kitchen",
+            "image": "https://c-wilton.github.io/img/activities/jpg/20161030_124253.jpg" 
+        },
+        { 
+            "description": "Day out in nature with friends",
+            "image": "https://c-wilton.github.io/img/activities/jpg/lamp.jpg" 
+        },
+        { 
+            "description": "Walking with family",
+            "image": "https://c-wilton.github.io/img/activities/jpg/20180408_142616.jpg" 
+        },
+        
