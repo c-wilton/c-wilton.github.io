@@ -14,6 +14,14 @@ html, body {
 
 */
 
+@font-face {
+    font-family: 'Batala';
+    src: url("assets/Batala.ttf");
+}
+.batala {
+    font-family: 'Batala';
+}
+
 .wrapper {
     width: 900px;
     margin: auto;
@@ -169,6 +177,8 @@ footer {
 /* caption tag */
 .galleryRow div div {
     background-color: inherit;
+    color: white;
+    font-weight: bold;
     flex: 0;
 }
 
