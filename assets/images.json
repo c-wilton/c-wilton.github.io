@@ -1,0 +1,128 @@
+{
+    "gallery": [
+        { 
+            "description": "Getting ready to perform for a local community near Mut&aacute;",
+            "image": "https://c-wilton.github.io/img/brazil/jpg/49212642_10161198364810425_8754994325533753344_n.jpg" 
+        },
+        { 
+            "description": "Gathering to perform at the Pelourinho, the home of Samba Reggae", 
+            "image": "https://c-wilton.github.io/img/brazil/jpg/49345133_10161198706680425_8319625082854965248_n.jpg"
+        },
+        { 
+            "description": "Ready for a performance by our sister band, Cortejo Afro", 
+            "image": "https://c-wilton.github.io/img/brazil/jpg/50599618_10161198945060425_4174637782838280192_n.jpg"
+        },
+        
+        { 
+            "description": "Playing for a local community near Mut&aacute;",
+            "image": "https://c-wilton.github.io/img/brazil/jpg/49662924_10156386767478802_7910088878755676160_n.jpg" 
+        },
+        { 
+            "description": "Me and my close friend", 
+            "image": "https://c-wilton.github.io/img/brazil/jpg/50271992_10161198890815425_8397445406312628224_n.jpg"
+        },
+        { 
+            "description": "Playing for a local community near Mut&aacute;", 
+            "image": "https://c-wilton.github.io/img/brazil/jpg/IMG_1895.JPG"
+        },
+
+        { 
+            "description": "My favorite Samba reggae band, Did&aacute;, who were coincidently being filmed or the BBC!",
+            "image": "https://c-wilton.github.io/img/brazil/jpg/IMG_2019-01-23 00-42-17_5.jpeg" 
+        },
+        { 
+            "description": "The UK contingency in Brazil", 
+            "image": "https://c-wilton.github.io/img/brazil/jpg/IMG_1337.JPG"
+        },
+        { 
+            "description": "Our monkey friends who visited at the accommodaton frequently", 
+            "image": "https://c-wilton.github.io/img/brazil/jpg/IMG_2019-01-14 19-24-46_2.jpeg"
+        }
+    ],
+    "carosel": [
+        { 
+            "description": "Volunteering with Habitat for Humanity in New Orleans",
+            "image": "https://c-wilton.github.io/img/activities/jpg/10297710_10204134508150019_6400465394953515065_n.jpg" 
+        },
+        { 
+            "description": "Volunteering with Habitat for Humanity in New Orleans",
+            "image": "https://c-wilton.github.io/img/activities/jpg/IMG-20150407-WA0010.jpg" 
+        },
+        { 
+            "description": "Volunteering with Habitat for Humanity in New Orleans",
+            "image": "https://c-wilton.github.io/img/activities/jpg/IMG-20150429-WA0004.jpg" 
+        },
+        { 
+            "description": "Volunteering with Habitat for Humanity in New Orleans",
+            "image": "https://c-wilton.github.io/img/activities/jpg/IMG-20150408-WA0000.jpg" 
+        },
+        { 
+            "description": "Volunteering with Habitat for Humanity in New Orleans",
+            "image": "https://c-wilton.github.io/img/activities/jpg/IMG-20150408-WA0008.jpg" 
+        },
+        { 
+            "description": "Downtime in New Orleans", 
+            "image": "https://c-wilton.github.io/img/activities/jpg/11062075_10204134513710158_2790856273596925738_n.jpg"
+        },
+        { 
+            "description": "End of the trip photo",
+            "image": "https://c-wilton.github.io/img/activities/jpg/11122444_1426553980993085_5762251917410178064_n.jpg" 
+        },
+        { 
+            "description": "Alternative Spring Break Certificate", 
+            "image": "https://c-wilton.github.io/img/activities/jpg/11039303_10204304864008809_9132904989914344699_n.jpg"
+        },
+        { 
+            "description": "Me and my bike",
+            "image": "https://c-wilton.github.io/img/activities/jpg/20170511_174441.jpg" 
+        },
+        { 
+            "description": "Belaying my sister as she leads a climb",
+            "image": "https://c-wilton.github.io/img/activities/jpg/IMG_1095.JPG" 
+        },
+        { 
+            "description": "Rollerblading at the local skatepark",
+            "image": "https://c-wilton.github.io/img/activities/jpg/IMG_1096.JPG" 
+        },
+        { 
+            "description": "Top of the mountain in Lancaster",
+            "image": "https://c-wilton.github.io/img/activities/jpg/20150801_163234.jpg" 
+        },
+        { 
+            "description": "Walking up a mountain to drum in Lancaster",
+            "image": "https://c-wilton.github.io/img/activities/jpg/11705495_1460599390911706_4952217805679933872_o.jpg" 
+        },
+        { 
+            "description": "Walking with the sheep",
+            "image": "https://c-wilton.github.io/img/activities/jpg/20160529_145315.jpg" 
+        },
+        { 
+            "description": "Rowing on the Hudson river in NYC",
+            "image": "https://c-wilton.github.io/img/activities/jpg/20150516_131125.jpg" 
+        },
+        { 
+            "description": "At the beach, playing on the sand",
+            "image": "https://c-wilton.github.io/img/activities/jpg/IMG_1097.JPG" 
+        },
+        { 
+            "description": "Climbing the swings",
+            "image": "https://c-wilton.github.io/img/activities/jpg/IMG_1098.JPG" 
+        },
+        { 
+            "description": "Graduation day",
+            "image": "https://c-wilton.github.io/img/activities/jpg/20180720_142412.jpg" 
+        },
+        { 
+            "description": "Me at Niagra Falls, NY side",
+            "image": "https://c-wilton.github.io/img/activities/jpg/Niagara Falls.jpg" 
+        },
+        { 
+            "description": "Playing the guitar",
+            "image": "https://c-wilton.github.io/img/activities/jpg/1470339520056.jpg" 
+        },
+        { 
+            "description": "Completed Oppy Club at the local sailing club",
+            "image": "https://c-wilton.github.io/img/activities/jpg/20180710_160930.jpg" 
+        }
+    ]
+}

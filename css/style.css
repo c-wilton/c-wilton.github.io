@@ -1,9 +1,8 @@
 html, body {
-    margin: 0px;
+    margin: 5px;
     height: 100%;
-/*    display: flex;    */
     justify-content: center;
-    font-family: sans-serif;
+    font-family: 'Roboto', 'PT Sans', 'Montserrat', Helvetica, Arial, sans-serif;
 }
 
 /* color schemes 
@@ -14,11 +13,19 @@ html, body {
 
 */
 
+@font-face {
+    font-family: 'Batala';
+    src: url("assets/Batala.ttf");
+}
+.batala {
+    font-family: 'Batala';
+    font-size: 36px;
+}
+
+
 .wrapper {
     width: 900px;
     margin: auto;
-/*    border-radius: 10px;  */
-/*    box-shadow: 0px 0px 15px rgba(0,0,0,0.5); */
 }
 
 /* HEADER, NAV MENU AND FOOTER */
@@ -29,23 +36,27 @@ header, footer {
     background-color: #006600;
     background: linear-gradient(to bottom right, #006600, green, #009900, #00b300, #ffffff);
     color: white;
+    font-weight: bold;
     text-align: center;
-/*    position: fixed;  */
 }
 
 header {
-    height: 150px;
+    height: 200px;
+    line-height: 150;
+    background-image: url(../img/background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 header h1 {
     margin: 0px;
-    line-height: 100px;
-/*    float: left;  */
+    line-height: 150px;
 }
 header nav {
     margin: 0px;
     line-height: 50px;
-/*    float: right; */
+    background-color: #009900; 
 }
 
 header nav ul {
@@ -55,20 +66,19 @@ header nav ul {
 }
 
 header nav ul li {
-/*    float: left;    */
     display: inline-block;
 }
 
 header nav a {
     text-decoration: none;
     color: white;
+    font-weight: bold;
+    text-transform: capitalize;
     padding:10px;
 /*    border-bottom: solid 6px black; 
     transition:  border-bottom 1s ease-in-out, margin-top 1s ease-in-out;   */
 }
-/*
-00A600
-*/
+
 header nav a.this-page {
     background-color: #008000;
     color: white
@@ -91,57 +101,126 @@ footer {
 }
 /* END HEADER, NAV MENU AND FOOTER */
 
-
-/* #084D08, #280F99, #009900, #994C04, #4D2404 */
-.row {
-    display: block;
-    width: 100%;
-    background-color: #994C04;
-    text-align: center;
+/* CONTENT */
+.section1 {
+    background-color: rgba(0, 153, 0, 0.1); 
+    
+    /* #084D08, #280F99, #009900, #994C04, #4D2404  */
 }
-
-.row div {
-    display: inline-block;
-    text-align: center;
-    margin: 10px;
-/*    height: 100px;    */
-    background-color: #084D08;
+.section2 {
+    background-color: rgba(153, 76, 4, 0.1); 
 }
+/* END OF CONTENT */
 
 /* IMAGE GALLERY */
-.gallery {
-    height: 200px;
-    background-color: #280F99;
-}
-
-.gallery div div {
-    margin: 0px;
-    width: 100px;
-/*    height: 100px;        */
-/*    line-height: 100px;   */
-    background-color: #009900;
-}
-
-.gallery div div img {
-    margin: 0px;
+.galleryFrame {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
     width: 100%;
-    height: 100px;        
-/*    line-height: 10px;    */
     background-color: #994C04;
+    text-align: center;
 }
 
-.gallery a {
-    font-size: 0px;
-    margin: 0px;
-    line-height: 0px;
-    height: 0px;
+.galleryRow {
+    display: flex; 
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    
+    /*background-color: violet;*/
+    margin: 10px 0;
+   
+    /* flex: flex-grow flex-shrink flex-basis */
+    /* flex: 1 0px; */    /* all items same size, and 100% width */
 }
 
-.gallery div p {
-    margin: 0px;
-/*    height: 10px;         */
-/*    line-height: 10px;    */
+/* div holding image and caption */
+.galleryRow div {
     background-color: #4D2404;
+    display: flex;
+    flex: 0 30%;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+.galleryRow div:hover {
+    background-color: #084D08;
+    cursor: pointer;
+}
+
+/* img tag */
+.galleryRow div div img {
+    /* width: 100%; */
+    background-color: inherit;
+    /* margin: 10px; */
+    width: 100%;
+}
+
+/* caption tag */
+.galleryRow div div {
+    background-color: inherit;
+    color: white;
+    font-weight: bold;
+    flex: 0;
 }
 /* END IMAGE GALLERY */
 
+/* IMAGE CAROUSEL */
+.carousel {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    background-color: #994C04;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.carousel > * {
+    padding: 10px;
+    /* flex: flex-grow flex-shrink flex-basis */
+    flex: 1 100%;   /* all items same size, and 100% width */
+}
+
+.button:hover {
+    background-color: #009900;
+    cursor: pointer;
+}
+.button:active {
+    background-color: #084D08;
+}
+
+.prevButton, .nextButton {
+    background-color: #4D2404;
+    line-height: 100px;
+    margin: auto;
+}
+
+.carouselImage {
+    background-color: #084D08;
+    overflow: hidden;
+}
+
+.carouselCaption {
+    background-color: #4D2404;
+}
+/* END IMAGE CAROUSEL */
+
+/* MEDIA QUERIES */
+/* desktop and tablet*/
+@media all and (min-width:800px) {
+    .wrapper { width: 90%; }
+    .carouselImage { flex: 10 0px; }
+    .prevButton { flex: 1 0px; }
+    .nextButton { flex: 1 0px; }
+    .prevButton { order: 1; }
+    .carouselImage { order: 2; }
+    .nextButton { order: 3; }
+    .carouselCaption { order: 4; }
+}
+
+@media all and (min-width: 600px) {
+    .wrapper { width: 90%; }
+    .prevButton { flex: 2 0px; }
+    .nextButton { flex: 2 0px; }
+}

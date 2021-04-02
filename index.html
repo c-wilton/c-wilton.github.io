@@ -1,26 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>CW Software - Showcase</title>
-    <!--<link rel="icon" href="logo.png" /> -->
+    <title>CW Software - Professional</title>
 
     <meta name="Author" content="Chrs Wilton" />
 	<meta name="Description" content="Software Developer in Gwynedd, North Wales" />
-	<meta name="keywords" content="Software, Development, Developer, Engineering, Engineer,
-                Java, Html, Swift, Apps, Programs, Computing,
-                Bangor, Gwynedd, North Wales" />
-<!--<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />    -->
+	<meta name="keywords" content="Software Developer, Software Engineer,
+                Java, Html, Swift, Bangor, Gwynedd, North Wales" />
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 
+    <link rel="icon" href="img/310582_10150298576507232_4175852_n.jpg" type="image/gif" />
     <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet" />
+
+    <script defer src="js/dates.js"></script> <!--  type="text/javascript" unnecessay -->
 </head>
 <body>
     <div class="wrapper">
         <header>
-            <h1>Title</h1>
+            <h1>CW Software</h1>
             <nav>
                 <ul>
-                    <li><a href="index.html" class="this-page">my showcase</a></li>
-                    <li><a href="professional.html">career background</a></li>
+                    <li><a href="index.html" class="this-page">career background</a></li>
+                    <li><a href="showcase.html">my showcase</a></li>
                     <li><a href="activities.html">my activities</a></li>
                     <li><a href="music.html">music background</a></li>
                 </ul>
@@ -28,30 +30,56 @@
         </header>
         <main>
             <!--Main content here-->
-            <section>
-                <h2>My prgoramming style</h2>
-                <p>During my studies in software development, I have known that there is much for me to learn.
-                    So as a principle I enjoy the chllenge of writing my own code over using pre-written code or coding tools when writing code for myself.
-                    I feel this is the best way to learn and understand the principles of how everything works together.
-                    However, I also understand and acknowledge the importance of pre-written code and libraries, 
-                    and I'm happy to use them in my professional setting.
+            <section class="section1">
+                <h2>About Me</h2>
+                <p>Welcome! 
+                    <br />My name is Chris,<!-- foaf: firstname --> 
+                    I'm a Software Engineer <!-- profession: software? -->
+                    based in Bangor, North Wales. <!-- place: Bangor --> 
+                    I graduated from the University of Liverpool in 2018
+                    with a first class degree in Software Development. 
+                    On this website, you can find out about my <a href="#background">professional background</a>, 
+                    see a <a href="showcase.html">showcase</a> of my work, 
+                    find out about the <a href="activities.html">activities</a> I enjoy, 
+                    and take a glance at my <a href="music.html">musical backgorund</a>. 
+                    <br />For more information, please <a href="mailto:chw20vvb@bangor.ac.uk?Subject=Find%20out%20more">contact me</a>.
                 </p>
             </section>
-            <section>
-                <h2>Java</h2>
-                <code></code>
+            <section class="section2">
+                <h2 id="backgorund">Pre-computing life</h2>
+                <p>During my GCSEs and A-levels, I was never sure about what I wanted to do after school.
+                    Going to University and getting student finance didn’t make sense to me when there was no overall goal to aim for.
+                    After my levels A-Ievels I did a year motor vehicle before getting a job in manufacturing engineering for almost 10 years.
+                </p>
             </section>
-            <section>
-                <h2>HTML</h2>
-                <code></code>
+            <section class="section1">
+                <h2>My introduction to computing</h2>
+                <p>My first experience with computing languages was when I saw my yahoo account came with Geocities (Wow that’s a blast from the past, right), 
+                    which allowed you to create your own webpage for no cost, so I thought I’d give it a go. 
+                    I started by using the website builder, but had to use the help feature to find out a few things including how to edit the hex color of an item in the html tab. 
+                    Whilst doing that, I realized that the code created to build the website seemed to make sense.
+                    It was around this time when I had started Batala Batala (link to the <a href="http://www.batalabangor.com" target="_blank">band's website</a>) which didn’t have a website. 
+                    So I thought I would learn more about html using geocities help and quackit tutorials and try to create one.
+                    </p>
             </section>
-            <section>
-                <h2>Swift</h2>
-                <code></code>
+            <section class="section2">
+                <h2>Turning computing into a career</h2>
+                <p>Deciding to leave my job to pursue a career in computing with only a basic understanding of html as a background of the field was quite a daunting choice. 
+                    However, an Associates Degree included a vast range of modules from Maths and English to Business and Accounting which meant should the subject major not be suitable, 
+                    it allows a much easier switch to another major. 
+                    So I decided started an Associates Degree and found that I was suited to the field of computing and then transferred to the University of Liverpool to do a BSc in software development which I graduated with a first-class honors.
+                    I am now continuing my studies to do a MSc in Computing.
+                    </p>
+            </section>
+            <section class="section1">
+                <h2>Showcase</h2>
+                <p>To see some samples of my work, go to the <a href="showcase.html">showcase page</a>.</p>
             </section>
         </main>
         <footer>
-            <p>&copy Chris Wilton <!-- date --> </p>
+            <p><span id="copyright"></span>
+                <span id="modified"></span>
+            </p>
         </footer>
     </div>
 </body>
