@@ -2,7 +2,7 @@ html, body {
     margin: 5px;
     height: 100%;
     justify-content: center;
-    font-family: 'PT Sans', 'Montserrat', Helvetica, Arial, sans-serif;
+    font-family: 'Roboto', 'PT Sans', 'Montserrat', Helvetica, Arial, sans-serif;
 }
 
 /* color schemes 
@@ -19,7 +19,9 @@ html, body {
 }
 .batala {
     font-family: 'Batala';
+    font-size: 36px;
 }
+
 
 .wrapper {
     width: 900px;
@@ -98,6 +100,17 @@ footer {
     height: 100px;
 }
 /* END HEADER, NAV MENU AND FOOTER */
+
+/* CONTENT */
+.section1 {
+    background-color: rgba(0, 153, 0, 0.1); 
+    
+    /* #084D08, #280F99, #009900, #994C04, #4D2404  */
+}
+.section2 {
+    background-color: rgba(153, 76, 4, 0.1); 
+}
+/* END OF CONTENT */
 
 /* IMAGE GALLERY */
 .galleryFrame {
@@ -179,6 +192,7 @@ footer {
 
 .prevButton, .nextButton {
     background-color: #4D2404;
+    line-height: 100px;
     margin: auto;
 }
 
