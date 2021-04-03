@@ -208,7 +208,7 @@ footer {
 
 /* MEDIA QUERIES */
 /* desktop and tablet*/
-@media all and (min-width:800px) {
+@media screen and (min-width:800px) {
     .wrapper { width: 90%; }
     .carouselImage { flex: 10 0px; }
     .prevButton { flex: 1 0px; }
@@ -219,8 +219,14 @@ footer {
     .carouselCaption { order: 4; }
 }
 
-@media all and (min-width: 600px) {
+@media screen and (min-width: 600px) {
     .wrapper { width: 90%; }
+    header nav ul:nth-child(1) { display: inline; }
+    header nav ul:nth-child(2) { display: block; }
+    header nav ul:nth-child(1) { display: inline; }
+    header nav ul:nth-child(2) { display: block; }
     .prevButton { flex: 2 0px; }
     .nextButton { flex: 2 0px; }
 }
+
+
