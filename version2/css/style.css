@@ -282,7 +282,7 @@ footer p .linkedIn {
     header nav ul li { flex: 0 0 35%; }
     footer p .validator { padding-right: 5px;}
     footer p .linkedIn { padding-left: 20px;}
-    .video { width: 100%}
+    .video { width: 100%; }
 }
 
 /* mobile with 4 row navigation */ 
@@ -293,6 +293,16 @@ footer p .linkedIn {
     /* footer p span span { display: block; line-height: 50px; } */
     footer p .validator { padding-right: 5px;}
     footer p .linkedIn { padding-left: 5px;}
+}
+
+#project p, #project ul {
+    display: none; 
+    /* visibility: hidden; */
+}
+
+#project:hover>p, #project:hover>ul {
+    /* cursor: pointer; */
+    display: block;
 }
 
 
