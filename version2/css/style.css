@@ -69,7 +69,7 @@ header nav ul {
 
 header nav ul li {
     /* display: inline-block; */
-    flex: 0 0 1;
+    flex: 0 0 auto;
 }
 
 header nav a {
@@ -230,7 +230,7 @@ footer {
 }
 
 /* mobile with 2 row navigation */
-@media screen and (max-width: 635px) {
+@media screen and (max-width: 650px) {
     header nav ul li { flex: 0 0 35%; }
 }
 
