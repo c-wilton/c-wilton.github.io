@@ -282,6 +282,7 @@ footer p .linkedIn {
     header nav ul li { flex: 0 0 35%; }
     footer p .validator { padding-right: 5px;}
     footer p .linkedIn { padding-left: 20px;}
+    .video { width: 100%}
 }
 
 /* mobile with 4 row navigation */ 
