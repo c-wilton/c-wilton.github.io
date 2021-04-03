@@ -40,18 +40,14 @@ header, footer {
     text-align: center;
 }
 
-header {
-    height: 200px;
-    line-height: 150;
+header h1 {
+    margin: 0px;
+    line-height: 150px;
+
     background-image: url(../img/background.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-header h1 {
-    margin: 0px;
-    line-height: 150px;
 }
 
 /* navigation elements */
@@ -65,14 +61,15 @@ header nav ul {
     margin: 0px;
     padding: 0px;
     list-style-type: none;
+
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-evenly;
-    width: 100%;
+    justify-content: center;
 }
 
 header nav ul li {
-    flex: 1;
+    /* display: inline-block; */
+    flex: 0 0 1;
 }
 
 header nav a {
@@ -227,10 +224,12 @@ footer {
 
 @media screen and (min-width: 10px) {
     .wrapper { width: 90%; }
+    /*
     header nav ul:nth-child(1) { display: inline; }
     header nav ul:nth-child(2) { display: block; }
     header nav ul:nth-child(1) { display: inline; }
     header nav ul:nth-child(2) { display: block; }
+    */
     .prevButton { flex: 2 0px; }
     .nextButton { flex: 2 0px; }
 }
