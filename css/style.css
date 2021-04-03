@@ -219,7 +219,7 @@ footer {
     .carouselCaption { order: 4; }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (min-width:10px) {
     .wrapper { width: 90%; }
     header nav ul:nth-child(1) { display: inline-block; }
     header nav ul:nth-child(2) { display: block; }
