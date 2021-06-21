@@ -34,7 +34,7 @@
     color: #000000;
     cursor: pointer;
 }
-.button:active {
+.galleryRow div:active {
     background-color: #FF0000;
     color: #FFFFFF;
 }
