@@ -4,7 +4,7 @@
     flex-flow: column nowrap;
     justify-content: space-evenly;
     width: 100%;
-    background-color: #994C04;
+    background-color: #FF0000;
     text-align: center;
 }
 
@@ -22,7 +22,7 @@
 
 /* div holding image and caption */
 .galleryRow div {
-    background-color: #4D2404;
+    background-color: #000000;
     display: flex;
     flex: 0 30%;
     flex-flow: column nowrap;
@@ -30,7 +30,7 @@
 }
 
 .galleryRow div:hover {
-    background-color: #084D08;
+    background-color: #FFFFFF;
     cursor: pointer;
 }
 
