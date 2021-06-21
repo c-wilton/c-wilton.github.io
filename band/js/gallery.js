@@ -6,7 +6,7 @@ var row3 = document.getElementById('row3');
 
 /* extract objects from json file */
 //get a file from this address
-fetch("https://c-wilton.github.io/assets/images.json")
+fetch("https://c-wilton.github.io/band/assets/images.json")
 .then(function(res) {
     //convert contents of file to json
     res.json().then(function(json) {
