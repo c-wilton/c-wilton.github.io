@@ -3,7 +3,7 @@
     display: flex;
     flex-flow: row wrap;
     width: 100%;
-    background-color: #994C04;
+    background-color: #red;
     color: white;
     font-weight: bold;
     text-align: center;
@@ -16,26 +16,26 @@
 }
 
 .button:hover {
-    background-color: #009900;
+    background-color: #FFFFFF;
     cursor: pointer;
 }
 .button:active {
-    background-color: #084D08;
+    background-color: #000000;
 }
 
 .prevButton, .nextButton {
-    background-color: #4D2404;
+    background-color: #FF0000;
     line-height: 100px;
     margin: auto;
 }
 
 .carouselImage {
-    background-color: #084D08;
+    background-color: #FFFFFF;
     overflow: hidden;
 }
 
 .carouselCaption {
-    background-color: #4D2404;
+    background-color: #FF0000;
 }
 /* END IMAGE CAROUSEL */
 
@@ -55,6 +55,7 @@
     .prevButton { flex: 2 0px; }
     .nextButton { flex: 2 0px; }
 }
+
 
 .labCarousel {
     position: relative;
