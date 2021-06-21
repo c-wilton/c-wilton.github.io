@@ -17,14 +17,15 @@
 
 .button:hover {
     background-color: #FFFFFF;
+    color: #000000;
     cursor: pointer;
 }
 .button:active {
-    background-color: #000000;
+    background-color: #FF0000;
 }
 
 .prevButton, .nextButton {
-    background-color: #FF0000;
+    background-color: #000000;
     line-height: 100px;
     margin: auto;
 }
