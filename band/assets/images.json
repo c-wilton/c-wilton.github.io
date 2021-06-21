@@ -1,0 +1,43 @@
+{
+    "home": [
+        { 
+            "description": "",
+            "image": "https://c-wilton.github.io/band/img/home/19243083039_5af13b3041_o.jpg" 
+        },
+        { 
+            "description": "",
+            "image": "https://c-wilton.github.io/band/img/home/FullSizeRender-4.jpg" 
+        },{ 
+            "description": "",
+            "image": "https://c-wilton.github.io/band/img/home/FullSizeRender.jpg" 
+        },{ 
+            "description": "St David's Day gig",
+            "image": "https://c-wilton.github.io/band/img/home/Welsh8.jpg" 
+        },{ 
+            "description": "",
+            "image": "https://c-wilton.github.io/band/img/home/11903958_1079369388763459_3268330523221564319_n.jpg" 
+        }
+    ],
+    "gallery": [
+        { 
+            "description": "Batala Hey!",
+            "image": "https://c-wilton.github.io/band/img/gallery/983787_907057409305018_5162321812133115664_n.jpg" 
+        },
+        { 
+            "description": "",
+            "image": "https://c-wilton.github.io/band/img/gallery/10464396_10203816738326294_1729592294650377048_n.jpg" 
+        },{ 
+            "description": "",
+            "image": "https://c-wilton.github.io/band/img/gallery/10690188_10205195566156128_2547097801696400025_n.jpg" 
+        },{ 
+            "description": "",
+            "image": "https://c-wilton.github.io/band/img/gallery/11196254_915802891833945_8951889525559194629_n.jpg" 
+        },{ 
+            "description": "",
+            "image": "https://c-wilton.github.io/band/img/gallery/11824975_460728434099049_147519031095915143_n.jpg" 
+        },{ 
+            "description": "",
+            "image": "https://c-wilton.github.io/band/img/gallery/11870809_1099707296706694_5987470913510811232_n.jpg" 
+        }
+    ]
+}
