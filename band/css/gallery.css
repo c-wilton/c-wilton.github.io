@@ -31,7 +31,11 @@
 
 .galleryRow div:hover {
     background-color: #FFFFFF;
+    color: #000000;
     cursor: pointer;
+}
+.button:active {
+    background-color: #FF0000;
 }
 
 /* img tag */
