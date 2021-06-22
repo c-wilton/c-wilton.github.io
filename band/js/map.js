@@ -1,5 +1,6 @@
 //window.onload = getMyLocation();
 var ourCoords = {latitude: 47.624851, longitude: -122.52099};
+var map;
 
 getMyLocation();
 
@@ -21,6 +22,8 @@ function displayLoation(position) {
     var km = computeCoords(position.coords, ourCoords);
     var distance = document.getElementById("distance");
     distance.innerHTML = "distance: " + km + "km";
+
+    showMap(position.coords);
 }
 
 function computeCoords(startCoords, destCoords) {
@@ -42,4 +45,14 @@ function computeCoords(startCoords, destCoords) {
 function degreeToRadians(degrees) {
     var radians = (degrees * Math.PI)/180;
     return radians;
+}
+
+function showMap(coords) {
+    var googleCoords = new google.maps.LatLng(latitude, longitude);
+
+    var mapOptions = {
+        zoom: 10,
+        center: googleCoords, 
+        mapTypeId: google.maps.mapTypeId.ROADMAP
+    };
 }
