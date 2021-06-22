@@ -30,8 +30,8 @@
 }
 
 .galleryRow div:hover {
-    background-color: #FFFFFF;
     color: #000000;
+    background-color: #FFFFFF;
     cursor: pointer;
 }
 .galleryRow div:active {
