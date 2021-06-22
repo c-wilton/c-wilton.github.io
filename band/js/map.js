@@ -48,7 +48,7 @@ function degreeToRadians(degrees) {
 }
 
 function showMap(coords) {
-    var googleCoords = new google.maps.LatLng(latitude, longitude);
+    var googleCoords = new google.maps.LatLng(coords.latitude, coords.longitude);
 
     var mapOptions = {
         zoom: 10,
