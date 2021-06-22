@@ -1,0 +1,17 @@
+body {
+    width: 90%;
+    color: black;
+}
+
+.header {
+    width: 100%;
+    background-color: #FF0000;
+    color: white;
+}
+
+.map {
+    width: 100%;
+    background-color: #000000;
+    color: white;
+    height: 200px;
+}
