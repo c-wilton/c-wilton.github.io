@@ -9,9 +9,14 @@ body {
     color: white;
 }
 
-.map, .location {
+.map, .location, .distance {
     width: 100%;
     background-color: #000000;
     color: white;
+    line-height: 1.5em;
+    margin-top: 10px;
+}
+
+.map {
     height: 200px;
 }
