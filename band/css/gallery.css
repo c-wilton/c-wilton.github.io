@@ -23,6 +23,7 @@
 /* div holding image and caption */
 .galleryRow div {
     background-color: #000000;
+    color: white;
     display: flex;
     flex: 0 30%;
     flex-flow: column nowrap;
@@ -50,7 +51,7 @@
 /* caption tag */
 .galleryRow div div {
     background-color: inherit;
-    color: white;
+    color: inherit;
     font-weight: bold;
     flex: 0;
 }
