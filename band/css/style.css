@@ -9,7 +9,7 @@ body {
     color: white;
 }
 
-.map {
+.map, .location {
     width: 100%;
     background-color: #000000;
     color: white;
