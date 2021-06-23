@@ -23,7 +23,8 @@ function displayLoation(position) {
     var distance = document.getElementById("distance");
     distance.innerHTML = "distance: " + km + "km";
 
-    showMap(position.coords);
+    //showMap(position.coords);
+    initMap();
 }
 
 function computeCoords(startCoords, destCoords) {
@@ -55,4 +56,14 @@ function showMap(coords) {
         center: googleCoords, 
         mapTypeId: google.maps.mapTypeId.ROADMAP
     };
+}
+
+let myMap;
+
+function initMap() {
+    myMap = new google.maps.Map(
+        document.getElementById("map"), {
+            center: {lat: -34.397, lng: 150.644},
+            zoom: 8,
+        });
 }
