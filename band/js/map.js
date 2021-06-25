@@ -23,7 +23,7 @@ function displayLoation(position) {
     var distance = document.getElementById("distance");
     distance.innerHTML = "distance: " + km + "km";
 
-    //showMap(position.coords);
+    showMap(position.coords);
     //initMap();
     createMap();
 }
@@ -57,6 +57,9 @@ function showMap(coords) {
         center: googleCoords, 
         mapTypeId: google.maps.mapTypeId.ROADMAP
     };
+
+    var mapDiv = document.getElementById("map");
+    map = new google.maps.Map(mapDiv, mapOptions);
 }
 
 let myMap;
