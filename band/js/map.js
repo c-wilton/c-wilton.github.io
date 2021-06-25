@@ -55,6 +55,7 @@ function showMap(coords) {
     var mapOptions = {
         zoom: 10,
         center: googleCoords, 
+        key: "AIzaSyBRVyfspaq-IUxBNhIxCcqMoRj-4MX_Ihc"
         //mapTypeId: google.maps.mapTypeId.ROADMAP
     };
 
