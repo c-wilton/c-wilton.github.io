@@ -24,7 +24,8 @@ function displayLoation(position) {
     distance.innerHTML = "distance: " + km + "km";
 
     //showMap(position.coords);
-    initMap();
+    //initMap();
+    createMap();
 }
 
 function computeCoords(startCoords, destCoords) {
@@ -66,4 +67,11 @@ function initMap() {
             center: {lat: -34.397, lng: 150.644},
             zoom: 8
         });
+}
+
+function createMap() {
+    let img_url = "https://maps.googleapis.com/maps/api/staticmap?center=" +
+            "-34.397,150.644"+"&zoom=14&size=400x300&sensor=false&key=AIzaSyBRVyfspaq-IUxBNhIxCcqMoRj-4MX_Ihc";
+    
+    document.getElementById("map").innerHTML = "<img src='"+img_url+"'>";
 }
