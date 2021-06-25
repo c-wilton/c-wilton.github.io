@@ -25,7 +25,7 @@ function displayLoation(position) {
 
     showMap(position.coords);
     //initMap();
-    createMap();
+    //createMap();
 }
 
 function computeCoords(startCoords, destCoords) {
@@ -55,7 +55,7 @@ function showMap(coords) {
     var mapOptions = {
         zoom: 10,
         center: googleCoords, 
-        mapTypeId: google.maps.mapTypeId.ROADMAP
+        //mapTypeId: google.maps.mapTypeId.ROADMAP
     };
 
     var mapDiv = document.getElementById("map");
