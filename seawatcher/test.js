@@ -7,8 +7,8 @@ function geoFindMe() {
     mapLink.textContent = '';
       
     function addElement(){
-        const para = document.createElement("p"); <p id = "status"></p>
-        setAttribute(‘id’, ‘distance’)
+        const para = document.createElement("p");
+        setAttribute(‘id’, ‘distance’);
         para.innerText = "This is a paragraph";
         document.body.appendChild(para);
     }
