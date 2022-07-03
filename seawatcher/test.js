@@ -6,6 +6,13 @@ function geoFindMe() {
     mapLink.href = '';
     mapLink.textContent = '';
       
+    function addElement(){
+        const para = document.createElement("p"); <p id = "status"></p>
+        setAttribute(‘id’, ‘distance’)
+        para.innerText = "This is a paragraph";
+        document.body.appendChild(para);
+    }
+    
     function success(position) {
         const latitude  = position.coords.latitude;
         const longitude = position.coords.longitude;
