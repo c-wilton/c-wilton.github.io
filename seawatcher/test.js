@@ -6,10 +6,16 @@ function geoFindMe() {
     mapLink.href = '';
     mapLink.textContent = '';
       
+    function calcDistance(pos1, pos2){
+        result = document.getElementByID('distance')
+        message = 'lat1: ' + pos1.lat
+        #result.innerText = message
+    }
+    
     function addElement(){
-        const para = document.createElement("p");
-        setAttribute(‘id’, ‘distance’);
-        para.innerText = "This is a paragraph";
+        const para = document.createElement('p');
+        para.setAttribute(‘id’, ‘distance’);
+        para.innerText = 'This is a paragraph';
         document.body.appendChild(para);
     }
     
@@ -20,7 +26,13 @@ function geoFindMe() {
         status.textContent = '';
         mapLink.href = `https://www.openstreetmap.org/#map=18/${latitude}/${longitude}`;
         mapLink.textContent = `Latitude: ${latitude} °, Longitude: ${longitude} °`;
+        
+        position1 = {latitude, longitude}
+        testLat = 53.225589
+        testLong = -4.127876
+        position2 = {testLat, testLong}
         addElement()
+        calcDistance(position1, position2)
     }
       
     function error() {
