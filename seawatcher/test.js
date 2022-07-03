@@ -20,6 +20,7 @@ function geoFindMe() {
         status.textContent = '';
         mapLink.href = `https://www.openstreetmap.org/#map=18/${latitude}/${longitude}`;
         mapLink.textContent = `Latitude: ${latitude} °, Longitude: ${longitude} °`;
+        addElement()
     }
       
     function error() {
