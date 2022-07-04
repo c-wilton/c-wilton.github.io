@@ -6,9 +6,14 @@ function geoFindMe() {
     mapLink.href = '';
     mapLink.textContent = '';
       
-    function calcDistance(pos1, pos2){
+    function getDistance(pos1, pos2){
         result = document.getElementById('distance')
-        message = 'lat1: ' + pos1.lat
+        lat1 = pos1.lat
+        lang1 = pos1.long
+        lat2 = pos2.lat
+        lang2 = pos2.long
+        message = 'lat1: ' + lat1 + ' long1: ' + long1 + '<br>'
+        message += 'lat2: ' + lat2 + ' long2: ' + long2
         result.innerText = message
     }
     
@@ -30,9 +35,9 @@ function geoFindMe() {
         position1 = {lat: latitude, long: longitude}
         testLat = 53.225589
         testLong = -4.127876
-        position2 = {'lat': testLat, 'long': testLong}
+        position2 = {lat: testLat, long: testLong}
         addElement()
-        calcDistance(position1, position2)
+        getDistance(position1, position2)
     }
       
     function error() {
