@@ -1,5 +1,4 @@
 /* import {distance} from './test1.js'; */
-
 function geoFindMe() {
     
     const status = document.querySelector('#status');
@@ -9,17 +8,17 @@ function geoFindMe() {
     mapLink.textContent = '';
       
     function getDistance(pos1, pos2){
-        result = document.getElementById('distance')
-        lat1 = pos1.lat
-        lang1 = pos1.long
-        lat2 = pos2.lat
-        lang2 = pos2.long
+        result = document.getElementById('distance');
+        lat1 = pos1.lat;
+        lang1 = pos1.long;
+        lat2 = pos2.lat;
+        lang2 = pos2.long;
         /* dist = distance(lat1, long1, lat2, long2, 'M') */
-        dist = 0
-        message = 'lat1: ' + lat1 + ' long1: ' + long1 + '<br>'
-        message += 'lat2: ' + lat2 + ' long2: ' + long2 + '<br>'
-        message += 'distance: ' + dist
-        result.innerText = message
+        dist = 0;
+        message = 'lat1: ' + lat1 + ' long1: ' + long1 + '<br>';
+        message += 'lat2: ' + lat2 + ' long2: ' + long2 + '<br>';
+        message += 'distance: ' + dist;
+        result.innerText = message;
     }
     
     function addElement(){
@@ -37,12 +36,12 @@ function geoFindMe() {
         mapLink.href = `https://www.openstreetmap.org/#map=18/${latitude}/${longitude}`;
         mapLink.textContent = `Latitude: ${latitude} °, Longitude: ${longitude} °`;
         
-        position1 = {lat: latitude, long: longitude}
-        testLat = 53.225589
-        testLong = -4.127876
-        position2 = {lat: testLat, long: testLong}
-        addElement()
-        getDistance(position1, position2)
+        position1 = {lat: latitude, long: longitude};
+        testLat = 53.225589;
+        testLong = -4.127876;
+        position2 = {lat: testLat, long: testLong};
+        addElement();
+        getDistance(position1, position2);
     }
       
     function error() {
