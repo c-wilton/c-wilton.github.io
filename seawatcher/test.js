@@ -27,10 +27,10 @@ function geoFindMe() {
         mapLink.href = `https://www.openstreetmap.org/#map=18/${latitude}/${longitude}`;
         mapLink.textContent = `Latitude: ${latitude} °, Longitude: ${longitude} °`;
         
-        position1 = {latitude, longitude}
+        position1 = {'lat': latitude, 'long': longitude}
         testLat = 53.225589
         testLong = -4.127876
-        position2 = {testLat, testLong}
+        position2 = {'lat': testLat, 'long': testLong}
         addElement()
         calcDistance(position1, position2)
     }
