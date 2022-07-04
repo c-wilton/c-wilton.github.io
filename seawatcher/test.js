@@ -14,7 +14,8 @@ function geoFindMe() {
         lang1 = pos1.long
         lat2 = pos2.lat
         lang2 = pos2.long
-        dist = distance(lat1, long1, lat2, long2, 'M')
+        /* dist = distance(lat1, long1, lat2, long2, 'M') */
+        dist = 0
         message = 'lat1: ' + lat1 + ' long1: ' + long1 + '<br>'
         message += 'lat2: ' + lat2 + ' long2: ' + long2 + '<br>'
         message += 'distance: ' + dist
