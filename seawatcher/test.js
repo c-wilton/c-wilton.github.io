@@ -9,7 +9,7 @@ function geoFindMe() {
     function calcDistance(pos1, pos2){
         result = document.getElementById('distance')
         message = 'lat1: ' + pos1.lat
-        /*result.innerText = message*/
+        result.innerText = message
     }
     
     function addElement(){
