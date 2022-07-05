@@ -20,6 +20,7 @@ function geoFindMe() {
         message += 'lat2: ' + lat2 + ' long2: ' + long2 + '\n';
         message += 'distance: ' + dist + 'km \n';
         message += 'distance: ' + distInM + ' meters';
+        message += 'google maps distance: 41.148 meters';
         result.innerText = message;
     }
     
