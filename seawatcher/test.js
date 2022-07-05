@@ -10,9 +10,9 @@ function geoFindMe() {
     function getDistance(pos1, pos2){
         result = document.getElementById('distance');
         lat1 = pos1.lat;
-        lang1 = pos1.long;
+        long1 = pos1.long;
         lat2 = pos2.lat;
-        lang2 = pos2.long;
+        long2 = pos2.long;
         /* dist = distance(lat1, long1, lat2, long2, 'M') */
         dist = 0;
         message = 'lat1: ' + lat1 + ' long1: ' + long1 + '<br>';
