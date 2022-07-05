@@ -16,8 +16,8 @@ function geoFindMe() {
         dist = distance(lat1, long1, lat2, long2, 'K')
         distInM = dist * 1000
         /* dist = 0; */
-        message = 'lat1: ' + lat1 + ' long1: ' + long1 + '\n';
-        message += 'lat2: ' + lat2 + ' long2: ' + long2 + '\n';
+        message = 'New Look: lat1: ' + lat1 + ' long1: ' + long1 + '\n';
+        message += 'Fat cat: lat2: ' + lat2 + ' long2: ' + long2 + '\n';
         message += 'distance: ' + dist + 'km \n';
         message += 'distance: ' + distInM + ' meters';
         message += 'google maps distance: 41.148 meters';
