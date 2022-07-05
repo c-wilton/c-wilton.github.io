@@ -13,11 +13,13 @@ function geoFindMe() {
         long1 = pos1.long;
         lat2 = pos2.lat;
         long2 = pos2.long;
-        dist = distance(lat1, long1, lat2, long2, 'M')
+        dist = distance(lat1, long1, lat2, long2, 'K')
+        distInM = dist * 1000
         /* dist = 0; */
         message = 'lat1: ' + lat1 + ' long1: ' + long1 + '\n';
         message += 'lat2: ' + lat2 + ' long2: ' + long2 + '\n';
-        message += 'distance: ' + dist;
+        message += 'distance: ' + dist + 'km \n';
+        message += 'distance: ' + distInM + ' meters';
         result.innerText = message;
     }
     
