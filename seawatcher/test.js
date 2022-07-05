@@ -1,4 +1,4 @@
-import {distance} from './test1.js';
+/* import {distance} from './test1.js'; */
 function geoFindMe() {
     
     const status = document.querySelector('#status');
