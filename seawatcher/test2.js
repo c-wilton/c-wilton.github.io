@@ -46,6 +46,7 @@ function geoFindMe() {
         */
         
         atext.value = `Latitude: ${latitude} °, Longitude: ${longitude} °`;
+        atext.gps-entity-place = "latitude: ${latitude}; longitude:  ${latitude};"
         
         /*
         position1 = {lat: latitude, long: longitude};
