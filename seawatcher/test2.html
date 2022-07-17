@@ -12,8 +12,10 @@
   <body>
     <a-scene vr-mode-ui="enabled: false" arjs="sourceType: webcam; videoTexture: true; debugUIEnabled: false;">
       <a-text value="This content will always face you." look-at="[gps-camera]" scale="120 120 120" gps-entity-place="latitude: 53.22597071349516; longitude:  -4.127555930547311;"></a-text>
-      <a-camera gps-camera rotation-reader> </a-camera>
-      <a-entity line="start: 0 1 0; end: 2 0 -5; color: red" line__2="start: -2 4 5; end: 0 4 -3; color: green"></a-entity>
+      <a-camera gps-camera rotation-reader> 
+        <a-entity line="start: 1 0 -3; end: 1 4 -3; color: red" line__2="start: -2 4 5; end: 0 4 -3; color: green"></a-entity>
+      </a-camera>
+      
     </a-scene>
   </body>
 </html>
