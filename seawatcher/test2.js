@@ -1,13 +1,16 @@
 function geoFindMe() {
     
+    /*
     const atext = document.querySelector("a-text");
+    */
+    const atext = document.getElementById("a-text");
     
     function success(position) {
         console.log("Location Success")
         const latitude  = position.coords.latitude;
         const longitude = position.coords.longitude;
         
-        atext.setAttribute(value,"");
+        atext.setAttribute(value, "");
         atext.setAttribute(value, "Latitude: ${latitude}, Longitude: ${longitude}");
         atext.setAttribute("gps-entity-place", "latitude: ${latitude}; longitude: ${latitude}");
         atext.setAttribute('rotation', '0 180 0');
