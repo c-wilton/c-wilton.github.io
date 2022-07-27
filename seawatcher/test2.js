@@ -10,8 +10,8 @@ function geoFindMe() {
         const latitude  = position.coords.latitude;
         const longitude = position.coords.longitude;
         
-        atext.setAttribute(value, "");
-        atext.setAttribute(value, "Latitude: ${latitude}, Longitude: ${longitude}");
+        atext.value = "";
+        atext.value = "Latitude: ${latitude}, Longitude: ${longitude}";
         atext.setAttribute("gps-entity-place", "latitude: ${latitude}; longitude: ${latitude}");
         atext.setAttribute('rotation', '0 180 0');
     }
