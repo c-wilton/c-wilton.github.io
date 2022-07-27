@@ -9,7 +9,7 @@ function geoFindMe() {
         
         atext.value = '';
         atext.value = "Latitude: ${latitude}, Longitude: ${longitude}";
-        atext.gps-entity-place = "latitude: ${latitude}; longitude:  ${latitude};"
+        atext.gps-entity-place = "latitude: ${latitude}; longitude: ${latitude}";
     }
       
     function error() {
