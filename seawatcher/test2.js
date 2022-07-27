@@ -3,6 +3,7 @@ function geoFindMe() {
     const atext = document.querySelector('a-text');
     
     function success(position) {
+        console.log("Location Success")
         const latitude  = position.coords.latitude;
         const longitude = position.coords.longitude;
         
