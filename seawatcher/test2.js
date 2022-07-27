@@ -17,13 +17,13 @@ function geoFindMe() {
     }
       
     function error() {
-        atext.value = "Unable to retrieve your location";
+        atext.setAttribute(value, "Unable to retrieve your location");
     }
       
     if(!navigator.geolocation) {
-        atext.value = "Geolocation is not supported by your browser";
+        atext.setAttribute(value, "Geolocation is not supported by your browser");
     } else {
-        atext.value = "Locating…";
+        atext.setAttribute(value, "Locating…");
         navigator.geolocation.getCurrentPosition(success, error);
     }
     
