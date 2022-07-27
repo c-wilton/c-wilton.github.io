@@ -3,7 +3,7 @@ function geoFindMe() {
     /*
     const atext = document.querySelector("a-text");
     */
-    const atext = document.getElementById("a-text");
+    const atext = document.getElementById("text");
     
     function success(position) {
         console.log("Location Success")
