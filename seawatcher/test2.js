@@ -14,6 +14,7 @@ function geoFindMe() {
         atext.value = "Latitude: ${latitude}, Longitude: ${longitude}";
         atext.setAttribute("gps-entity-place", "latitude: ${latitude}; longitude: ${latitude}");
         atext.setAttribute('rotation', '0 180 0');
+        console.log(atext.getAttributeNames() )
     }
       
     function error() {
