@@ -18,12 +18,15 @@ function geoFindMe() {
       
     function error() {
         atext.setAttribute(value, "Unable to retrieve your location");
+        console.log("Location error")
     }
       
     if(!navigator.geolocation) {
         atext.setAttribute(value, "Geolocation is not supported by your browser");
+        console.log("Location not supported")
     } else {
         atext.value = "Locating…";
+        console.log("Starting")
         navigator.geolocation.getCurrentPosition(success, error);
     }
     
