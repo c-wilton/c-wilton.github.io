@@ -9,9 +9,11 @@ class Rectangle {
   #altitude
   
   constructor() {
-    this.armLength = 70
+    this.#armLength = 70
     this.#personHeight = 1.675
     this.#altitude = 18.325
+    setDistances()
+    setIntervals()
   }
   
   setDistances() {
@@ -19,6 +21,17 @@ class Rectangle {
   }
   setIntervals() {
     this.#intervals = []
+    this.#intervals.append(3)
+  }
+  
+  getDistance(){
+    distance = distances[0]
+    return distance
+  }
+  
+  getInterval(){
+    interval = intervals[0]
+    return interval
   }
   
   calcIntervals() {
