@@ -18,7 +18,7 @@ function geoFindMe() {
         atext.setAttribute('rotation', '90 180 0');
         console.log(atext.getAttributeNames() )
         console.log('id:', atext.getAttribute('id') )
-        console.log('value:' atext.getAttribute('value') )
+        console.log('value:', atext.getAttribute('value') )
         console.log('look-at:', atext.getAttribute('look-at') )
         console.log('sclae:', atext.getAttribute('scale') )
         console.log('gps:', atext.getAttribute('gps-entity-place') )
