@@ -9,19 +9,21 @@ function geoFindMe() {
         console.log("Location Success")
         const latitude  = position.coords.latitude;
         const longitude = position.coords.longitude;
+        place = 'latitude: ', latitude, '; longitude: ', longitude
+        console.log('place: ', place)
         
         atext.value = "";
         atext.value = "Latitude: ${latitude}, Longitude: ${longitude}";
-        atext.setAttribute("gps-entity-place", "latitude: ${latitude}; longitude: ${latitude}");
+        atext.setAttribute("gps-entity-place", "latitude: ${latitude}; longitude: ${longitude}");
         atext.setAttribute('rotation', '90 180 0');
         console.log(atext.getAttributeNames() )
-        console.log(atext.getAttribute('id') )
-        console.log(atext.getAttribute('value') )
-        console.log(atext.getAttribute('look-at') )
-        console.log(atext.getAttribute('scale') )
-        console.log(atext.getAttribute('gps-entity-place') )
-        console.log(atext.getAttribute('text') )
-        console.log(atext.getAttribute('rotation') )
+        console.log('id:', atext.getAttribute('id') )
+        console.log('value:' atext.getAttribute('value') )
+        console.log('look-at:', atext.getAttribute('look-at') )
+        console.log('sclae:', atext.getAttribute('scale') )
+        console.log('gps:', atext.getAttribute('gps-entity-place') )
+        console.log('text:', atext.getAttribute('text') )
+        console.log('rotation:', atext.getAttribute('rotation') )
     }
       
     function error() {
