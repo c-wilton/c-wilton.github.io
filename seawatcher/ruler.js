@@ -21,7 +21,7 @@ class Ruler {
   }
   setIntervals() {
     this.#intervals = []
-    this.#intervals.append(3)
+    this.#intervals.push(3)
   }
   
   getDistance(){
