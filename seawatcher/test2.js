@@ -15,22 +15,22 @@ function geoFindMe() {
         atext.setAttribute("gps-entity-place", "latitude: ${latitude}; longitude: ${latitude}");
         atext.setAttribute('rotation', '90 180 0');
         console.log(atext.getAttributeNames() )
-        console.log(atext.getAttribute(id) )
-        console.log(atext.getAttribute(value) )
-        console.log(atext.getAttribute(look-at) )
-        console.log(atext.getAttribute(scale) )
-        console.log(atext.getAttribute(gps-entity-place) )
-        console.log(atext.getAttribute(text) )
-        console.log(atext.getAttribute(rotation) )
+        console.log(atext.getAttribute('id') )
+        console.log(atext.getAttribute('value') )
+        console.log(atext.getAttribute('look-at') )
+        console.log(atext.getAttribute('scale') )
+        console.log(atext.getAttribute('gps-entity-place') )
+        console.log(atext.getAttribute('text') )
+        console.log(atext.getAttribute('rotation') )
     }
       
     function error() {
-        atext.setAttribute(value, "Unable to retrieve your location");
+        atext.setAttribute('value', "Unable to retrieve your location");
         console.log("Location error")
     }
       
     if(!navigator.geolocation) {
-        atext.setAttribute(value, "Geolocation is not supported by your browser");
+        atext.setAttribute('value', "Geolocation is not supported by your browser");
         console.log("Location not supported")
     } else {
         atext.value = "Locating…";
