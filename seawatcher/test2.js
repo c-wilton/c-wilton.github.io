@@ -9,7 +9,7 @@ function geoFindMe() {
         console.log("Location Success")
         const latitude  = position.coords.latitude;
         const longitude = position.coords.longitude;
-        place = 'latitude: ', latitude, '; longitude: ', longitude
+        place = 'latitude: ' + latitude + ': longitude: ' + longitude
         console.log('place: ', place)
         
         atext.value = "";
