@@ -1,4 +1,4 @@
-class Rectangle {
+class Ruler {
   
   #distances
   #intervals
@@ -25,12 +25,12 @@ class Rectangle {
   }
   
   getDistance(){
-    distance = distances[0]
+    distance = this.#distances[0]
     return distance
   }
   
   getInterval(){
-    interval = intervals[0]
+    interval = this.#intervals[0]
     return interval
   }
   
@@ -42,3 +42,8 @@ class Rectangle {
     return interval
   }
 }
+
+
+rule = new Ruler()
+console.log(rule.getDistance())
+console.log(rule.getInterval())
