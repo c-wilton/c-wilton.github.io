@@ -13,16 +13,18 @@ function geoFindMe() {
         console.log('place: ', place)
         
         /* atext.value = "";
-        atext.value = "Latitude: ${latitude}, Longitude: ${longitude}"; */
-        atext.setAttribute('value', 'changed')
+        atext.value = "Latitude: ${latitude}, Longitude: ${longitude}"; 
         atext.setAttribute("gps-entity-place", place);
+        atext.setAttribute('value', 'changed')
+        */
+        
         atext.setAttribute('scale', '10 10 10');
         atext.setAttribute('rotation', '20 30 45');
         console.log(atext.getAttributeNames() )
         console.log('id:', atext.getAttribute('id') )
         console.log('value:', atext.getAttribute('value') )
         console.log('look-at:', atext.getAttribute('look-at') )
-        console.log('sclae:', atext.getAttribute('scale') )
+        console.log('scale:', atext.getAttribute('scale') )
         console.log('gps:', atext.getAttribute('gps-entity-place') )
         console.log('text:', atext.getAttribute('text') )
         console.log('rotation:', atext.getAttribute('rotation') )
