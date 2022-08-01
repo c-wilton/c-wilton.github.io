@@ -45,5 +45,5 @@ class Ruler {
 
 
 rule = new Ruler()
-console.log(rule.getDistance())
-console.log(rule.getInterval())
+console.log('distance', rule.getDistance())
+console.log('interval', rule.getInterval())
