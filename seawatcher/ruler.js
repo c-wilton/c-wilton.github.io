@@ -31,7 +31,7 @@ class Ruler {
   }
   
   getInterval(){
-    interval = this.#intervals[0]
+    let interval = this.#intervals[0]
     return interval
   }
   
