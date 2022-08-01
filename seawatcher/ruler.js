@@ -25,7 +25,6 @@ class Ruler {
   }
   
   getDistance(){
-    console.log(this.#distances[0])
     let distance = this.#distances[0]
     return distance
   }
