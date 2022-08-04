@@ -47,3 +47,4 @@ class Ruler {
 rule = new Ruler()
 console.log('distance', rule.getDistance())
 console.log('interval', rule.getInterval())
+console.log('calcIntervals', rule.calcIntervals())
