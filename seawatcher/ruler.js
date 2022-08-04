@@ -22,6 +22,12 @@ class Ruler {
   setIntervals() {
     this.#intervals = []
     this.#intervals.push(3)
+    console.log('Setting internvals \nDistances')
+    cnt = 0
+    for(d in this.#distances){
+     console.log('distance ', cnt, ': ', d)
+      cnt += 1
+    }
   }
   
   getDistance(){
@@ -47,4 +53,4 @@ class Ruler {
 rule = new Ruler()
 console.log('distance', rule.getDistance())
 console.log('interval', rule.getInterval())
-console.log('calcIntervals', rule.calcIntervals())
+console.log('calcIntervals()', rule.calcIntervals())
