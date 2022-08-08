@@ -19,13 +19,13 @@ class Ruler {
   setDistances() {
     this.#distances = [100, 200, 300, 500, 700, 1000, 1500, 2000, 2500, 3000, 4000] 
   }
+  
   setIntervals() {
     this.#intervals = []
     this.#intervals.push(3)
     console.log('Setting internvals \nDistances')
     
-    
-    this.#distances.foreach(d,i){
+    this.#distances.foreach(d,i) => {
      console.log('distance ', i, ': ', d)
     }
   }
