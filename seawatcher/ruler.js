@@ -44,7 +44,14 @@ class Ruler {
     let distance = 450
     let totalHeight = this.#personHeight + this.#altitude
     let visualHorizon = 3838 * (totalHeight ** 0.5)
-    interval =  (this.#armLength*totalHeight) * (visualHorizon-distance) / ( (totalHeight**2) + (visualHorizon*distance) )
+    let interval =  (this.#armLength*totalHeight) * (visualHorizon-distance) / ( (totalHeight**2) + (visualHorizon*distance) )
+    
+    console.log('/nCalculated intervals:')
+    for(let d in this.#distances){
+      let calcInterval =  (this.#armLength*totalHeight) * (visualHorizon-d) / ( (totalHeight**2) + (visualHorizon*d) )
+      console.log('d: ', d, '; i: ', i)
+    }
+    
     return interval
   }
 }
