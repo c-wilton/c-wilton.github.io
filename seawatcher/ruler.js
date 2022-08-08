@@ -23,10 +23,10 @@ class Ruler {
     this.#intervals = []
     this.#intervals.push(3)
     console.log('Setting internvals \nDistances')
-    let cnt = 0
-    for(let i in this.#distances.length){
-     console.log('distance ', i, ': ', this.#distances[i])
-      cnt += 1
+    
+    
+    this.#distances.foreach(d,i){
+     console.log('distance ', i, ': ', d)
     }
   }
   
