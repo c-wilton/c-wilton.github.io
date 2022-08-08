@@ -25,9 +25,9 @@ class Ruler {
     this.#intervals.push(3)
     console.log('Setting internvals \nDistances')
     
-    this.#distances.foreach(d,i) => {
+    this.#distances.foreach((d,i) => {
      console.log('distance ', i, ': ', d)
-    }
+    })
   }
   
   getDistance(){
