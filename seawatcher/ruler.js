@@ -24,7 +24,7 @@ class Ruler {
     this.#intervals.push(3)
     console.log('Setting internvals \nDistances')
     let cnt = 0
-    for(d in this.#distances){
+    for(let d in this.#distances){
      console.log('distance ', cnt, ': ', d)
       cnt += 1
     }
@@ -41,10 +41,17 @@ class Ruler {
   }
   
   calcIntervals() {
-    distance = 450
-    totalHeight = this.#personHeight + this.#altitude
-    visualHorizon = 3838 * (totalHeight ** 0.5)
-    interval =  (this.#armLength*totalHeight) * (visualHorizon-distance) / ( (totalHeight**2) + (visualHorizon*distance) )
+    let distance = 450
+    let totalHeight = this.#personHeight + this.#altitude
+    let visualHorizon = 3838 * (totalHeight ** 0.5)
+    let interval =  (this.#armLength*totalHeight) * (visualHorizon-distance) / ( (totalHeight**2) + (visualHorizon*distance) )
+    
+    console.log('/nCalculated intervals:')
+    for(let d in this.#distances){
+      let calcInterval =  (this.#armLength*totalHeight) * (visualHorizon-d) / ( (totalHeight**2) + (visualHorizon*d) )
+      console.log('d: ', d, '; i: ', i)
+    }
+    
     return interval
   }
 }
