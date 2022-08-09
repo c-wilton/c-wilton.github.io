@@ -1,4 +1,4 @@
-class Ruler {
+class RulerModel {
   
   #distances
   #intervals
@@ -58,7 +58,7 @@ class Ruler {
 }
 
 
-rule = new Ruler()
+rule = new RulerModel()
 console.log('distance', rule.getDistance())
 console.log('interval', rule.getInterval())
 console.log('calcIntervals()', rule.calcIntervals())
