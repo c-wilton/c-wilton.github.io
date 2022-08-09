@@ -47,7 +47,7 @@ class Ruler {
     let interval =  (this.#armLength*totalHeight) * (visualHorizon-distance) / ( (totalHeight**2) + (visualHorizon*distance) )
     
     console.log('/nCalculated intervals:')
-    for(var i=0; i<<this.#distances.length; i++){
+    for(var i=0; i<this.#distances.length; i++){
       let d = this.#distances[i]
       let calcInterval =  (this.#armLength*totalHeight) * (visualHorizon-d) / ( (totalHeight**2) + (visualHorizon*d) )
       console.log('d: ', d, '; i: ', calcInterval)
