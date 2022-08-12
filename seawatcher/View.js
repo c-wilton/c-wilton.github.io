@@ -1,7 +1,7 @@
 class View {
   constructor() {
     this.body = document.getElementById('body')
-    this.aScene = createElement('a-scene')
+    this.aScene = document.createElement('a-scene')
     let aSceneAttributes = {"vr-mode-ui": "enabled: false", "arjs": "sourceType: webcam; videoTexture: true; debugUIEnabled: false;"}
     this.setAttributes(this.aScene, aSceneAttributes)
     this.aText = createElement('a-text')
