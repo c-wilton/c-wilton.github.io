@@ -42,12 +42,10 @@ class RulerModel {
   }
   
   calcIntervals() {
-    /*
-    let distance = 450
+    //let distance = 450
     let totalHeight = this.#personHeight + this.#altitude
     let visualHorizon = 3838 * (totalHeight ** 0.5)
-    let interval =  (this.#armLength*totalHeight) * (visualHorizon-distance) / ( (totalHeight**2) + (visualHorizon*distance) )
-    */
+    //let interval =  (this.#armLength*totalHeight) * (visualHorizon-distance) / ( (totalHeight**2) + (visualHorizon*distance) )
     
     console.log('/nCalculated intervals:')
     for(var i=0; i<this.#distances.length; i++){
