@@ -22,48 +22,47 @@ class RulerModel {
   
   setIntervals() {
     this.#intervals = new Array(this.#distances.length)
-    //this.#intervals.push(3)
-    console.log('Setting internvals \nDistances')
+    //console.log('Setting internvals')
     
-    for (var i=0; i<this.#distances.length; i++){
-     console.log('distance ', i, ': ', this.#distances[i])
+    this.calcIntervals()
+  }
+  
+  getDistances(){
+    for(var i=0; i<this.#distances.length; i++){
+      console.log('distance[', i, ']: ', this.#distances[i] )
     }
+    return this.#distances
   }
   
-  getDistance(){
-    let distance = this.#distances[0]
-    return distance
-  }
-  
-  getInterval(){
-    let interval = this.#intervals[0]
-    return interval
+  getIntervals(){
+    for(var i=0; i<this.#intervals.length; i++){
+      console.log('calcInt[', i, ']: ', this.#intervals[i] )
+    }
+    return this.#intervals
   }
   
   calcIntervals() {
+    /*
     let distance = 450
     let totalHeight = this.#personHeight + this.#altitude
     let visualHorizon = 3838 * (totalHeight ** 0.5)
     let interval =  (this.#armLength*totalHeight) * (visualHorizon-distance) / ( (totalHeight**2) + (visualHorizon*distance) )
+    */
     
     console.log('/nCalculated intervals:')
     for(var i=0; i<this.#distances.length; i++){
       let d = this.#distances[i]
       let calcInterval =  (this.#armLength*totalHeight) * (visualHorizon-d) / ( (totalHeight**2) + (visualHorizon*d) )
       this.#intervals[i] = calcInterval
-      console.log('d: ', d, '; i: ', calcInterval)
+      //console.log('d: ', d, '; i: ', calcInterval)
     }
     
-    for(var i=0; i<this.#intervals.length; i++){
-      console.log('calcInt[', i, ']: ', this.#intervals[i] )
-    } 
-    
-    return interval
   }
+  
 }
 
 
-rule = new RulerModel()
-console.log('distance', rule.getDistance())
-console.log('interval', rule.getInterval())
-console.log('calcIntervals()', rule.calcIntervals())
+ruler = new RulerModel()
+console.log('distance', ruler.getDistances())
+console.log('interval', ruler.getIntervals())
+//console.log('calcIntervals()', rule.calcIntervals())
