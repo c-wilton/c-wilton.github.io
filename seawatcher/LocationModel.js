@@ -11,7 +11,6 @@ class LocationModel {
   }
   
   setLocation(){
-    console.log('setLocation')
     let defaultLatitude = 53.225589
     let defaultLongitude = -4.127876
     
@@ -19,7 +18,7 @@ class LocationModel {
     this.#longitude = defaultLongitude
     
     this.#location = {lat: this.#latitude, long: this.#longitude};
-    console.log('lat: ', this.#latitude, '\nlong: ', this.#longitude, '\nloc: ', this.#location)
+    console.log('Default\n', 'lat: ', this.#latitude, '; long: ', this.#longitude, '; loc: ', this.#location)
   }
   
   getLocation(){
@@ -44,7 +43,6 @@ class LocationModel {
     if(!navigator.geolocation) {
       console.log("Location not supported")
     } else {
-      console.log("Starting")
       navigator.geolocation.getCurrentPosition(this.success, this.error);
     } 
   }
