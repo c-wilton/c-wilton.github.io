@@ -22,7 +22,7 @@ class RulerModel {
   
   setIntervals() {
     this.#intervals = []
-    this.#intervals.push(3)
+    //this.#intervals.push(3)
     console.log('Setting internvals \nDistances')
     
     for (var i=0; i<this.#distances.length; i++){
@@ -50,7 +50,12 @@ class RulerModel {
     for(var i=0; i<this.#distances.length; i++){
       let d = this.#distances[i]
       let calcInterval =  (this.#armLength*totalHeight) * (visualHorizon-d) / ( (totalHeight**2) + (visualHorizon*d) )
+      this.intervals[i] = calcInterval
       console.log('d: ', d, '; i: ', calcInterval)
+    }
+    
+    for(var i=0; i<this.#intervals.length; i++){
+      console.log('calcInt[', i, ']: ', this.#intervals[i]
     }
     
     return interval
