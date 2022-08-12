@@ -50,7 +50,7 @@ class RulerModel {
     for(var i=0; i<this.#distances.length; i++){
       let d = this.#distances[i]
       let calcInterval =  (this.#armLength*totalHeight) * (visualHorizon-d) / ( (totalHeight**2) + (visualHorizon*d) )
-      this.intervals[i] = calcInterval
+      this.#intervals[i] = calcInterval
       console.log('d: ', d, '; i: ', calcInterval)
     }
     
