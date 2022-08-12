@@ -6,6 +6,7 @@ class LocationModel {
   
   constructor() {
     setLocation()
+    getGeoLocation()
   }
   
   setLocation(){
@@ -21,4 +22,28 @@ class LocationModel {
   getLocation(){
     return this.#location
   }
+  
+  success(position) {
+    console.log("Location Success")
+    const latitude  = position.coords.latitude;
+    const longitude = position.coords.longitude;
+    place = 'latitude: ' + latitude + ': longitude: ' + longitude
+    console.log('place: ', place)
+  }
+  
+  error() {
+    console.log("Location error")
+  }
+  
+  getGeoLocation() {
+    if(!navigator.geolocation) {
+      console.log("Location not supported")
+    } else {
+      console.log("Starting")
+      navigator.geolocation.getCurrentPosition(success, error);
+    } 
+  }
+  
 }
+
+loc = new LocationModel()
