@@ -55,8 +55,8 @@ class RulerModel {
     }
     
     for(var i=0; i<this.#intervals.length; i++){
-      console.log('calcInt[', i, ']: ', this.#intervals[i]
-    }
+      console.log('calcInt[', i, ']: ', this.#intervals[i] )
+    } 
     
     return interval
   }
