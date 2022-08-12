@@ -4,4 +4,4 @@ function createRuler() {
   camera.append(el)
 }
 
-window.onload = () => { createRuler() };
+createRuler()
