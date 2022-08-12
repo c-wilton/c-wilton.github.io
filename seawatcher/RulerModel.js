@@ -21,7 +21,7 @@ class RulerModel {
   }
   
   setIntervals() {
-    this.#intervals = []
+    this.#intervals = new Array(this.#distances.length)
     //this.#intervals.push(3)
     console.log('Setting internvals \nDistances')
     
