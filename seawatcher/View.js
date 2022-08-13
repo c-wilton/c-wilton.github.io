@@ -45,4 +45,4 @@ class View {
   }
 }
 
-view = new View()
+//view = new View()

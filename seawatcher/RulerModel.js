@@ -60,7 +60,7 @@ class RulerModel {
 }
 
 
-ruler = new RulerModel()
-console.log('distance', ruler.getDistances())
-console.log('interval', ruler.getIntervals())
+//ruler = new RulerModel()
+//console.log('distance', ruler.getDistances())
+//console.log('interval', ruler.getIntervals())
 //console.log('calcIntervals()', rule.calcIntervals())
