@@ -1,4 +1,4 @@
-export class View {
+class View {
   constructor() {
     //set ascene with camera
     this.body = document.getElementById('body')
