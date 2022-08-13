@@ -1,5 +1,6 @@
 class View {
   constructor() {
+    //set ascene with camera
     this.body = document.getElementById('body')
     this.aScene = this.createElement('a-scene')
     let aSceneAttributes = {"vr-mode-ui": "enabled: false", "arjs": "sourceType: webcam; videoTexture: true; debugUIEnabled: false;"}
