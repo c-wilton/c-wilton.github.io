@@ -1,7 +1,7 @@
 class Controller {
   constructor(view, rulerModel) {
     this.view = view
-    this.rulerModel = rulerModule
+    this.rulerModel = rulerModel
   }
   
   createRuler() {
