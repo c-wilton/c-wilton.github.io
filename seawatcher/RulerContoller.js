@@ -1,3 +1,6 @@
+import {View} from './View.js';
+
+
 class Controller {
   constructor(view, rulerModel) {
     this.view = view
