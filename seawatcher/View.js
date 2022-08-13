@@ -33,11 +33,11 @@ class View {
       //css element
       element = document.querySelector(selector)
     }
-    elseif(opt==1){
+    else if(opt==1){
       //id element
       element = document.getElementById(selector)
     }
-    elseif(opt==2){
+    else if(opt==2){
       //tag element
     }
     
