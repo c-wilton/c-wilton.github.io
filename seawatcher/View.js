@@ -1,13 +1,13 @@
 class View {
   constructor() {
     this.body = document.getElementById('body')
-    this.aScene = document.createElement('a-scene')
+    this.aScene = this.createElement('a-scene')
     let aSceneAttributes = {"vr-mode-ui": "enabled: false", "arjs": "sourceType: webcam; videoTexture: true; debugUIEnabled: false;"}
     this.setAttributes(this.aScene, aSceneAttributes)
-    this.aText = createElement('a-text')
+    this.aText = this.createElement('a-text')
     let aTextAttributes = {"id":"text", "value": "This content will always face you.", "look-at": "[gps-camera]", "scale": "120 120 120", "gps-entity-place": "latitude: 53.22597071349516; longitude: -4.127555930547311;"}
     this.setAttributes(this.aText, aTextAttributes)
-    this.aCamera = createElement('a-camera')
+    this.aCamera = this.createElement('a-camera')
     let aCameraAttributes = {"id": "camera", "gps-camera": "", "rotation-reader": ""}
     this.setAttributes(this.aCamera, aCameraAttributes)
     
