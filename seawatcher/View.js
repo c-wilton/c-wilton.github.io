@@ -12,7 +12,7 @@ class View {
     this.setAttributes(this.aCamera, aCameraAttributes)
     
     this.body.append(this.aScene)
-    this.aScene.append(aText, aCamera)
+    this.aScene.append(this.aText, this.aCamera)
   }
   
   createElement(tag) {
