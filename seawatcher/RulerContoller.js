@@ -15,7 +15,7 @@ class Controller {
     this.view.appendChild(aCamera, aEntity)
     
     let line = this.setLine(-1.3, -1.7, -3, -1, 1.7, -3, red)
-    console.log(line)
+    
     
     /*
     <a-entity line="start: -1 -2 -3; end: -1 2 -3; color: red" 
@@ -34,7 +34,7 @@ class Controller {
     let lineEnd = 'end: ' + x2 + ' ' + y2 + ' ' + z2 + '; '
     let lineColor = 'color: ' + color
     let line = lineStart + lineEnd + lineColor
-    
+    console.log(line)
   }
   
   retrieveRulerData() {
