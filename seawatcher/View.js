@@ -26,6 +26,10 @@ class View {
       element.setAttribute(attribute, attributes[attribute]);
     }
   }
+  
+  appendChild(parent, child) {
+    parent.append(child)
+  }
 
   getElement(opt, selector) {
     let element = null
