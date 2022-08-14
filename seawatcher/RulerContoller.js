@@ -14,6 +14,17 @@ class Controller {
     this.view.setAttributes(aEntity, aEntityAttr)
     this.view.appendChild(aCamera, aEntity)
     
+    let startx = -1.3
+    let endx = -1
+    let y = -1.7
+    let z = -3
+    let color = 'red'
+    let lineStart = 'start: ', startx, ' ', y, ' ', z, '; '
+    let lineEnd = 'end: ', endx, ' ', y, ' ', z, '; '
+    let lineColor = 'color: ', color
+    let line = lineStart + lineEnd + lineColor
+    console.log(line)
+    
     /*
     <a-entity line="start: -1 -2 -3; end: -1 2 -3; color: red" 
                   line__2="start: -1.3 -1.7 -3; end: -1 -1.7 -3; color: red"
