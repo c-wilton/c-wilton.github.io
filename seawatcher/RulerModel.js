@@ -28,16 +28,20 @@ class RulerModel {
   }
   
   getDistances(){
+    /*
     for(var i=0; i<this.#distances.length; i++){
       console.log('distance[', i, ']: ', this.#distances[i] )
     }
+    */
     return this.#distances
   }
   
   getIntervals(){
+    /*
     for(var i=0; i<this.#intervals.length; i++){
       console.log('calcInt[', i, ']: ', this.#intervals[i] )
     }
+    */
     return this.#intervals
   }
   
@@ -47,7 +51,7 @@ class RulerModel {
     let visualHorizon = 3838 * (totalHeight ** 0.5)
     //let interval =  (this.#armLength*totalHeight) * (visualHorizon-distance) / ( (totalHeight**2) + (visualHorizon*distance) )
     
-    console.log('/nCalculated intervals:')
+    //console.log('/nCalculated intervals:')
     for(var i=0; i<this.#distances.length; i++){
       let d = this.#distances[i]
       let calcInterval =  (this.#armLength*totalHeight) * (visualHorizon-d) / ( (totalHeight**2) + (visualHorizon*d) )
