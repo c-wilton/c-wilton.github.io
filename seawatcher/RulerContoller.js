@@ -3,6 +3,7 @@ class Controller {
     this.view = view
     this.rulerModel = rulerModel
     this.createRuler()
+    this.retrieveRulerData()
   }
   
   createRuler() {
@@ -23,6 +24,14 @@ class Controller {
                   line__7="start: -1.3 2 -3; end: -1 2 -3; color: red">
         </a-entity>
     */
+  }
+  
+  retrieveRulerData() {
+    this.distances = this.rulerModel.getDistances()
+    this.intervals = this.rulerModel.getIntervals()
+    console.log('distances: ', this.distances)
+    console.log('intervals: ', this.intervals)
+    
   }
 }
 
