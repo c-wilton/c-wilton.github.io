@@ -9,12 +9,23 @@ class Controller {
   createRuler() {
     let aCamera = this.view.getElement(1, "camera")
     
+    //create horizon line
     let aEntity = this.view.createElement("a-entity")
     let aEntityAttr = {"line": this.setLine(-1.5, 2, -3, 1.5, 2, -3, 'green')}   
     this.view.setAttributes(aEntity, aEntityAttr)
     this.view.appendChild(aCamera, aEntity)
     
+    //create ruler line
+    aEntity = this.view.createElement("a-entity")
+    aEntityAttr = {}
+    //add for loop
     let line = this.setLine(-1.3, -1.7, -3, -1, 1.7, -3, red)
+    aEntityAttr['line'] = line
+    
+    //add all lines to aEntity
+    this.view.setAttributes(aEntity, aEntityAttr)
+    this.view.appendChild(aCamera, aEntity)
+    
     
     
     /*
