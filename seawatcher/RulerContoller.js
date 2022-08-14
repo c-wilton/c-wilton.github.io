@@ -6,11 +6,11 @@ class Controller {
   
   createRuler() {
     let aCamera = this.view.getElement(1, "camera")
+    
     let aEntity = this.view.createElement("a-entity")
-    
-    let aEntityAttr = {"line": "start: -1.5 2 -3; end: 1.5 2 -3; color: green"}
-    
+    let aEntityAttr = {"line": "start: -1.5 2 -3; end: 1.5 2 -3; color: green"}   
     this.view.setAttributes(aEntity, aEntityAttr)
+    this.view.appendChild(aCamera, aEntity)
     
     /*
     <a-entity line="start: -1 -2 -3; end: -1 2 -3; color: red" 
