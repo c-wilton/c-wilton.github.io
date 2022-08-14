@@ -18,9 +18,11 @@ class Controller {
     //create ruler line
     aEntity = this.view.createElement("a-entity")
     aEntityAttr = {}
-    //add for loop
+    
+    let lineIds = ['line', 'line__2']
+    //for(i<lineIds.length)
     let line = this.setLine(-1.3, -1.7, -3, -1, 1.7, -3, 'red')
-    aEntityAttr['line'] = line
+    aEntityAttr[ lineIds[0] ] = line
     
     //add all lines to aEntity
     this.view.setAttributes(aEntity, aEntityAttr)
