@@ -46,6 +46,7 @@ class Controller {
     let lineColor = 'color: ' + color
     let line = lineStart + lineEnd + lineColor
     console.log(line)
+    return line
   }
   
   retrieveRulerData() {
