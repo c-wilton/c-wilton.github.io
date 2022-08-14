@@ -19,9 +19,9 @@ class Controller {
     let y = -1.7
     let z = -3
     let color = 'red'
-    let lineStart = 'start: ', startx, ' ', y, ' ', z, '; '
-    let lineEnd = 'end: ', endx, ' ', y, ' ', z, '; '
-    let lineColor = 'color: ', color
+    let lineStart = 'start: ' + startx + ' ' + y + ' ' + z + '; '
+    let lineEnd = 'end: ' + endx + ' ' + y + ' ' + z + '; '
+    let lineColor = 'color: ' + color
     let line = lineStart + lineEnd + lineColor
     console.log(line)
     
