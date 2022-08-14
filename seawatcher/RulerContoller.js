@@ -19,7 +19,7 @@ class Controller {
     aEntity = this.view.createElement("a-entity")
     aEntityAttr = {}
     //add for loop
-    let line = this.setLine(-1.3, -1.7, -3, -1, 1.7, -3, red)
+    let line = this.setLine(-1.3, -1.7, -3, -1, 1.7, -3, 'red')
     aEntityAttr['line'] = line
     
     //add all lines to aEntity
