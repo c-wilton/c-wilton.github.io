@@ -10,36 +10,28 @@ class Controller {
     let aCamera = this.view.getElement(1, "camera")
     
     //create horizon line
+    /*
     let aEntity = this.view.createElement("a-entity")
     let aEntityAttr = {"line": this.setLine(-1.5, 2, -3, 1.5, 2, -3, 'green')}   
     this.view.setAttributes(aEntity, aEntityAttr)
     this.view.appendChild(aCamera, aEntity)
+    */
     
-    //create ruler line
-    aEntity = this.view.createElement("a-entity")
-    aEntityAttr = {}
+    //create ruler entity
+    let aEntity = this.view.createElement("a-entity")
     
-    let horLine = {'line', [-1.5, 2, -3, 1.5, 2, -3, 'green']}
-    let vertLine = {'line__2', [-1, -2, -3, -1, 2, -3, 'red']}
-    let mark1 = {'line__3', [-1.3, -1.7, -3, -1, -1.7, -3, 'red']}
-    let mark2 = {'line__4', [-1.3, -1.5, -3, -1, -1.5, -3, 'red']} 
-    let mark3 = {'line__5', [-1.3, -1, -3, -1, -1, -3, 'red']} 
-    let mark4 = {'line__6', [-1.3, 0, -3, -1, 0, -3, 'red']} 
-    let mark5 = {'line__7', [-1.3, 1, -3, -1, 1, -3, 'red']} 
-    let mark6 = {'line__8', [-1.3, 2, -3, -1, 2, -3, 'red']} 
-    lines = [horLine, vertLine, mark1, mark2, mark3, mark4, mark5]
-    
-    for(let 1=0; i<lines.length; i++) {
-      let line = lines[i]
-      let aEntity = this.view.createElement("a-entity")
-      let aEntityAttr = {"line": this.setLine(-1.5, 2, -3, 1.5, 2, -3, 'green')}
-    }
-    //for(i<lineIds.length)
-    let line = this.setLine()
-    aEntityAttr[ lineIds[0] ] = line
+    //set lines
+    let aEntityAttr = {'line': this.setLine(-1.5, 2, -3, 1.5, 2, -3, 'green'),
+                      'line__2': this.setLine(-1, -2, -3, -1, 2, -3, 'red'),
+                      'line__3': this.setLine(-1.3, -1.7, -3, -1, -1.7, -3, 'red'),
+                      'line__4': this.setLine(-1.3, -1.5, -3, -1, -1.5, -3, 'red'),
+                      'line__5': this.setLine(-1.3, -1, -3, -1, -1, -3, 'red'),
+                      'line__6': this.setLine(-1.3, 0, -3, -1, 0, -3, 'red'),
+                      'line__7': this.setLine(-1.3, 1, -3, -1, 1, -3, 'red'),
+                      'line__8': this.setLine(-1.3, 2, -3, -1, 2, -3, 'red')}
+    this.view.setAttributes(aEntity, aEntityAttr)
     
     //add all lines to aEntity
-    this.view.setAttributes(aEntity, aEntityAttr)
     this.view.appendChild(aCamera, aEntity)
     
     /*
