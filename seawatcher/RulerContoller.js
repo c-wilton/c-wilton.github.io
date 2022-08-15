@@ -31,7 +31,8 @@ class Controller {
     aEntity = this.view.createElement("a-text")
     aEntityAttr = {'id': 'text',
                    'value': 'Horizon', 
-                   'scale': '10 10 10', 
+                   'scale': '10 10 10',
+                   'position': '0 0 -1'
                    }
     this.view.setAttributes(aEntity, aEntityAttr)
     this.view.appendChild(aCamera, aEntity)
