@@ -27,6 +27,15 @@ class Controller {
     //add all lines to aEntity
     this.view.appendChild(aCamera, aEntity)
     
+    //add text
+    aEntity = this.view.createElement("a-text")
+    aEntityAttr = {'id': 'text" 
+                   'value': 'Horizon' 
+                   'scale': '10 10 10" 
+                   }
+    <a-text id="text" value="This content will always face you." look-at="[gps-camera]" scale="120 120 120" gps-entity-place="latitude: 53.22597071349516; longitude:  -4.127555930547311;"></a-text>
+      
+    
   }
   
   setLine(x1, y1, z1, x2, y2, z2, color) {
