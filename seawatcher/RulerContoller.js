@@ -19,16 +19,28 @@ class Controller {
     aEntity = this.view.createElement("a-entity")
     aEntityAttr = {}
     
-    let lineIds = ['line', 'line__2']
+    let horLine = {'line', [-1.5, 2, -3, 1.5, 2, -3, 'green']}
+    let vertLine = {'line__2', [-1, -2, -3, -1, 2, -3, 'red']}
+    let mark1 = {'line__3', [-1.3, -1.7, -3, -1, -1.7, -3, 'red']}
+    let mark2 = {'line__4', [-1.3, -1.5, -3, -1, -1.5, -3, 'red']} 
+    let mark3 = {'line__5', [-1.3, -1, -3, -1, -1, -3, 'red']} 
+    let mark4 = {'line__6', [-1.3, 0, -3, -1, 0, -3, 'red']} 
+    let mark5 = {'line__7', [-1.3, 1, -3, -1, 1, -3, 'red']} 
+    let mark6 = {'line__8', [-1.3, 2, -3, -1, 2, -3, 'red']} 
+    lines = [horLine, vertLine, mark1, mark2, mark3, mark4, mark5]
+    
+    for(let 1=0; i<lines.length; i++) {
+      let line = lines[i]
+      let aEntity = this.view.createElement("a-entity")
+      let aEntityAttr = {"line": this.setLine(-1.5, 2, -3, 1.5, 2, -3, 'green')}
+    }
     //for(i<lineIds.length)
-    let line = this.setLine(-1.3, -1.7, -3, -1, -1.7, -3, 'red')
+    let line = this.setLine()
     aEntityAttr[ lineIds[0] ] = line
     
     //add all lines to aEntity
     this.view.setAttributes(aEntity, aEntityAttr)
     this.view.appendChild(aCamera, aEntity)
-    
-    
     
     /*
     <a-entity line="start: -1 -2 -3; end: -1 2 -3; color: red" 
