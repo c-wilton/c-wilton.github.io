@@ -9,19 +9,12 @@ class Controller {
   createRuler() {
     let aCamera = this.view.getElement(1, "camera")
     
-    //create horizon line
-    /*
-    let aEntity = this.view.createElement("a-entity")
-    let aEntityAttr = {"line": this.setLine(-1.5, 2, -3, 1.5, 2, -3, 'green')}   
-    this.view.setAttributes(aEntity, aEntityAttr)
-    this.view.appendChild(aCamera, aEntity)
-    */
-    
     //create ruler entity
     let aEntity = this.view.createElement("a-entity")
     
     //set lines
     let aEntityAttr = {'line': this.setLine(-1.5, 2, -3, 1.5, 2, -3, 'green'),
+                       'text': 'value: Horizon; color: red; ',
                       'line__2': this.setLine(-1, -2, -3, -1, 2, -3, 'red'),
                       'line__3': this.setLine(-1.3, -1.7, -3, -1, -1.7, -3, 'red'),
                       'line__4': this.setLine(-1.3, -1.5, -3, -1, -1.5, -3, 'red'),
@@ -34,16 +27,6 @@ class Controller {
     //add all lines to aEntity
     this.view.appendChild(aCamera, aEntity)
     
-    /*
-    <a-entity line="start: -1 -2 -3; end: -1 2 -3; color: red" 
-                  line__2="start: -1.3 -1.7 -3; end: -1 -1.7 -3; color: red"
-                  line__3="start: -1.3 -1.5 -3; end: -1 -1.5 -3; color: red"
-                  line__4="start: -1.3 -1 -3; end: -1 -1 -3; color: red"
-                  line__5="start: -1.3 0 -3; end: -1 0 -3; color: red"
-                  line__6="start: -1.3 1 -3; end: -1 1 -3; color: red"
-                  line__7="start: -1.3 2 -3; end: -1 2 -3; color: red">
-        </a-entity>
-    */
   }
   
   setLine(x1, y1, z1, x2, y2, z2, color) {
