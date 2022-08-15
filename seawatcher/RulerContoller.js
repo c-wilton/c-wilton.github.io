@@ -14,7 +14,7 @@ class Controller {
     
     //set lines
     let aEntityAttr = {'line': this.setLine(-1.5, 2, -3, 1.5, 2, -3, 'green'),
-                       'text': 'Horizon',
+                       'text': 'value: Horizon; color: red; ',
                       'line__2': this.setLine(-1, -2, -3, -1, 2, -3, 'red'),
                       'line__3': this.setLine(-1.3, -1.7, -3, -1, -1.7, -3, 'red'),
                       'line__4': this.setLine(-1.3, -1.5, -3, -1, -1.5, -3, 'red'),
