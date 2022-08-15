@@ -29,10 +29,13 @@ class Controller {
     
     //add text
     aEntity = this.view.createElement("a-text")
-    aEntityAttr = {'id': 'text",
+    aEntityAttr = {'id': 'text',
                    'value': 'Horizon', 
-                   'scale': '10 10 10", 
+                   'scale': '10 10 10', 
                    }
+    this.view.setAttributes(aEntity, aEntityAttr)
+    this.view.appendChild(aCamera, aEntity)
+    
     //<a-text id="text" value="This content will always face you." look-at="[gps-camera]" scale="120 120 120" gps-entity-place="latitude: 53.22597071349516; longitude:  -4.127555930547311;"></a-text>
       
     
