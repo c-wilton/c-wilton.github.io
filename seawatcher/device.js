@@ -1,6 +1,6 @@
 let deviceHeight = window.screen.availHeight
 let usableHeight = window.screen.height
-let docHeight = document.height
+let docHeight = document.body.clientHeight
 
 console.log('device height: ', deviceHeight)
 console.log('in cm: ', deviceHeight/3)
