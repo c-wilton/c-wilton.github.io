@@ -11,4 +11,4 @@ console.log('in cm: ', docHeight/3)
 
 console.log('113/2.3: ', 113/2.3)
 console.log('441/:8.6 ', 441/8.6)
-console.llog('237/4.6', 237/4.6)
+console.log('237/4.6', 237/4.6)
