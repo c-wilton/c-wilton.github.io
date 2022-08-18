@@ -1,4 +1,4 @@
-let deviceHeight = window.screen.avaiHeight
+let deviceHeight = window.screen.availHeight
 let usableHeight = window.screen.height
 
 console.log(deviceHeight)
