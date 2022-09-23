@@ -13,9 +13,11 @@ class LocationModel {
   setLocation(){
     let defaultLatitude = 53.225589
     let defaultLongitude = -4.127876
+    let defaultAltitude = 0
     
     this.#latitude = defaultLatitude
     this.#longitude = defaultLongitude
+    this.#altitude = defaultAltitude
     
     this.#location = {lat: this.#latitude, long: this.#longitude};
     console.log('Default\n', 'lat: ', this.#latitude, '; long: ', this.#longitude, '; loc: ', this.#location)
@@ -30,8 +32,10 @@ class LocationModel {
     console.log("Location Success")
     const latitude  = position.coords.latitude;
     const longitude = position.coords.longitude;
+    const altitude = position.coords.altitude;
     let place = 'latitude: ' + latitude + ': longitude: ' + longitude
     console.log('place: ', place)
+    console.log('altitude', altitude)
   }
   
   error() {
