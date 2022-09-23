@@ -23,4 +23,4 @@ RulerController retrieves data from the RulerModel and uses the view.js to load 
 
 NOTE: 
 Not all elements are linked yet, for example, the ruler markings are loaded manually and are not yet loaded using the data from the rulerModel.
-But have implemented it with this in mind, hence using MVC.  
+But have implemented it with this in mind, by the use of functions and the MVC method.  
