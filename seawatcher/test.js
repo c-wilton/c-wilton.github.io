@@ -7,7 +7,7 @@ function geoFindMe() {
     mapLink.href = '';
     mapLink.textContent = '';
       
-    function getDistance(pos1, pos2){
+    function getDistance(pos1, pos2, alt){
         result = document.getElementById('distance');
         lat1 = pos1.lat;
         long1 = pos1.long;
@@ -16,7 +16,7 @@ function geoFindMe() {
         dist = distance(lat1, long1, lat2, long2, 'K')
         distInM = dist * 1000
         /* dist = 0; */
-        message = 'New Look: lat1: ' + lat1 + ' long1: ' + long1 + '\n';
+        message = 'New Look: lat1: ' + lat1 + ' long1: ' + long1 + ' alt: ' + alt + '\n';
         message += 'Fat cat: lat2: ' + lat2 + ' long2: ' + long2 + '\n';
         message += 'distance: ' + dist + 'km \n';
         message += 'distance: ' + distInM + ' meters';
@@ -34,6 +34,7 @@ function geoFindMe() {
     function success(position) {
         const latitude  = position.coords.latitude;
         const longitude = position.coords.longitude;
+        const altitude = position.coords.altitude;
         
         status.textContent = '';
         mapLink.href = `https://www.openstreetmap.org/#map=18/${latitude}/${longitude}`;
@@ -44,7 +45,7 @@ function geoFindMe() {
         testLong = -4.127876;
         position2 = {lat: testLat, long: testLong};
         addElement();
-        getDistance(position1, position2);
+        getDistance(position1, position2, altitude);
     }
       
     function error() {
