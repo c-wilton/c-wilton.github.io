@@ -3,6 +3,7 @@ class LocationModel {
   #latitude
   #longitude
   #location
+  #altitude
   
   constructor() {
     console.log('New Location model')
