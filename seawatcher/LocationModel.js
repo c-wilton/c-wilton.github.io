@@ -17,7 +17,7 @@ class LocationModel {
     
     this.#latitude = defaultLatitude
     this.#longitude = defaultLongitude
-    this.#altitude = defaultAltitude
+    this.#altitude = defaultAltitude 
     
     this.#location = {lat: this.#latitude, long: this.#longitude};
     console.log('Default\n', 'lat: ', this.#latitude, '; long: ', this.#longitude, '; loc: ', this.#location)
