@@ -2,10 +2,21 @@
 
 /* export */ 
 function distance(lat1, lon1, lat2, lon2, unit) {
+	/** Calculate the distance between two points
+	* @param lat1 the latitude of the first position
+	* @param lon1 the longitude of the first position
+	* @param lat2 the latitude of the second position
+	* @param lon3 the longitude of the second position
+	* @param unit a char to deteremine the unit of measurement 
+	* @return dist the distance between the two points
+	*/
+	
+	/* if the longitudes and latitudes of the two points are the same, they are in the same location */
 	if ((lat1 == lat2) && (lon1 == lon2)) {
 		return 0;
 	}
 	else {
+		/* the points are not in the same location, so calculate the distance */
 		var radlat1 = Math.PI * lat1/180;
 		var radlat2 = Math.PI * lat2/180;
 		var theta = lon1-lon2;
@@ -17,8 +28,12 @@ function distance(lat1, lon1, lat2, lon2, unit) {
 		dist = Math.acos(dist);
 		dist = dist * 180/Math.PI;
 		dist = dist * 60 * 1.1515;
+		
+		/* convert to required unit */
 		if (unit=="K") { dist = dist * 1.609344 }
 		if (unit=="N") { dist = dist * 0.8684 }
+		
+		/* return the distance */
 		return dist;
 	}
 }
