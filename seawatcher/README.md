@@ -17,7 +17,7 @@ It uses pre-defined default values for device altitude, user's arm length and us
 
 It was found that the ruler altertered size depending on the size of the screen. 
 DeviceModel.js was created to retrieve the size of the screen and to see if there was a correlation to accomodate for this.
-It prints the findings to the console.
+It prints the findings to the console. docHeight/50 = actual height in cm.
 
 RulerController retrieves data from the RulerModel and uses the view.js to load the a-frame ruler onto the camera view.
 
