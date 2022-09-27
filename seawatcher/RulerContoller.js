@@ -1,5 +1,10 @@
 class Controller {
+  /** Gets data from the ...Model classes.
+    * Uses the View class to load this data to manipulate the elements on the webpage 
+    */
+  
   constructor(view, rulerModel) {
+    /** Initialises the model and view and create a ruler */
     this.view = view
     this.rulerModel = rulerModel
     this.createRuler()
@@ -7,12 +12,15 @@ class Controller {
   }
   
   createRuler() {
+    /** creates a ruler using a-frame */
+    
+    //get camera entity
     let aCamera = this.view.getElement(1, "camera")
     
     //create ruler entity
     let aEntity = this.view.createElement("a-entity")
     
-    //set lines
+    //set attributes of a-entity to create lines
     let aEntityAttr = {'line': this.setLine(-1.5, 2, -3, 1.5, 2, -3, 'green'),
                        'text': 'value: Horizon; color: red; ',
                       'line__2': this.setLine(-1, -2, -3, -1, 2, -3, 'red'),
@@ -24,10 +32,10 @@ class Controller {
                       'line__8': this.setLine(-1.3, 2, -3, -1, 2, -3, 'red')}
     this.view.setAttributes(aEntity, aEntityAttr)
     
-    //add all lines to aEntity
+    //add all lines to aCamera
     this.view.appendChild(aCamera, aEntity)
     
-    //add text
+    //create new a-entity to add text
     aEntity = this.view.createElement("a-text")
     aEntityAttr = {'id': 'text',
                    'value': 'Horizon', 
@@ -43,6 +51,14 @@ class Controller {
   }
   
   setLine(x1, y1, z1, x2, y2, z2, color) {
+    /** set the attributes for the a-entity lines 
+      * @param x1 the x position for the start of the line
+      * @param y1 the y position for the start of the line
+      * @param x2 the x position for the end of the line
+      * @param y2 the y position for the end of the line
+      * @param color the color of the line
+      @return line the attributes of the line as a string
+    */
     let lineStart = 'start: ' + x1 + ' ' + y1 + ' ' + z1 + '; '
     let lineEnd = 'end: ' + x2 + ' ' + y2 + ' ' + z2 + '; '
     let lineColor = 'color: ' + color
@@ -52,6 +68,11 @@ class Controller {
   }
   
   retrieveRulerData() {
+    /** creates a rulerModel.
+      * Gets the distances as an array which can be used to annotate the lines on the ruler.
+      * Gets the intervals as an array which can be used to set the positions of lines.
+      * distances[x] links to intervals[x]
+      */
     this.distances = this.rulerModel.getDistances()
     this.intervals = this.rulerModel.getIntervals()
     console.log('distances: ', this.distances)
@@ -62,6 +83,8 @@ class Controller {
 
 /*
 function createRuler() {
+  /** Gets the camera element of the webpage and adds a-entity element to it. */
+  
   const camera = document.getElementById("camera");
   let el = document.createElement("a-entity");
   camera.append(el)
