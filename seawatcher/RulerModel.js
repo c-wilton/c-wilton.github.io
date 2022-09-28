@@ -1,4 +1,12 @@
 class RulerModel {
+  /** Contains data needed for a the ruler 
+    * intervals relates to the distance between the ruler markings in cm.
+    * distances relates to the annotations for the markkings and is in meters.
+    * intervals and distances are stored in an array where the annotation for a marking at interval[x] is stored at distance[x]
+    * armLength is to hold the arm length of the user in cm.
+    * personHeight is to hold the height of the user in meters.
+    * altitude is the height of the user above sea level in meters.
+    */
   
   #distances
   #intervals
@@ -9,6 +17,9 @@ class RulerModel {
   #altitude
   
   constructor() {
+    /** Set armLength, personHeight and altitude to pre-defined values.
+      * call other methods to set the values for distances and intervals.
+      */
     this.#armLength = 70
     this.#personHeight = 1.675
     this.#altitude = 18.325
@@ -17,10 +28,12 @@ class RulerModel {
   }
   
   setDistances() {
+    /** Sets the distances to pre-defined values */
     this.#distances = [100, 200, 300, 500, 700, 1000, 1500, 2000, 2500, 3000, 4000] 
   }
   
   setIntervals() {
+    /** Creates an array to store the intervals and calls the method to set them */
     this.#intervals = new Array(this.#distances.length)
     //console.log('Setting internvals')
     
@@ -28,7 +41,9 @@ class RulerModel {
   }
   
   getDistances(){
+    /** @returns distances as an array */
     /*
+    //print distances
     for(var i=0; i<this.#distances.length; i++){
       console.log('distance[', i, ']: ', this.#distances[i] )
     }
@@ -37,7 +52,9 @@ class RulerModel {
   }
   
   getIntervals(){
+    /** @returns intervals as an array */
     /*
+    //print intervals
     for(var i=0; i<this.#intervals.length; i++){
       console.log('calcInt[', i, ']: ', this.#intervals[i] )
     }
@@ -46,12 +63,16 @@ class RulerModel {
   }
   
   calcIntervals() {
-    //let distance = 450
+    /** Uses the range finder technique to calculate the intervals for each element in distances */
+    
+    //calculate total height and visual horizon needed for the calculation
     let totalHeight = this.#personHeight + this.#altitude
     let visualHorizon = 3838 * (totalHeight ** 0.5)
-    //let interval =  (this.#armLength*totalHeight) * (visualHorizon-distance) / ( (totalHeight**2) + (visualHorizon*distance) )
     
-    //console.log('/nCalculated intervals:')
+    //formula to calculate an itnerval
+    //interval[x] =  (this.#armLength*totalHeight) * (visualHorizon-distance[x]) / ( (totalHeight**2) + (visualHorizon*distance[x]) )
+    
+    //calculate the intervals for each element in distances
     for(var i=0; i<this.#distances.length; i++){
       let d = this.#distances[i]
       let calcInterval =  (this.#armLength*totalHeight) * (visualHorizon-d) / ( (totalHeight**2) + (visualHorizon*d) )
