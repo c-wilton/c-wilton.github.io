@@ -1,7 +1,7 @@
 class DeviceModel {
   
   constructor(){
-    height = getDeviceHeight()
+    height = this.getDeviceHeight()
   }
   
   getDeviceHeight(){
