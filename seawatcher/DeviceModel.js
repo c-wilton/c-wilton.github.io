@@ -29,7 +29,10 @@ class DeviceModel {
     console.log('237/4.6', 237/4.6)
     
     /* use formula to test, and heights at different doc heights approximately match result */
-    console.log('in cm: ', docHeight/50)
+    console.log('docHeight of ', docHeight, ' = ', docHeight/50, ' in cm: ')
+    
+    /* reformat formula calculate needed docHeight given cm */
+    console.log(4.6, 'cm = docHeight of ', 4.6 * 50)
     
     return docHeight
   }
