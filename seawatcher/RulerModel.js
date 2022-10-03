@@ -42,12 +42,12 @@ class RulerModel {
   
   getDistances(){
     /** @returns distances as an array */
-    /*
+    
     //print distances
     for(var i=0; i<this.#distances.length; i++){
       console.log('distance[', i, ']: ', this.#distances[i] )
     }
-    */
+    
     return this.#distances
   }
   
