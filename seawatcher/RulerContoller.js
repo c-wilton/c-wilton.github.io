@@ -93,4 +93,4 @@ function createRuler() {
 createRuler()
 */
 
-controller = new Controller(new View(), new RulerModel() )
+controller = new RulerContoller(new View(), new RulerModel() )
