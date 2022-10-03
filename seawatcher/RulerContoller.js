@@ -1,4 +1,4 @@
-class Controller {
+class RulerContoller {
   /** Gets data from the ...Model classes.
     * Uses the View class to load this data to manipulate the elements on the webpage 
     */
@@ -83,7 +83,7 @@ class Controller {
 
 /*
 function createRuler() {
-  /** Gets the camera element of the webpage and adds a-entity element to it. */
+  // Gets the camera element of the webpage and adds a-entity element to it.
   
   const camera = document.getElementById("camera");
   let el = document.createElement("a-entity");
