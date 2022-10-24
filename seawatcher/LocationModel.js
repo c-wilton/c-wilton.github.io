@@ -44,8 +44,8 @@ class LocationModel {
     const longitude = position.coords.longitude;
     const altitude = position.coords.altitude;
     
-    this.#latitude = latitude;
-    /*this.#longitude = longitude;
+    /*this.#latitude = latitude;
+    this.#longitude = longitude;
     this.#altitude = altitude;
     this.#location = {latitude: this.#latitude, longitude: this.#longitude, altitude: this.#altitude};
     */
