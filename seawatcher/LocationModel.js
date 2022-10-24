@@ -50,10 +50,10 @@ class LocationModel {
     this.#location = {latitude: this.#latitude, longitude: this.#longitude, altitude: this.#altitude};
     */
     /* print the location to the console */
-    let place = 'latitude: ' + this.#latitude + ': longitude: ' + this.#longitude
+    let place = 'latitude: ' + latitude + ': longitude: ' + longitude
     
     console.log('place: ', place)
-    console.log('altitude', this.#altitude)
+    console.log('altitude', altitude)
   }
   
   error() {
