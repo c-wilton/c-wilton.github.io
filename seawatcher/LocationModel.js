@@ -74,7 +74,7 @@ class LocationModel {
     } else {
       /* if geolocation is supported, get the device location */
       let position = navigator.geolocation.getCurrentPosition(this.success, this.error);
-      console.log('getGeo pos: , position)
+      console.log('getGeo pos: ', position)
     } 
   }
   
