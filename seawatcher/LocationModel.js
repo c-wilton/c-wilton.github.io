@@ -9,22 +9,24 @@ class LocationModel {
   constructor() {
     /** sets the location to default values, then attempts to retrieve device location */
     console.log('New Location model')
-    this.setLocation()
+    this.setLocation(53.225589, -4.127876, 0)
     this.getGeoLocation()
   }
   
-  setLocation(){
+  setLocation(lat, long, alt){
     /** Sets the location to default values */
+    /*
     let defaultLatitude = 53.225589
     let defaultLongitude = -4.127876
     let defaultAltitude = 0
+    */
     
-    this.#latitude = defaultLatitude
-    this.#longitude = defaultLongitude
-    this.#altitude = defaultAltitude 
+    this.#latitude = lat
+    this.#longitude = long
+    this.#altitude = alt 
     
-    this.#location = {lat: this.#latitude, long: this.#longitude};
-    console.log('Default\n', 'lat: ', this.#latitude, '; long: ', this.#longitude, '; loc: ', this.#location)
+    this.#location = {lat: this.#latitude, long: this.#longitude, alt: this.#altitude};
+    console.log(lat: ', this.#latitude, '; long: ', this.#longitude, alt: ', this.#altitude, '; loc: ', this.#location)
   }
   
   getLocation(){
@@ -49,6 +51,8 @@ class LocationModel {
     this.#altitude = altitude;
     this.#location = {latitude: this.#latitude, longitude: this.#longitude, altitude: this.#altitude};
     */
+    setLocation(latitude, longitude, altitude)
+    
     /* print the location to the console */
     let place = 'latitude: ' + latitude + ': longitude: ' + longitude
     
