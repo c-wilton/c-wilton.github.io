@@ -26,7 +26,7 @@ class LocationModel {
     this.#altitude = alt 
     
     this.#location = {lat: this.#latitude, long: this.#longitude, alt: this.#altitude};
-    console.log(lat: ', this.#latitude, '; long: ', this.#longitude, alt: ', this.#altitude, '; loc: ', this.#location)
+    console.log('lat: ', this.#latitude, '; long: ', this.#longitude, 'alt: ', this.#altitude, '; loc: ', this.#location)
   }
   
   getLocation(){
