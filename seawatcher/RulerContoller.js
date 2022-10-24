@@ -8,6 +8,7 @@ class RulerContoller {
     this.view = view
     this.rulerModel = rulerModel
     this.locationModel = locationModel
+    this.getLocation()
     this.createRuler()
     this.retrieveRulerData()
   }
@@ -83,7 +84,7 @@ class RulerContoller {
   
   getLocation(){
     let position = this.locationModel.getLocation()
-    console.log('latitude: ', position.latitude, '\tlongitude: ', position.longitude, '\taltitude: ', position.altitude,)
+    console.log('RulerController\n', 'latitude: ', position.latitude, '\tlongitude: ', position.longitude, '\taltitude: ', position.altitude,)
   }
 }
 
