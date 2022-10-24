@@ -40,15 +40,13 @@ class LocationModel {
     
     /* get device location */
     console.log("Location Success")
-    /*
     const latitude  = position.coords.latitude;
     const longitude = position.coords.longitude;
     const altitude = position.coords.altitude;
-    */
     
-    this.#latitude = position.coords.latitude;
-    this.#longitude = position.coords.longitude;
-    this.#altitude = position.coords.altitude;
+    this.#latitude = latitude;
+    this.#longitude = longitude;
+    this.#altitude = altitude;
     this.#location = {latitude: this.#latitude, longitude: this.#longitude, altitude: this.#altitude};
     
     /* print the location to the console */
