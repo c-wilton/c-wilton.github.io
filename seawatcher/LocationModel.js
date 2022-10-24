@@ -14,7 +14,8 @@ class LocationModel {
     console.log('set default location')
     this.setLocation(53.225589, -4.127876, 0)
     console.log('get default location')
-    console.log(this.getGeoLocation(getLocation()))
+    console.log(this.getLocation())
+    this.getGeoLocation()
   }
   
   setLocation(lat, long, alt){
