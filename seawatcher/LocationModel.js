@@ -45,10 +45,10 @@ class LocationModel {
     const altitude = position.coords.altitude;
     
     this.#latitude = latitude;
-    this.#longitude = longitude;
+    /*this.#longitude = longitude;
     this.#altitude = altitude;
     this.#location = {latitude: this.#latitude, longitude: this.#longitude, altitude: this.#altitude};
-    
+    */
     /* print the location to the console */
     let place = 'latitude: ' + this.#latitude + ': longitude: ' + this.#longitude
     
