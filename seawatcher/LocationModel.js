@@ -67,14 +67,14 @@ class LocationModel {
     /** Attempt to get the device location */
     console.log('getGeoLocation')
     if(!navigator.geolocation) {
-      /** display message if geolocationis not supported */
+      /* display message if geolocationis not supported */
       console.log("Location not supported")
     } else {
-      /** if geolocation is supported, get the device location */
+      /* if geolocation is supported, get the device location */
       navigator.geolocation.getCurrentPosition(this.success, this.error);
     } 
   }
   
 }
 
-loc = new LocationModel()
+/* loc = new LocationModel() */
