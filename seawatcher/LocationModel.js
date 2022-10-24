@@ -9,21 +9,14 @@ class LocationModel {
   constructor() {
     /** sets the location to default values, then attempts to retrieve device location */
     console.log('New Location model')
-    console.log('set default location')
-    this.setLocation(53.225589, -4.127876, 0)
-    console.log('get default location')
-    console.log(this.getLocation())
+    /* set default location */
+    this.setLocation(53.225589, -4.127876, 20)
+    /* get Geolocation */
     this.getGeoLocation()
   }
   
   setLocation(lat, long, alt){
-    /** Sets the location to default values */
-    /*
-    let defaultLatitude = 53.225589
-    let defaultLongitude = -4.127876
-    let defaultAltitude = 0
-    */
-    
+    /** Sets the location to passed in values */
     this.#latitude = lat
     this.#longitude = long
     this.#altitude = alt 
