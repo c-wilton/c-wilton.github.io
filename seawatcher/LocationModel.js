@@ -1,10 +1,12 @@
 class LocationModel {
   /** Gets the location of the device */
   
+  /*
   #latitude
   #longitude
   #location
   #altitude
+  */
   
   constructor() {
     /** sets the location to default values, then attempts to retrieve device location */
@@ -21,18 +23,18 @@ class LocationModel {
     let defaultAltitude = 0
     */
     
-    this.#latitude = lat
-    this.#longitude = long
-    this.#altitude = alt 
+    this.latitude = lat
+    this.longitude = long
+    this.altitude = alt 
     
-    this.#location = {lat: this.#latitude, long: this.#longitude, alt: this.#altitude};
-    console.log('lat: ', this.#latitude, '; long: ', this.#longitude, 'alt: ', this.#altitude, '; loc: ', this.#location)
+    this.location = {lat: this.latitude, long: this.longitude, alt: this.altitude};
+    console.log('lat: ', this.latitude, '; long: ', this.longitude, 'alt: ', this.altitude, '; loc: ', this.location)
   }
   
   getLocation(){
     /** @return the location */
     console.log('getLocation')
-    return this.#location
+    return this.location
   }
   
   success(position) {
