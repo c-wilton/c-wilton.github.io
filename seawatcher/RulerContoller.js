@@ -3,10 +3,11 @@ class RulerContoller {
     * Uses the View class to load this data to manipulate the elements on the webpage 
     */
   
-  constructor(view, rulerModel) {
+  constructor(view, rulerModel, locationModel) {
     /** Initialises the model and view and create a ruler */
     this.view = view
     this.rulerModel = rulerModel
+    this.locationModel = locationModel
     this.createRuler()
     this.retrieveRulerData()
   }
@@ -79,18 +80,11 @@ class RulerContoller {
     console.log('intervals: ', this.intervals)
     
   }
-}
-
-/*
-function createRuler() {
-  // Gets the camera element of the webpage and adds a-entity element to it.
   
-  const camera = document.getElementById("camera");
-  let el = document.createElement("a-entity");
-  camera.append(el)
+  getLocation(){
+    let position = this.locationModel.getLocation()
+    console.log('latitude: ', position.latitude, '\tlongitude: ', position.longitude, '\taltitude: ', position.altitude,)
+  }
 }
 
-createRuler()
-*/
-
-controller = new RulerContoller(new View(), new RulerModel() )
+controller = new RulerContoller(new View(), new RulerModel(), new LocationModel() )
