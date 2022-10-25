@@ -18,6 +18,8 @@ function geoFindMe() {
         atext.setAttribute('value', 'changed')
         */
         
+        atext.setAttribute("gps-entity-place", place);
+        
         atext.setAttribute('scale', '0.5 0.5 0.5');
         atext.setAttribute('rotation', '0 0 180');
         console.log(atext.getAttributeNames() )
