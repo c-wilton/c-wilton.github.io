@@ -22,7 +22,7 @@ function geoFindMe() {
         atext.setAttribute('value', 'Text set');
         
         atext.setAttribute('scale', '0.5 0.5 0.5');
-        atext.setAttribute('rotation', '90 0 180');
+        atext.setAttribute('rotation', '0 0 0');
         console.log(atext.getAttributeNames() )
         console.log('id:', atext.getAttribute('id') )
         console.log('value:', atext.getAttribute('value') )
