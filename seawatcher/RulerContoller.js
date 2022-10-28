@@ -22,8 +22,7 @@ class RulerContoller {
     //create ruler entity
     let aEntity = this.view.createElement("a-entity")
     
-    let length = 6
-    let xOrigin = -1.5;   let yOrigin = 2;   let z = 3;
+    let xOrigin = -1.5;   let yOrigin = 2;   let z = -3;
     let xEnd = 1.5;       let yEnd = -2;
     let rulerXOffset = 0.5
     let markingXOffset = 0.2
@@ -32,10 +31,33 @@ class RulerContoller {
     let rulerLengthVal = {startx:xOrigin+rulerXOffset, starty:yOrigin, startZ:z, endX:yEnd, endY:yEnd, endZ:z, color:'red'}
     
     let lines=[]
-    for(let i=0; i<length; i++){
-      lines[i] = {startx:xOrigin+markingXOffset, starty:yOrigin-markingsYOffset[i], startZ:z, endX:xOrigin+rulerXOffset, endY:yOrigin-markingsYOffset[i], endZ:z, color:'red'}
+    for(let i=0; i<lines.length; i++){
+      let x1; let y1; let z1; let x2; let y2; let z2; let color;
+      let textStart='start'; let textEnd='end'; let textColor='color'
+      if(i==0){ 
+        x1=xOrigin,                 y1=yOrigin,                     z1=z, 
+        x2=xEnd,                    y2=yOrigin,                     z2=z
+        color='green'
+      }
+      if(i==1){ 
+        x1=xOrigin+rulerXOffset,    y1=yOrigin,                     z1=z, 
+        x2=+rulerXOffset,           y2=yEnd,                        z2=z
+        color='red'
+      }
+      else{     
+        x1=xOrigin+markingXOffset,  y1=yOrigin-markingsYOffset[i],  z1=z, 
+        x2=xOrigin+rulerXOffset,    y2=yOrigin-markingsYOffset[i],  z2=z
+        color='red'
+      }
+      
+      let lineStart = 'start: ' + x1 + ' ' + y1 + ' ' + z1 + '; '
+      let lineEnd = 'end: ' + x2 + ' ' + y2 + ' ' + z2 + '; '
+      let lineColor = 'color: ' + color
+      lines[0] = lineStart + lineEnd + lineColor
     }
     console.log('lines: ', lines)
+    
+    
     
     //set attributes of a-entity to create lines
     let aEntityAttr = {'line': this.setLine(-1.5, 2, -3, 1.5, 2, -3, 'green'),
@@ -48,6 +70,7 @@ class RulerContoller {
                       'line__7': this.setLine(-1.3, 1, -3, -1, 1, -3, 'red'),
                       'line__8': this.setLine(-1.3, 2, -3, -1, 2, -3, 'red')}
     this.view.setAttributes(aEntity, aEntityAttr)
+    
     
     //add all lines to aCamera
     this.view.appendChild(aCamera, aEntity)
