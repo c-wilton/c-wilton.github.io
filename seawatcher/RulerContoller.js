@@ -35,17 +35,17 @@ class RulerContoller {
     for(let i=0; i<(markingsYOffset.length + 2); i++){
       let x1; let y1; let z1; let x2; let y2; let z2; let color;
       let textStart='start'; let textEnd='end'; let textColor='color'
-      if(i==0){ 
+      if(i==0){                     //Horizon line
         x1=xOrigin,                 y1=yOrigin,                     z1=z, 
         x2=xEnd,                    y2=yOrigin,                     z2=z
         color='green'
       }
-      else if(i==1){ 
+      else if(i==1){                //Ruler length line
         x1=xOrigin+rulerXOffset,    y1=yOrigin,                     z1=z, 
         x2=xOrigin+rulerXOffset,    y2=yEnd,                        z2=z
         color='red'
       }
-      else{     
+      else{                         //markings line
         x1=xOrigin+markingXOffset,  y1=yOrigin-markingsYOffset[i-2],  z1=z, 
         x2=xOrigin+rulerXOffset,    y2=yOrigin-markingsYOffset[i-2],  z2=z
         color='red'
