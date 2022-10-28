@@ -53,7 +53,8 @@ class RulerContoller {
       let lineStart = 'start: ' + x1 + ' ' + y1 + ' ' + z1 + '; '
       let lineEnd = 'end: ' + x2 + ' ' + y2 + ' ' + z2 + '; '
       let lineColor = 'color: ' + color
-      lines[0] = lineStart + lineEnd + lineColor
+      lines[i] = lineStart + lineEnd + lineColor
+      console.log('line[',i,']: ', lineStart, lineEnd, lineColor, '\n', lines[i])
     }
     console.log('lines: ', lines)
     
