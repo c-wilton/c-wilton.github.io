@@ -23,7 +23,7 @@ class RulerContoller {
     let aEntity = this.view.createElement("a-entity")
     
     let markingsYOffset = [0, 1, 2, 3, 3.5, 3.7]
-    let lines = setLinePosition(markingsYOffset)
+    let lines = this.setLinePosition(markingsYOffset)
     console.log('lines: ', lines)
     
     let aEntityAttr={}; let textLine='';
