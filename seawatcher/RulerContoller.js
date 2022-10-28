@@ -31,8 +31,8 @@ class RulerContoller {
     let rulerLengthVal = {startx:xOrigin+rulerXOffset, starty:yOrigin, startZ:z, endX:yEnd, endY:yEnd, endZ:z, color:'red'}
     
     //create line for all markings, plus ruler length line, plus horizon line
-    let lines = new Array(markingsYOffset+2)   
-    for(let i=0; i<lines.length; i++){
+    let lines = []   
+    for(let i=0; i<(markingsYOffset.length + 2); i++){
       let x1; let y1; let z1; let x2; let y2; let z2; let color;
       let textStart='start'; let textEnd='end'; let textColor='color'
       if(i==0){ 
@@ -40,7 +40,7 @@ class RulerContoller {
         x2=xEnd,                    y2=yOrigin,                     z2=z
         color='green'
       }
-      if(i==1){ 
+      else if(i==1){ 
         x1=xOrigin+rulerXOffset,    y1=yOrigin,                     z1=z, 
         x2=+rulerXOffset,           y2=yEnd,                        z2=z
         color='red'
