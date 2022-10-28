@@ -55,9 +55,16 @@ class RulerContoller {
       let lineEnd = 'end: ' + x2 + ' ' + y2 + ' ' + z2 + '; '
       let lineColor = 'color: ' + color
       lines[i] = lineStart + lineEnd + lineColor
-      console.log('line[',i,']: ', lineStart, lineEnd, lineColor, '\n', lines[i])
     }
     console.log('lines: ', lines)
+    
+    let aEntity={}; let textLine='';
+    for(let i=0; i<lines.length; i++){
+      if(i==0){ textLine = 'line'}
+      else{     textLine = 'line__'+(i+1)}
+      aEntityAttr[textLine] = lines[i]
+    }
+    this.view.setAttributes(aEntity, aEntityAttr)
     
     /*
     let aEntity ={}; let textLine;
@@ -69,7 +76,7 @@ class RulerContoller {
     */
     
     
-    
+    /*
     //set attributes of a-entity to create lines
     let aEntityAttr = {'line': this.setLine(-1.5, 2, -3, 1.5, 2, -3, 'green'),
                        'text': 'value: Horizon; color: red; ',
@@ -81,7 +88,7 @@ class RulerContoller {
                       'line__7': this.setLine(-1.3, 1, -3, -1, 1, -3, 'red'),
                       'line__8': this.setLine(-1.3, 2, -3, -1, 2, -3, 'red')}
     this.view.setAttributes(aEntity, aEntityAttr)
-    
+    */
     
     //add all lines to aCamera
     this.view.appendChild(aCamera, aEntity)
