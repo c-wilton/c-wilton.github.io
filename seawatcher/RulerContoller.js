@@ -27,7 +27,7 @@ class RulerContoller {
     let xEnd = 1.5;       let yEnd = -2;
     let rulerXOffset = 0.5
     let markingXOffset = 0.2
-    let horVal = {startx:xOrigin, starty:yOrigin, startZ:z, endX:xEnd, endY:startY, endZ:z, color:'green'}
+    let horVal = {startx:xOrigin, starty:yOrigin, startZ:z, endX:xEnd, endY:xOrigin, endZ:z, color:'green'}
     let rulerLengthVal = {startx:xOrigin+rulerXOffset, starty:yOrigin, startZ:z, endX:yEnd, endY:yEnd, endZ:z, color:'red'}
     
     let lines=[]
