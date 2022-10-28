@@ -22,40 +22,8 @@ class RulerContoller {
     //create ruler entity
     let aEntity = this.view.createElement("a-entity")
     
-    let xOrigin = -1.5;   let yOrigin = 2;   let z = -3;
-    let xEnd = 1.5;       let yEnd = -2;
-    let rulerXOffset = 0.5
-    let markingXOffset = 0.2
     let markingsYOffset = [0, 1, 2, 3, 3.5, 3.7]
-    let horVal = {startx:xOrigin, starty:yOrigin, startZ:z, endX:xEnd, endY:xOrigin, endZ:z, color:'green'}
-    let rulerLengthVal = {startx:xOrigin+rulerXOffset, starty:yOrigin, startZ:z, endX:yEnd, endY:yEnd, endZ:z, color:'red'}
-    
-    //create line for all markings, plus ruler length line, plus horizon line
-    let lines = []   
-    for(let i=0; i<(markingsYOffset.length + 2); i++){
-      let x1; let y1; let z1; let x2; let y2; let z2; let color;
-      let textStart='start'; let textEnd='end'; let textColor='color'
-      if(i==0){                     //Horizon line
-        x1=xOrigin,                 y1=yOrigin,                     z1=z, 
-        x2=xEnd,                    y2=yOrigin,                     z2=z
-        color='green'
-      }
-      else if(i==1){                //Ruler length line
-        x1=xOrigin+rulerXOffset,    y1=yOrigin,                     z1=z, 
-        x2=xOrigin+rulerXOffset,    y2=yEnd,                        z2=z
-        color='red'
-      }
-      else{                         //markings line
-        x1=xOrigin+markingXOffset,  y1=yOrigin-markingsYOffset[i-2],  z1=z, 
-        x2=xOrigin+rulerXOffset,    y2=yOrigin-markingsYOffset[i-2],  z2=z
-        color='red'
-      }
-      
-      let lineStart = 'start: ' + x1 + ' ' + y1 + ' ' + z1 + '; '
-      let lineEnd = 'end: ' + x2 + ' ' + y2 + ' ' + z2 + '; '
-      let lineColor = 'color: ' + color
-      lines[i] = lineStart + lineEnd + lineColor
-    }
+    let lines = setLinePosition(markingsYOffset)
     console.log('lines: ', lines)
     
     let aEntityAttr={}; let textLine='';
@@ -97,6 +65,47 @@ class RulerContoller {
       
     
   }
+  
+  setLinePosition(markingsYOffset) {
+    let xOrigin = -1.5;   let yOrigin = 2;   let z = -3;
+    let xEnd = 1.5;       let yEnd = -2;
+    let rulerXOffset = 0.5
+    let markingXOffset = 0.2
+    
+    //let horVal = {startx:xOrigin, starty:yOrigin, startZ:z, endX:xEnd, endY:xOrigin, endZ:z, color:'green'}
+    //let rulerLengthVal = {startx:xOrigin+rulerXOffset, starty:yOrigin, startZ:z, endX:yEnd, endY:yEnd, endZ:z, color:'red'}
+    
+    //create line for all markings, plus ruler length line, plus horizon line
+    let lines = []   
+    for(let i=0; i<(markingsYOffset.length + 2); i++){
+      let x1; let y1; let z1; let x2; let y2; let z2; let color;
+      let textStart='start'; let textEnd='end'; let textColor='color'
+      if(i==0){                     //Horizon line
+        x1=xOrigin,                 y1=yOrigin,                     z1=z, 
+        x2=xEnd,                    y2=yOrigin,                     z2=z
+        color='green'
+      }
+      else if(i==1){                //Ruler length line
+        x1=xOrigin+rulerXOffset,    y1=yOrigin,                     z1=z, 
+        x2=xOrigin+rulerXOffset,    y2=yEnd,                        z2=z
+        color='red'
+      }
+      else{                         //markings line
+        x1=xOrigin+markingXOffset,  y1=yOrigin-markingsYOffset[i-2],  z1=z, 
+        x2=xOrigin+rulerXOffset,    y2=yOrigin-markingsYOffset[i-2],  z2=z
+        color='red'
+      }
+      
+      let lineStart = 'start: ' + x1 + ' ' + y1 + ' ' + z1 + '; '
+      let lineEnd = 'end: ' + x2 + ' ' + y2 + ' ' + z2 + '; '
+      let lineColor = 'color: ' + color
+      lines[i] = lineStart + lineEnd + lineColor
+    }
+    return lines
+  }
+  
+  
+  
   
   setLine(x1, y1, z1, x2, y2, z2, color) {
     /** set the attributes for the a-entity lines 
