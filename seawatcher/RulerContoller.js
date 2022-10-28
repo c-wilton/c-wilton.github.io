@@ -42,7 +42,7 @@ class RulerContoller {
       }
       else if(i==1){ 
         x1=xOrigin+rulerXOffset,    y1=yOrigin,                     z1=z, 
-        x2=+rulerXOffset,           y2=yEnd,                        z2=z
+        x2=xOrigin+rulerXOffset,    y2=yEnd,                        z2=z
         color='red'
       }
       else{     
