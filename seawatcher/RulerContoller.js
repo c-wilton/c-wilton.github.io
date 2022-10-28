@@ -22,7 +22,7 @@ class RulerContoller {
     //create ruler entity
     let aEntity = this.view.createElement("a-entity")
     
-    /*
+    
     xOrigin = -1.5;   yOrigin = 2;   z = 2;
     xEnd = 1.5;       yEnd = -2;
     rulerXOffset = 0.5
@@ -34,7 +34,7 @@ class RulerContoller {
     for(i=0; i<6; i++){
       lines.append({startx:xOrigin+markingXOffset, starty:yOrigin-1, startZ:z, endX:rulerXOffset, endY:yOrigin-1, endZ:z, color:'red'})
     }
-    */
+    console.log('lines: ', lines)
     
     //set attributes of a-entity to create lines
     let aEntityAttr = {'line': this.setLine(-1.5, 2, -3, 1.5, 2, -3, 'green'),
