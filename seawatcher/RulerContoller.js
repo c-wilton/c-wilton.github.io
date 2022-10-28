@@ -32,7 +32,7 @@ class RulerContoller {
     
     let lines=[]
     for(let i=0; i<6; i++){
-      lines.append({startx:xOrigin+markingXOffset, starty:yOrigin-1, startZ:z, endX:rulerXOffset, endY:yOrigin-1, endZ:z, color:'red'})
+      lines.push({startx:xOrigin+markingXOffset, starty:yOrigin-1, startZ:z, endX:rulerXOffset, endY:yOrigin-1, endZ:z, color:'red'})
     }
     console.log('lines: ', lines)
     
