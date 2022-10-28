@@ -46,8 +46,8 @@ class RulerContoller {
         color='red'
       }
       else{     
-        x1=xOrigin+markingXOffset,  y1=yOrigin-markingsYOffset[i],  z1=z, 
-        x2=xOrigin+rulerXOffset,    y2=yOrigin-markingsYOffset[i],  z2=z
+        x1=xOrigin+markingXOffset,  y1=yOrigin-markingsYOffset[i-2],  z1=z, 
+        x2=xOrigin+rulerXOffset,    y2=yOrigin-markingsYOffset[i-2],  z2=z
         color='red'
       }
       
