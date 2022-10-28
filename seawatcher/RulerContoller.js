@@ -58,23 +58,13 @@ class RulerContoller {
     }
     console.log('lines: ', lines)
     
-    let aEntity={}; let textLine='';
+    let aEntityAttr={}; let textLine='';
     for(let i=0; i<lines.length; i++){
       if(i==0){ textLine = 'line'}
       else{     textLine = 'line__'+(i+1)}
       aEntityAttr[textLine] = lines[i]
     }
     this.view.setAttributes(aEntity, aEntityAttr)
-    
-    /*
-    let aEntity ={}; let textLine;
-    To create the ruler from array:
-    for(i=0 to lines.length):
-      if i==0:  textLine = 'line'
-      else:     textLine = 'line__'+(i+1)
-    aEntityAttr[textLine] = lines[i]
-    */
-    
     
     /*
     //set attributes of a-entity to create lines
