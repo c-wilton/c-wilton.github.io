@@ -54,6 +54,7 @@ class LocationModel {
     
     console.log('place: ', place)
     console.log('altitude', altitude)
+    return place
   }
   
   error() {
