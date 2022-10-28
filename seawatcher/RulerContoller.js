@@ -23,16 +23,17 @@ class RulerContoller {
     let aEntity = this.view.createElement("a-entity")
     
     let length = 6
-    let xOrigin = -1.5;   let yOrigin = 2;   let z = 2;
+    let xOrigin = -1.5;   let yOrigin = 2;   let z = 3;
     let xEnd = 1.5;       let yEnd = -2;
     let rulerXOffset = 0.5
     let markingXOffset = 0.2
+    let markingsYOffset = [0.3, 0.5, 1, 2, 3, 4]
     let horVal = {startx:xOrigin, starty:yOrigin, startZ:z, endX:xEnd, endY:xOrigin, endZ:z, color:'green'}
     let rulerLengthVal = {startx:xOrigin+rulerXOffset, starty:yOrigin, startZ:z, endX:yEnd, endY:yEnd, endZ:z, color:'red'}
     
     let lines=[]
     for(let i=0; i<length; i++){
-      lines[i] = {startx:xOrigin+markingXOffset, starty:yOrigin-1, startZ:z, endX:rulerXOffset, endY:yOrigin-1, endZ:z, color:'red'}
+      lines[i] = {startx:xOrigin+markingXOffset, starty:yOrigin-markingsYOffset[i], startZ:z, endX:xOrigin+rulerXOffset, endY:yOrigin-markingsYOffset[i], endZ:z, color:'red'}
     }
     console.log('lines: ', lines)
     
