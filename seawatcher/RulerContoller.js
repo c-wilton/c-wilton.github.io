@@ -79,7 +79,7 @@ class RulerContoller {
     let aEntityAttributes = []
     for(let i=0; i<annotations.length; i++)
     {
-      console.log('annotations[',i,']', annotations[i])
+      console.log('annotation:', annotations[i])
       markingPosition = '' + annotations[i]['x'] + ' ' + annotations[i]['y'] + ' ' +  annotations[i]['z']
       console.log('markingPosition:', markingPosition)
       console.log('distance',i,':', rulerData['distances'][i])
