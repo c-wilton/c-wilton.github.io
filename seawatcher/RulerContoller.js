@@ -128,7 +128,7 @@ class RulerContoller {
         x1=xOrigin+markingXOffset,  y1=yOrigin-markingsYOffset[i-2],  z1=z, 
         x2=xOrigin+rulerXOffset,    y2=yOrigin-markingsYOffset[i-2],  z2=z
         color='red'
-        annotations[i] = {'x':xOrigin, 'y':y1, 'z':z}
+        annotations[i-2] = {'x':xOrigin, 'y':y1, 'z':z}
       }
       
       let lineStart = 'start: ' + x1 + ' ' + y1 + ' ' + z1 + '; '
