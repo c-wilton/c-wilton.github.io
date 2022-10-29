@@ -82,8 +82,9 @@ class RulerContoller {
       markingPosition = '' + annotations[i][x] + ' ' + annotations[i][y] + ' ' +  annotations[i][z]
       console.log('markingPosition:', markingPosition)
       console.log('distance',i,':', rulerData['distances'][i])
+      
       aEntityAttr = {'id': 'text',
-                     'value': 'rulerData['distances'][i], 
+                     'value': rulerData['distances'][i], 
                      'scale': '1 1 1',
                      'position': markingPosition
                      }
