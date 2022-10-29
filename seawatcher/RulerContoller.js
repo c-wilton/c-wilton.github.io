@@ -65,7 +65,7 @@ class RulerContoller {
     //create new a-entity to add text
     aEntity = this.view.createElement("a-text")
     aEntityAttr = {'id': 'text',
-                   'value': Horizon', 
+                   'value': 'Horizon', 
                    'scale': '1 1 1',
                    'position': '1.5 2 -3'
                    }
