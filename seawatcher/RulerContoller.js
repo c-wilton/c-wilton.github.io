@@ -65,7 +65,7 @@ class RulerContoller {
     //create new a-entity to add text
     aEntity = this.view.createElement("a-text")
     aEntityAttr = {'id': 'text',
-                   'value': rulerData['distances'], 
+                   'value': Horizon', 
                    'scale': '1 1 1',
                    'position': '1.5 2 -3'
                    }
@@ -81,8 +81,9 @@ class RulerContoller {
     {
       markingPosition = '' + annotations[i][x] + ' ' + annotations[i][y] + ' ' +  annotations[i][z]
       console.log('markingPosition:', markingPosition)
+      console.log('distance',i,':', rulerData['distances'][i])
       aEntityAttr = {'id': 'text',
-                     'value': 'Horizon', 
+                     'value': 'rulerData['distances'][i], 
                      'scale': '1 1 1',
                      'position': markingPosition
                      }
