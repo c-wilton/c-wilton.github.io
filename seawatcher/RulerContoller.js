@@ -75,10 +75,11 @@ class RulerContoller {
     
     
     //create new a-entity to add annotations to ruker markings
-    aEntity = this.view.createElement("a-text")
-    let aEntityAttributes = []
+    //let aEntityAttributes = []
     for(let i=0; i<annotations.length; i++)
     {
+      aEntity = this.view.createElement("a-text")
+    
       console.log('annotation:', annotations[i])
       let markingPosition = '' + annotations[i]['x'] + ' ' + annotations[i]['y'] + ' ' +  annotations[i]['z']
       console.log('markingPosition:', markingPosition)
@@ -89,10 +90,12 @@ class RulerContoller {
                      'scale': '1 1 1',
                      'position': markingPosition
                      }
-      aEntityAttributes[i] = aEntityAttributes
+      //aEntityAttributes[i] = aEntityAttr
+      console.log('aEntityAttr: ', aEntityAttr)
+      this.view.setAttributes(aEntity, aEntityAttr)
+      this.view.appendChild(aCamera, aEntity)
     }
-    this.view.setAttributes(aEntity, aEntityAttributes)
-    this.view.appendChild(aCamera, aEntity)
+    
     
     //<a-text id="text" value="This content will always face you." look-at="[gps-camera]" scale="120 120 120" gps-entity-place="latitude: 53.22597071349516; longitude:  -4.127555930547311;"></a-text>
       
