@@ -9,18 +9,23 @@ class RulerContoller {
     this.rulerModel = rulerModel
     this.locationModel = locationModel
     this.getLocation()
-    this.createRuler()
-    this.retrieveRulerData()
+    let rulerData = this.retrieveRulerData()
+    this.createRuler(rulerData)
+    
   }
   
-  createRuler() {
-    /** creates a ruler using a-frame */
+  createRuler(rulerData) {
+    /** creates a ruler using a-frame 
+        @param rulerData dictionary containing distances and intervals
+    */
     
     //get camera entity
     let aCamera = this.view.getElement(1, "camera")
     
     //create ruler entity
     let aEntity = this.view.createElement("a-entity")
+    
+    console.log('rulerData: ', rulerData)
     
     let markingsYOffset = [0, 1, 2, 3, 3.5, 3.7]
     let lines = this.setLinePosition(markingsYOffset)
@@ -130,11 +135,20 @@ class RulerContoller {
       * Gets the intervals as an array which can be used to set the positions of lines.
       * distances[x] links to intervals[x]
       */
+    
+    /*
     this.distances = this.rulerModel.getDistances()
     this.intervals = this.rulerModel.getIntervals()
     console.log('distances: ', this.distances)
     console.log('intervals: ', this.intervals)
+    */
     
+    let distances = this.rulerModel.getDistances()
+    let intervals = this.rulerModel.getIntervals()
+    let rulerData = {'distances': distances, 'intervals':intervals}
+    //console.log('rulerData: ', rulerData)
+    
+    return rulerData
   }
   
   getLocation(){
