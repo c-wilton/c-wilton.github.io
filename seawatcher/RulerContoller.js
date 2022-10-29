@@ -30,8 +30,12 @@ class RulerContoller {
     //let markingsYOffset = [0, 1, 2, 3, 3.5, 3.7]
     console.log('rulerDataintervals: ', rulerData['intervals'])
     let markingsYOffset = rulerData['intervals']
-    let lines = this.setLinePosition(markingsYOffset)
+    
+    let positions = this.setLinePosition(markingsYOffset)
+    let lines = positions['lines']
+    let annotations = positions['annotations']
     console.log('lines: ', lines)
+    console.log('annotations: ', annotations)
     
     let aEntityAttr={}; let textLine='';
     for(let i=0; i<lines.length; i++){
@@ -83,7 +87,8 @@ class RulerContoller {
     //let rulerLengthVal = {startx:xOrigin+rulerXOffset, starty:yOrigin, startZ:z, endX:yEnd, endY:yEnd, endZ:z, color:'red'}
     
     //create line for all markings, plus ruler length line, plus horizon line
-    let lines = []   
+    let lines = []  
+    let annotations = []
     for(let i=0; i<(markingsYOffset.length + 2); i++){
       let x1; let y1; let z1; let x2; let y2; let z2; let color;
       let textStart='start'; let textEnd='end'; let textColor='color'
@@ -101,6 +106,7 @@ class RulerContoller {
         x1=xOrigin+markingXOffset,  y1=yOrigin-markingsYOffset[i-2],  z1=z, 
         x2=xOrigin+rulerXOffset,    y2=yOrigin-markingsYOffset[i-2],  z2=z
         color='red'
+        annotations[i] = {'x':xOrigin, 'y':y1, 'z':z)
       }
       
       let lineStart = 'start: ' + x1 + ' ' + y1 + ' ' + z1 + '; '
@@ -108,7 +114,7 @@ class RulerContoller {
       let lineColor = 'color: ' + color
       lines[i] = lineStart + lineEnd + lineColor
     }
-    return lines
+    return {'lines':lines, 'annotations':annotations}
   }
   
   
