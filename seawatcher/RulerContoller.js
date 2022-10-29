@@ -65,10 +65,29 @@ class RulerContoller {
     //create new a-entity to add text
     aEntity = this.view.createElement("a-text")
     aEntityAttr = {'id': 'text',
-                   'value': 'Horizon', 
+                   'value': rulerData['distances'], 
                    'scale': '1 1 1',
                    'position': '1.5 2 -3'
                    }
+    this.view.setAttributes(aEntity, aEntityAttr)
+    this.view.appendChild(aCamera, aEntity)
+    
+    
+    
+    //create new a-entity to add annotations to ruker markings
+    aEntity = this.view.createElement("a-text")
+    let aEntityAttributes = []
+    for(let i=0; i<annotations.length; i++)
+    {
+      markingPosition = '' + annotations[i][x] + ' ' + annotations[i][y] + ' ' +  annotations[i][z]
+      console.log('markingPosition:', markingPosition)
+      aEntityAttr = {'id': 'text',
+                     'value': 'Horizon', 
+                     'scale': '1 1 1',
+                     'position': markingPosition
+                     }
+      aEntityAttributes[i] = aEntityAttributes
+    }
     this.view.setAttributes(aEntity, aEntityAttr)
     this.view.appendChild(aCamera, aEntity)
     
