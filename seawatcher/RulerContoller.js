@@ -27,7 +27,9 @@ class RulerContoller {
     
     console.log('rulerData: ', rulerData)
     
-    let markingsYOffset = [0, 1, 2, 3, 3.5, 3.7]
+    //let markingsYOffset = [0, 1, 2, 3, 3.5, 3.7]
+    console.log('rulerDataintervals: ', intervals)
+    let markingsYOffset = rulerData['intervals']
     let lines = this.setLinePosition(markingsYOffset)
     console.log('lines: ', lines)
     
