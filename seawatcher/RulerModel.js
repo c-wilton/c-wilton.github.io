@@ -29,7 +29,7 @@ class RulerModel {
   
   setDistances() {
     /** Sets the distances to pre-defined values */
-    this.#distances = [100, 200, 300, 500, 700, 1000, 1500, 2000, 2500, 3000, 4000, 5000, 10000] 
+    this.#distances = [100, 200, 300, 500, 700, 1000, 1500, 2000, 3000, 5000, 10000] 
   }
   
   setIntervals() {
