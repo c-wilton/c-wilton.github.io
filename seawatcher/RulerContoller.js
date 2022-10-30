@@ -25,44 +25,33 @@ class RulerContoller {
     //create ruler entity
     let aEntity = this.view.createElement("a-entity")
     
-    console.log('rulerData: ', rulerData)
-    
-    //let markingsYOffset = [0, 1, 2, 3, 3.5, 3.7]
-    console.log('rulerDataintervals: ', rulerData['intervals'])
-    let markingsYOffset = rulerData['intervals']
-    
-    let positions = this.setLinePosition(markingsYOffset)
-    let lines = positions['lines']
-    let annotations = positions['annotations']
-    console.log('lines: ', lines)
-    console.log('annotations: ', annotations)
-    
-    let aEntityAttr={}; let textLine='';
-    for(let i=0; i<lines.length; i++){
-      if(i==0){ textLine = 'line'}
-      else{     textLine = 'line__'+(i+1)}
-      aEntityAttr[textLine] = lines[i]
-    }
-    this.view.setAttributes(aEntity, aEntityAttr)
-    
     /*
-    //set attributes of a-entity to create lines
-    let aEntityAttr = {'line': this.setLine(-1.5, 2, -3, 1.5, 2, -3, 'green'),
-                       'text': 'value: Horizon; color: red; ',
-                      'line__2': this.setLine(-1, -2, -3, -1, 2, -3, 'red'),
-                      'line__3': this.setLine(-1.3, -1.7, -3, -1, -1.7, -3, 'red'),
-                      'line__4': this.setLine(-1.3, -1.5, -3, -1, -1.5, -3, 'red'),
-                      'line__5': this.setLine(-1.3, -1, -3, -1, -1, -3, 'red'),
-                      'line__6': this.setLine(-1.3, 0, -3, -1, 0, -3, 'red'),
-                      'line__7': this.setLine(-1.3, 1, -3, -1, 1, -3, 'red'),
-                      'line__8': this.setLine(-1.3, 2, -3, -1, 2, -3, 'red')}
+    //create pre-defined lines
+    let aEntityAttr = setManualAttributes()
     this.view.setAttributes(aEntity, aEntityAttr)
     */
     
-    //add all lines to aCamera
+    //get the positions for lines and annotations
+    console.log('rulerData: ', rulerData)
+    let markingsYOffset = rulerData['intervals']
+    let positions = this.setLinePosition(markingsYOffset)
+    console.log('line positions:' , positions)
+    
+    //let lines = positions['lines']
+    //let annotations = positions['annotations']
+    //console.log('lines: ', lines)
+    //console.log('annotations: ', annotations)
+    
+    /create lines
+    let aEntityAttr = createLines(positions['lines'])
+    this.view.setAttributes(aEntity, aEntityAttr)
+    
+    //add lines to aCamera
     this.view.appendChild(aCamera, aEntity)
     
-    //create new a-entity to add text
+    //create new a-entity to add horizon text
+    //TODO get position from line
+    console.log(positions['lines'][0])
     aEntity = this.view.createElement("a-text")
     aEntityAttr = {'id': 'text',
                    'value': 'Horizon', 
@@ -73,32 +62,8 @@ class RulerContoller {
     this.view.appendChild(aCamera, aEntity)
     
     
-    
     //create new a-entity to add annotations to ruker markings
-    //let aEntityAttributes = []
-    for(let i=0; i<annotations.length; i++)
-    {
-      aEntity = this.view.createElement("a-text")
-    
-      console.log('annotation:', annotations[i])
-      let markingPosition = '' + annotations[i]['x'] + ' ' + annotations[i]['y'] + ' ' +  annotations[i]['z']
-      console.log('markingPosition:', markingPosition)
-      console.log('distance',i,':', rulerData['distances'][i])
-      
-      aEntityAttr = {'id': 'text',
-                     'value': rulerData['distances'][i], 
-                     'scale': '0.5 0.5 0.5',
-                     'position': markingPosition
-                     }
-      //aEntityAttributes[i] = aEntityAttr
-      console.log('aEntityAttr: ', aEntityAttr)
-      this.view.setAttributes(aEntity, aEntityAttr)
-      this.view.appendChild(aCamera, aEntity)
-    }
-    
-    
-    //<a-text id="text" value="This content will always face you." look-at="[gps-camera]" scale="120 120 120" gps-entity-place="latitude: 53.22597071349516; longitude:  -4.127555930547311;"></a-text>
-      
+    createAnnotations(positions['annotations'], aEntity, aEntityAttr)
     
   }
   
@@ -142,8 +107,49 @@ class RulerContoller {
     return {'lines':lines, 'annotations':annotations}
   }
   
+  createLines(lines) {
+    let aEntityAttr={}; let textLine='';
+    for(let i=0; i<lines.length; i++){
+      if(i==0){ textLine = 'line'}
+      else{     textLine = 'line__'+(i+1)}
+      aEntityAttr[textLine] = lines[i]
+    }
+    return aEntityAttr
+  }
+  
+  createAnnotations(annotations, aEntity, aEntityAttr) {
+    for(let i=0; i<annotations.length; i++)
+    {
+      aEntity = this.view.createElement("a-text")
+    
+      let markingPosition = '' + annotations[i]['x'] + ' ' + annotations[i]['y'] + ' ' +  annotations[i]['z']
+      
+      aEntityAttr = {'id': 'text',
+                     'value': rulerData['distances'][i], 
+                     'scale': '0.5 0.5 0.5',
+                     'position': markingPosition
+                     }
+      console.log('aEntityAttr: ', aEntityAttr)
+      this.view.setAttributes(aEntity, aEntityAttr)
+      this.view.appendChild(aCamera, aEntity)
+    }
+  }
   
   
+  setManualAttributes() {
+    //set attributes of a-entity to create lines
+    let aEntityAttr = {'line': this.setLine(-1.5, 2, -3, 1.5, 2, -3, 'green'),
+                       'text': 'value: Horizon; color: red; ',
+                      'line__2': this.setLine(-1, -2, -3, -1, 2, -3, 'red'),
+                      'line__3': this.setLine(-1.3, -1.7, -3, -1, -1.7, -3, 'red'),
+                      'line__4': this.setLine(-1.3, -1.5, -3, -1, -1.5, -3, 'red'),
+                      'line__5': this.setLine(-1.3, -1, -3, -1, -1, -3, 'red'),
+                      'line__6': this.setLine(-1.3, 0, -3, -1, 0, -3, 'red'),
+                      'line__7': this.setLine(-1.3, 1, -3, -1, 1, -3, 'red'),
+                      'line__8': this.setLine(-1.3, 2, -3, -1, 2, -3, 'red')}
+    
+    return aEntityAttr
+  }
   
   setLine(x1, y1, z1, x2, y2, z2, color) {
     /** set the attributes for the a-entity lines 
