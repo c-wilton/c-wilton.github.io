@@ -8,7 +8,7 @@ function geoFindMe() {
     mapLink.href = '';
     mapLink.textContent = '';
       
-    function getDistance(pos1, pos2, alt1){
+    function getDistance(pos1, pos2, alt){
         /** 
         * Prints the distance between 2 positions 
         * @param pos1 the first position
