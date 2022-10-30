@@ -42,7 +42,7 @@ class RulerContoller {
     //console.log('lines: ', lines)
     //console.log('annotations: ', annotations)
     
-    /create lines
+    //create lines
     let aEntityAttr = createLines(positions['lines'])
     this.view.setAttributes(aEntity, aEntityAttr)
     
