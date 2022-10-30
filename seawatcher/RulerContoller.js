@@ -63,7 +63,7 @@ class RulerContoller {
     
     
     //create new a-entity to add annotations to ruker markings
-    this.createAnnotations(positions['annotations'], aEntity, aEntityAttr)
+    this.createAnnotations(positions['annotations'], rulerData['distances'], aEntity, aEntityAttr)
     
   }
   
@@ -117,7 +117,7 @@ class RulerContoller {
     return aEntityAttr
   }
   
-  createAnnotations(annotations, aEntity, aEntityAttr) {
+  createAnnotations(annotations, distances, aEntity, aEntityAttr) {
     for(let i=0; i<annotations.length; i++)
     {
       aEntity = this.view.createElement("a-text")
@@ -125,7 +125,7 @@ class RulerContoller {
       let markingPosition = '' + annotations[i]['x'] + ' ' + annotations[i]['y'] + ' ' +  annotations[i]['z']
       
       aEntityAttr = {'id': 'text',
-                     'value': rulerData['distances'][i], 
+                     'value': distances[i], 
                      'scale': '0.5 0.5 0.5',
                      'position': markingPosition
                      }
