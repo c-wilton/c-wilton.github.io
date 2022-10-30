@@ -126,7 +126,7 @@ class RulerContoller {
       
       aEntityAttr = {'id': 'text',
                      'value': distances[i], 
-                     'scale': '1 1 1',
+                     'scale': '0.75 0.75 0.75',
                      'position': markingPosition
                      }
       console.log('aEntityAttr: ', aEntityAttr)
