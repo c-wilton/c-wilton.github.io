@@ -66,7 +66,7 @@ class RulerContoller {
     aEntity = this.view.createElement("a-text")
     aEntityAttr = {'id': 'text',
                    'value': 'Horizon', 
-                   'scale': '1 1 1',
+                   'scale': '0.5 0.5 0.5',
                    'position': '1.5 2 -3'
                    }
     this.view.setAttributes(aEntity, aEntityAttr)
@@ -131,7 +131,7 @@ class RulerContoller {
         x1=xOrigin+markingXOffset,  y1=yOrigin-markingsYOffset[i-2],  z1=z, 
         x2=xOrigin+rulerXOffset,    y2=yOrigin-markingsYOffset[i-2],  z2=z
         color='red'
-        annotations[i-2] = {'x':xOrigin, 'y':y1, 'z':z}
+        annotations[i-2] = {'x':xOrigin-0.5, 'y':y1, 'z':z}
       }
       
       let lineStart = 'start: ' + x1 + ' ' + y1 + ' ' + z1 + '; '
