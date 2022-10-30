@@ -43,7 +43,7 @@ class RulerContoller {
     //console.log('annotations: ', annotations)
     
     //create lines
-    let aEntityAttr = createLines(positions['lines'])
+    let aEntityAttr = this.createLines(positions['lines'])
     this.view.setAttributes(aEntity, aEntityAttr)
     
     //add lines to aCamera
@@ -63,7 +63,7 @@ class RulerContoller {
     
     
     //create new a-entity to add annotations to ruker markings
-    createAnnotations(positions['annotations'], aEntity, aEntityAttr)
+    this.createAnnotations(positions['annotations'], aEntity, aEntityAttr)
     
   }
   
