@@ -22,7 +22,7 @@ class RulerModel {
       */
     this.#armLength = 5
     this.#personHeight = 1.675
-    this.#altitude = 5
+    this.#altitude = 20
     this.setDistances()
     this.setIntervals()
   }
