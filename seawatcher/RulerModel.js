@@ -20,7 +20,7 @@ class RulerModel {
     /** Set armLength, personHeight and altitude to pre-defined values.
       * call other methods to set the values for distances and intervals.
       */
-    this.#armLength = 20
+    this.#armLength = 70
     this.#personHeight = 1.675
     this.#altitude = 18.325
     this.setDistances()
