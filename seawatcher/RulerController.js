@@ -61,12 +61,12 @@ class RulerContoller {
     this.view.setAttributes(aEntity, aEntityAttr)
     this.view.appendChild(aCamera, aEntity)
     
-    //annotate 
+    //annotate key
     aEntity = this.view.createElement("a-text")
     aEntityAttr = {'id': 'text',
                    'value': 'Distance (m)', 
-                   'scale': '1 1 1',
-                   'position': '-1.5 2 -3'
+                   'scale': '0.5 0.5 0.5',
+                   'position': '-1.5 2.1 -3'
                    }
     this.view.setAttributes(aEntity, aEntityAttr)
     this.view.appendChild(aCamera, aEntity)
