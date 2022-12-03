@@ -22,5 +22,4 @@ It prints the findings to the console. docHeight/50 is approximately equal to th
 RulerController retrieves data from the RulerModel and uses the view.js to load the a-frame ruler onto the camera view.
 
 NOTE: 
-Not all elements are linked yet, for example, the ruler markings are loaded manually and are not yet loaded using the data from the rulerModel.
-But have implemented it with this in mind, by the use of functions and the MVC method.  
+Not the findings from the device model has not yet been linked to adjust the ruler accordingly.
