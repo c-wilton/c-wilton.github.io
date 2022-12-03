@@ -24,7 +24,7 @@ RulerController retrieves data from the RulerModel and uses the view.js to load 
 NOTE: 
 The findings from the device model has not yet been linked to adjust the ruler accordingly.
 
-UPDATES:
+UPDATES: (do not commit until after feedback/graduation)
 - loop created to wait for geoloctaion result
 - added code to send retrieved altitude to ruler model and updated intervals
 
