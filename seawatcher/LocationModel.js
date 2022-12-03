@@ -5,6 +5,7 @@ class LocationModel {
   #longitude
   #location
   #altitude
+  #isSet
   
   constructor() {
     /** sets the location to default values, then attempts to retrieve device location */
@@ -12,7 +13,10 @@ class LocationModel {
     /* set default location */
     this.setLocation(53.225589, -4.127876, 20)
     /* get Geolocation */
+    this.#isSet = false
     this.getGeoLocation()
+    this.checkFlag()
+    console.log('flag = ', this.#isSet, altitude = ', #this.altitude)
   }
   
   setLocation(lat, long, alt){
@@ -54,12 +58,14 @@ class LocationModel {
     
     console.log('place: ', place)
     console.log('altitude', altitude)
+    this.#isSet = true
     return place
   }
   
   error() {
     /** display message if geolocation failed */
     console.log("Location error")
+    this.#isSet = true
   }
   
   getGeoLocation() {
@@ -73,6 +79,12 @@ class LocationModel {
       let position = navigator.geolocation.getCurrentPosition(this.success, this.error);
       console.log('getGeo pos: ', position)
     } 
+  }
+  
+  checkFlag(){
+    if(this.#isSet == false){
+      window.timeout(this.checkFlag, 1000)
+    }
   }
   
 }
