@@ -31,6 +31,7 @@ class RulerModel {
   
   setEyeHeight(deviceHeight){
     this.eyeHeight = deviceHeight
+    this.setIntervals()
   }
   
   setDistances() {
