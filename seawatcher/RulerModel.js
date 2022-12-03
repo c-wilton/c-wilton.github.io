@@ -15,6 +15,7 @@ class RulerModel {
   #armLength
   #personHeight
   #altitude
+  #eyeHeight
   
   constructor() {
     /** Set armLength, personHeight and altitude to pre-defined values.
@@ -23,8 +24,13 @@ class RulerModel {
     this.#armLength = 70
     this.#personHeight = 1.675
     this.#altitude = 18.325
+    this.#eyeHeight = this.#personHeight + this.#altitude
     this.setDistances()
     this.setIntervals()
+  }
+  
+  setEyeHeight(deviceHeight){
+    this.eyeHeight = deviceHeight
   }
   
   setDistances() {
@@ -68,7 +74,7 @@ class RulerModel {
     /** Uses the range finder technique to calculate the intervals for each element in distances */
     
     //calculate total height and visual horizon needed for the calculation
-    let totalHeight = this.#personHeight + this.#altitude
+    let totalHeight = this.#eyeHeight
     let visualHorizon = 3838 * (totalHeight ** 0.5)
     
     //formula to calculate an itnerval
