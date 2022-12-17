@@ -22,4 +22,13 @@ It prints the findings to the console. docHeight/50 is approximately equal to th
 RulerController retrieves data from the RulerModel and uses the view.js to load the a-frame ruler onto the camera view.
 
 NOTE: 
-Not the findings from the device model has not yet been linked to adjust the ruler accordingly.
+The findings from the device model has not yet been linked to adjust the ruler accordingly.
+
+UPDATES: (do not commit until after feedback/graduation)
+- loop created to wait for geoloctaion result
+- added code to send retrieved altitude to ruler model and updated intervals
+
+TOODO:
+- add code to handle null altitude
+- add code to link device model and adjust ruler
+- look into arm length

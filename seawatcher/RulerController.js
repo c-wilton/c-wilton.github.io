@@ -7,8 +7,13 @@ class RulerContoller {
     /** Initialises the model and view and create a ruler */
     this.view = view
     this.rulerModel = rulerModel
+    
+    //get device height and send it to ruler model
     this.locationModel = locationModel
-    this.getLocation()
+    let deviceHeight = this.getLocation()
+    this.rulerModel.setEyeHeight(deviceHeight)
+    
+    //create ruler
     let rulerData = this.retrieveRulerData()
     this.createRuler(rulerData)
     
@@ -201,7 +206,8 @@ class RulerContoller {
   
   getLocation(){
     let position = this.locationModel.getLocation()
-    console.log('RulerController\n', 'latitude: ', position.latitude, '\tlongitude: ', position.longitude, '\taltitude: ', position.altitude,)
+    console.log('RulerController\n', 'latitude: ', position.latitude, '\tlongitude: ', position.longitude, '\taltitude: ', position.altitude)
+    return position.altitude
   }
 }
 
