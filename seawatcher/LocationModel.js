@@ -16,7 +16,7 @@ class LocationModel {
     this.isSet = false
     this.getGeoLocation()
     this.checkFlag()
-    console.log('flag = ', this.#isSet, ' altitude = ', this.#altitude)
+    console.log('flag = ', this.isSet, ' altitude = ', this.#altitude)
   }
   
   setLocation(lat, long, alt){
