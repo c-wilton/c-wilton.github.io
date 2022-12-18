@@ -83,8 +83,8 @@ class LocationModel {
   
   checkFlag(){
     if(this.#isSet == false){
-      setTimeout(this.#isSet, 5000)
-      //window.timeout(this.isSet, 1000)
+      setTimeout(this.#checkFlag, 5000)
+      //window.timeout(this.checkFlag, 1000)
     }
   }
   
