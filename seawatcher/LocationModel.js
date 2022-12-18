@@ -58,7 +58,9 @@ class LocationModel {
     
     console.log('place: ', place)
     console.log('altitude', altitude)
-    console.log('isSet', isSet, 'this.isSet', this.isSet, 'this.#isSet', this.#isSet)
+    console.log('isSet', isSet)
+    console.log('this.isSet', this.isSet)
+    console.log('this.#isSet', this.#isSet)
     this.#isSet = true
     return place
   }
