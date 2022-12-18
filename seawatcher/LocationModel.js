@@ -79,9 +79,9 @@ class LocationModel {
       let position = navigator.geolocation.getCurrentPosition(this.success, this.error);
       console.log('getGeo pos: ', position)
       
-      console.log('isSet', isSet)
+      //console.log('isSet', isSet)
       //console.log('this.isSet', this.isSet)
-      //console.log('this.#isSet', this.#isSet)
+      console.log('this.#isSet', this.#isSet)
       this.isSet = true
     
     } 
