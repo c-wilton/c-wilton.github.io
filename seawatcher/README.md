@@ -29,6 +29,8 @@ UPDATES: (do not commit until after feedback/graduation)
 - added code to send retrieved altitude to ruler model and updated intervals
 
 TOODO:
+- save geolocation as location.
+- fix loop
 - add code to handle null altitude
 - add code to link device model and adjust ruler
 - look into arm length
