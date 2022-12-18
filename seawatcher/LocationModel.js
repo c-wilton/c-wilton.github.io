@@ -55,6 +55,9 @@ class LocationModel {
     
     /* print the location to the console */
     let place = 'latitude: ' + latitude + ': longitude: ' + longitude
+    console.log('place: ', place)
+    console.log('altitude', altitude)
+      
     
     return place
   }
@@ -76,8 +79,6 @@ class LocationModel {
       let position = navigator.geolocation.getCurrentPosition(this.success, this.error);
       console.log('getGeo pos: ', position)
       
-      console.log('place: ', place)
-      console.log('altitude', altitude)
       console.log('isSet', isSet)
       //console.log('this.isSet', this.isSet)
       //console.log('this.#isSet', this.#isSet)
