@@ -20,7 +20,11 @@ class LocationModel {
   }
   
   setLocation(lat, long, alt){
-    /** Sets the location to passed in values */
+    /** Sets the location to passed in values 
+      * @param lat a latitude of a location
+      * @param long a longitude of a location
+      * @param alt an altitude of a location
+    */
     if(checkVar(lat)){ this.#latitude = lat }
     if(checkVar(long)){ this.#longitude = long }
     if(checkVar(alt)){ this.#altitude = alt } 
