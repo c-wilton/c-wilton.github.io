@@ -21,12 +21,23 @@ class LocationModel {
   
   setLocation(lat, long, alt){
     /** Sets the location to passed in values */
-    this.#latitude = lat
-    this.#longitude = long
-    this.#altitude = alt 
+    if(checkVar(lat)){ this.#latitude = lat }
+    if(checkVar(long)){ this.#longitude = long }
+    if(checkVar(alt)){ this.#altitude = alt } 
     
     this.#location = {latitude: this.#latitude, longitude: this.#longitude, altitude: this.#altitude};
     console.log('lat: ', this.#latitude, '; long: ', this.#longitude, 'alt: ', this.#altitude, '; loc: ', this.#location)
+  }
+  
+  checkVar(var){
+    /** Returns true if var is not null
+      * @param var a variable or object which needs checking
+      * @returns notNull a boolean indicating if the variable is not null
+    */
+    notNull = false
+    if(var != null){ notNull = true }
+    console.log(var, ' ', notNull)
+    return notNull
   }
   
   getLocation(){
