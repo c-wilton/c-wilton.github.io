@@ -89,6 +89,8 @@ class LocationModel {
       console.log('getGeo pos: ', position)
       console.log('type: ', position != null)
       
+      //while position == null -> wait
+      //if position != null -> let lat, long, alt = pos lat long alt; setLocation(lat, long, alt)
       window.setTimeout(this.checkFlag, 50000)
       
       console.log('step1: isSet: ', isSet) 
