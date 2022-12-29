@@ -39,7 +39,7 @@ class LocationModel {
       * @param item a variable or object which needs checking
       * @returns notNull a boolean indicating if the item is not null
     */
-    notNull = false
+    let notNull = false
     if(item != null){ notNull = true }
     console.log(item, ' ', notNull)
     return notNull
