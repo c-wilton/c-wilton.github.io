@@ -5,7 +5,6 @@ class LocationModel {
   #longitude
   #location
   #altitude
-  #isSet
   
   constructor() {
     /** sets the location to default values, then attempts to retrieve device location */
@@ -13,10 +12,7 @@ class LocationModel {
     /* set default location */
     this.setLocation(53.225589, -4.127876, 20)
     /* get Geolocation */
-    this.#isSet = false
     this.getGeoLocation()
-    this.checkFlag()
-    console.log('flag = ', this.#isSet, ' altitude = ', this.#altitude)
   }
   
   setLocation(lat, long, alt){
@@ -28,7 +24,7 @@ class LocationModel {
     if(this.checkVar(lat)){ this.#latitude = lat }
     if(this.checkVar(long)){ this.#longitude = long }
     if(this.checkVar(alt)){ this.#altitude = alt } 
-    console.log('!lat', !lat)
+    //console.log('!lat', !lat)
     
     this.#location = {latitude: this.#latitude, longitude: this.#longitude, altitude: this.#altitude};
     console.log('lat: ', this.#latitude, '; long: ', this.#longitude, 'alt: ', this.#altitude, '; loc: ', this.#location)
@@ -62,26 +58,17 @@ class LocationModel {
     const longitude = position.coords.longitude;
     const altitude = position.coords.altitude;
     
-    /*this.#latitude = latitude;
-    this.#longitude = longitude;
-    this.#altitude = altitude;
-    this.#location = {latitude: this.#latitude, longitude: this.#longitude, altitude: this.#altitude};
-    */
-    /* this.setLocation(latitude, longitude, altitude) */
-    
     /* print the location to the console */
-    let place = 'latitude: ' + latitude + ': longitude: ' + longitude
+    let place = 'latitude: ' + latitude + '; longitude: ' + longitude + '; altitude: ' + altitude
     console.log('place: ', place)
     console.log('altitude', altitude)
       
-    
     return place
   }
   
   error() {
     /** display message if geolocation failed */
     console.log("Location error")
-    this.#isSet = true
   }
   
   getGeoLocation() {
@@ -92,14 +79,21 @@ class LocationModel {
       console.log("Location not supported")
     } else {
       /* if geolocation is supported, get the device location */
+      
+      //geolocation is async
+      let isSet = false
+      
       let position = navigator.geolocation.getCurrentPosition(this.success, this.error);
+      
+      console.log('step1: isSet: ', isSet) 
       console.log('getGeo pos: ', position)
       
-      //console.log('isSet', isSet)
-      //console.log('this.isSet', this.isSet)
-      console.log('this.#isSet', this.#isSet)
-      this.isSet = true
-    
+      window.setTimeout(checkFlag, 5000)
+      
+      console.log('step1: isSet: ', isSet) 
+      console.log('getGeo pos: ', position)
+      
+      
     } 
   }
   
