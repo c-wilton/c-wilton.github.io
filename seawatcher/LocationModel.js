@@ -101,7 +101,7 @@ class LocationModel {
     //if(this.#isSet == false){
       //window.setTimeout(checkFlag, 5000)
       //window.timeout(checkFlag, 1000)
-    }
+    //}
   }
   
 }
