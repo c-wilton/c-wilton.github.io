@@ -25,9 +25,9 @@ class LocationModel {
       * @param long a longitude of a location
       * @param alt an altitude of a location
     */
-    if(checkVar(lat)){ this.#latitude = lat }
-    if(checkVar(long)){ this.#longitude = long }
-    if(checkVar(alt)){ this.#altitude = alt } 
+    if(this.checkVar(lat)){ this.#latitude = lat }
+    if(this.checkVar(long)){ this.#longitude = long }
+    if(this.checkVar(alt)){ this.#altitude = alt } 
     console.log('!lat', !lat)
     
     this.#location = {latitude: this.#latitude, longitude: this.#longitude, altitude: this.#altitude};
