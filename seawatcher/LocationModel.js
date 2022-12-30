@@ -93,6 +93,7 @@ class LocationModel {
         if(counter >= 10){
           break
         }
+        counter += 1
       }
       
       /*
