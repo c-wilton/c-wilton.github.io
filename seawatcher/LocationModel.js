@@ -81,54 +81,10 @@ class LocationModel {
       /* if geolocation is supported, get the device location */
       
       //geolocation is async
-      let isSet = false
       
       let position = navigator.geolocation.getCurrentPosition(this.success, this.error);
       
-      let counter = 0
-      console.log('getGeo pos: ', position)
-      while(position == null){
-        console.log('getGeo pos: ', position)
-        window.setTimeout(this.checkFlag, 5000, position)
-        if(counter >= 10){
-          break
-        }
-        counter += 1
-      }
-      
-      /*
-      isSet = checkFlag(position)
-      console.log('step1: isSet: ', isSet) 
-      console.log('getGeo pos: ', position)
-      console.log('type: ', position != null)
-      
-      //while position == null -> wait
-      //if position != null -> let lat, long, alt = pos lat long alt; setLocation(lat, long, alt)
-      window.setTimeout(this.checkFlag, 50000)
-      */
-      console.log('step1: isSet: ', isSet) 
-      console.log('getGeo pos: ', position)
-      
-      
     } 
-  }
-  
-  checkFlag(pos){
-    console.log(pos)
-    /*
-    position = pos
-    isSet = flag
-    if(position == null){
-      console.log('null')
-      window.setTimeout(checkFlag, 5000, position)
-    } else {
-      console.log('isSet: ', isSet)
-    }
-    */
-    //if(this.#isSet == false){
-      //window.setTimeout(checkFlag, 5000)
-      //window.timeout(checkFlag, 1000)
-    //}
   }
   
 }
