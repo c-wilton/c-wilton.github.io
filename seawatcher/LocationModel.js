@@ -85,6 +85,12 @@ class LocationModel {
       
       let position = navigator.geolocation.getCurrentPosition(this.success, this.error);
       
+      while(position == null){
+        window.setTimeout(this.checkFlag, 5000, position)
+      }
+      
+      /*
+      isSet = checkFlag(position)
       console.log('step1: isSet: ', isSet) 
       console.log('getGeo pos: ', position)
       console.log('type: ', position != null)
@@ -92,7 +98,7 @@ class LocationModel {
       //while position == null -> wait
       //if position != null -> let lat, long, alt = pos lat long alt; setLocation(lat, long, alt)
       window.setTimeout(this.checkFlag, 50000)
-      
+      */
       console.log('step1: isSet: ', isSet) 
       console.log('getGeo pos: ', position)
       
@@ -100,7 +106,18 @@ class LocationModel {
     } 
   }
   
-  checkFlag(){
+  checkFlag(pos){
+    console.log(pos)
+    /*
+    position = pos
+    isSet = flag
+    if(position == null){
+      console.log('null')
+      window.setTimeout(checkFlag, 5000, position)
+    } else {
+      console.log('isSet: ', isSet)
+    }
+    */
     //if(this.#isSet == false){
       //window.setTimeout(checkFlag, 5000)
       //window.timeout(checkFlag, 1000)
