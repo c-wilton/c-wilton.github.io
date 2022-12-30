@@ -85,7 +85,9 @@ class LocationModel {
       
       let position = navigator.geolocation.getCurrentPosition(this.success, this.error);
       
+      console.log('getGeo pos: ', position)
       while(position == null){
+        console.log('getGeo pos: ', position)
         window.setTimeout(this.checkFlag, 5000, position)
       }
       
