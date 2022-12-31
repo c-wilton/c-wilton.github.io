@@ -34,8 +34,9 @@ class DeviceModel {
     /* reformat formula calculate needed docHeight given cm */
     console.log(4.6, 'cm = docHeight of ', 4.6 * 50)
     
-    return docHeight
+    let docHeightRatio = 50
+    return docHeightRatio
   }
 }
 
-device = new DeviceModel()
+//device = new DeviceModel()
