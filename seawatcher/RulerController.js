@@ -3,10 +3,11 @@ class RulerContoller {
     * Uses the View class to load this data to manipulate the elements on the webpage 
     */
   
-  constructor(view, rulerModel, locationModel) {
+  constructor(view, rulerModel, locationModel, deviceModel) {
     /** Initialises the model and view and create a ruler */
     this.view = view
     this.rulerModel = rulerModel
+    this.deviceModel = deviceModel
     
     //get device height and send it to ruler model
     this.locationModel = locationModel
@@ -211,4 +212,4 @@ class RulerContoller {
   }
 }
 
-controller = new RulerContoller(new View(), new RulerModel(), new LocationModel() )
+controller = new RulerContoller(new View(), new RulerModel(), new LocationModel(), new DeviceModel() )
