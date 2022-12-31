@@ -39,4 +39,4 @@ class DeviceModel {
   }
 }
 
-device = new DeviceModel()
+//device = new DeviceModel()
