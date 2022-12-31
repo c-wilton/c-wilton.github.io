@@ -11,6 +11,7 @@ class RulerContoller {
     //get device height and send it to ruler model
     this.locationModel = locationModel
     let deviceHeight = this.getLocation()
+    console.log('Ruler Controller - deviceHeight: ', deviceHeight)
     this.rulerModel.setEyeHeight(deviceHeight)
     
     //create ruler
