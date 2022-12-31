@@ -1,7 +1,7 @@
 class DeviceModel {
   
   constructor(){
-    let height = this.getDeviceHeight()
+    let height = 0
   }
   
   getDeviceHeight(){
