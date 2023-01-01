@@ -28,7 +28,7 @@ class RulerModel {
     this.setDistances()
     this.setIntervals()
     console.log('Constructor intervals: ', this.#intervals)
-    console.log('Constructor getIntervals: ', getIntervals())
+    console.log('Constructor getIntervals: ', this.getIntervals())
   }
   
   setEyeHeight(deviceHeight){
@@ -38,7 +38,7 @@ class RulerModel {
   
   setRatio(ratio) {
     console.log('setRatio intervals: ', this.#intervals)
-    console.log('setRatio getIntervals: ', getIntervals())
+    console.log('setRatio getIntervals: ', this.getIntervals())
     
     for(var i=0; i<this.#intervals.length; i++){
       console.log('calcInt[', i, ']: ', this.#intervals[i] )
@@ -57,7 +57,7 @@ class RulerModel {
     }
     
     console.log('setRatio intervals: ', this.#intervals)
-    console.log('setRatio getIntervals: ', getIntervals())
+    console.log('setRatio getIntervals: ', this.getIntervals())
     
   }
   
@@ -73,12 +73,12 @@ class RulerModel {
     //console.log('Setting internvals')
     
     console.log('setIntervals intervals: ', this.#intervals)
-    console.log('setIntervals getIntervals: ', getIntervals())
+    console.log('setIntervals getIntervals: ', this.getIntervals())
     
     this.calcIntervals()
     
     console.log('setIntervals intervals: ', this.#intervals)
-    console.log('setIntervals getIntervals: ', getIntervals())
+    console.log('setIntervals getIntervals: ', this.getIntervals())
     
   }
   
