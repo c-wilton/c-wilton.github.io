@@ -19,7 +19,7 @@ class RulerContoller {
     this.rulerModel.setEyeHeight(deviceHeight)
     
     //create ruler at new altitude
-    let rulerData = this.retrieveRulerData()
+    rulerData = this.retrieveRulerData()
     this.createRuler(rulerData)
     
     this.updateRuler()
@@ -27,7 +27,7 @@ class RulerContoller {
   
   updateRuler(){
     let deviceModelRatio = this.deviceModel.getDeviceHeight()
-    this.rulerModel.setRatio(deviceModelRatio)
+    this.rulerModel.setRatio(deviceModelRatio, rulerData['intervals'])
     let rulerData = this.retrieveRulerData()
     this.createRuler(rulerData)
   }
