@@ -24,7 +24,7 @@ class RulerContoller {
   updateRuler(){
     let deviceModelRatio = this.deviceModel.getDeviceHeight()
     this.rulerModel.setRatio(deviceModelRatio)
-    rulerData = this.retrieveRulerData()
+    let rulerData = this.retrieveRulerData()
     this.createRuler(rulerData)
   }
   
