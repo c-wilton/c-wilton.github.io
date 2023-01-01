@@ -32,7 +32,7 @@ class RulerModel {
   }
   
   setEyeHeight(deviceHeight){
-    this.eyeHeight = deviceHeight
+    this.#eyeHeight = deviceHeight
     this.setIntervals()
   }
   
@@ -85,6 +85,8 @@ class RulerModel {
     console.log('setIntervals intervals: ', this.#intervals)
     console.log('setIntervals getIntervals: ', this.getIntervals())
     
+    console,log('setIntervals eyeHeight: ', this.#eyeHeight)
+    
     this.calcIntervals()
     
     console.log('setIntervals intervals: ', this.#intervals)
@@ -120,6 +122,7 @@ class RulerModel {
     /** Uses the range finder technique to calculate the intervals for each element in distances */
     
     //calculate total height and visual horizon needed for the calculation
+    console,log('calcIntervals eyeHeight: ', this.#eyeHeight)
     let totalHeight = this.#eyeHeight
     let visualHorizon = 3838 * (totalHeight ** 0.5)
     
