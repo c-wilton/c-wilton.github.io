@@ -27,8 +27,6 @@ class RulerModel {
     this.#eyeHeight = this.#personHeight + this.#altitude
     this.setDistances()
     this.setIntervals()
-    console.log('Constructor intervals: ', this.#intervals)
-    console.log('Constructor getIntervals: ', this.getIntervals())
   }
   
   setEyeHeight(deviceHeight){
@@ -47,18 +45,19 @@ class RulerModel {
     console.log('setRatio rulerDataIntervals: ', rulerDataIntervals)
     
     for(var i=0; i<this.#intervals.length; i++){
-      console.log('rulerDataIntervals[', i, ']: ', rulerDataIntervals[i] )
+      //console.log('rulerDataIntervals[', i, ']: ', rulerDataIntervals[i] )
       let temp = rulerDataIntervals[i] * ratio
       this.#intervals[i] = temp
-      console.log('temp: ', temp, ' calcInt[', i, ']: ', this.#intervals[i] )
+      //console.log('temp: ', temp, ' calcInt[', i, ']: ', this.#intervals[i] )
     }
     
+    /*
     for(var i=0; i<this.#intervals.length; i++){
       console.log('calcInt[', i, ']: ', this.#intervals[i] )
     }
+    */
     
     console.log('setRatio intervals: ', this.#intervals)
-    console.log('setRatio getIntervals: ', this.getIntervals())
     
   }
   
@@ -76,15 +75,11 @@ class RulerModel {
     console.log('setIntervals(): ', this.#intervals)
     //console.log('Setting internvals')
     
-    console.log('setIntervals intervals: ', this.#intervals)
-    console.log('setIntervals getIntervals: ', this.getIntervals())
-    
     console.log('setIntervals eyeHeight: ', this.#eyeHeight)
     
     this.calcIntervals()
     
     console.log('setIntervals intervals: ', this.#intervals)
-    console.log('setIntervals getIntervals: ', this.getIntervals())
     
   }
   
@@ -116,7 +111,6 @@ class RulerModel {
     /** Uses the range finder technique to calculate the intervals for each element in distances */
     
     //calculate total height and visual horizon needed for the calculation
-    console.log('calcIntervals eyeHeight: ', this.#eyeHeight)
     let totalHeight = this.#eyeHeight
     let visualHorizon = 3838 * (totalHeight ** 0.5)
     
