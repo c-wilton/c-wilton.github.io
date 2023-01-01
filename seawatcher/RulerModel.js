@@ -34,6 +34,15 @@ class RulerModel {
     this.setIntervals()
   }
   
+  setRatio(ratio) {
+    console.log('resetting intervals with ratio')
+    for(var i=0; i<this.#intervals.length; i++){
+      this.#intervals[i] = this.#intervals[i] * ratio
+      console.log('calcInt[', i, ']: ', this.#intervals[i] )
+    }
+    
+  }
+  
   setDistances() {
     /** Sets the distances to pre-defined values */
     this.#distances = [100, 200, 300, 500, 1000, 5000, 10000]
