@@ -38,7 +38,7 @@ class RulerModel {
     console.log('resetting intervals with ratio', ratio)
     for(var i=0; i<this.#intervals.length; i++){
       console.log('calcInt[', i, ']: ', this.#intervals[i] )
-      temp = this.#intervals[i] * ratio
+      let temp = this.#intervals[i] * ratio
       this.#intervals[i] = temp
       console.log('temp: ', temp, ' calcInt[', i, ']: ', this.#intervals[i] )
     }
