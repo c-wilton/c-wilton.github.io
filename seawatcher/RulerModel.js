@@ -44,6 +44,10 @@ class RulerModel {
       console.log('temp: ', temp, ' calcInt[', i, ']: ', this.#intervals[i] )
     }
     
+    for(var i=0; i<this.#intervals.length; i++){
+      console.log(calcInt[', i, ']: ', this.#intervals[i] )
+    }
+    
   }
   
   setDistances() {
