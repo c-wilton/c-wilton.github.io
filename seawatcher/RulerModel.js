@@ -71,7 +71,10 @@ class RulerModel {
   
   setIntervals() {
     /** Creates an array to store the intervals and calls the method to set them */
+    this.#intervals = null
+    console.log('setIntervals(): ', this.#intervals)
     this.#intervals = new Array(this.#distances.length)
+    console.log('setIntervals(): ', this.#intervals)
     //console.log('Setting internvals')
     
     console.log('setIntervals intervals: ', this.#intervals)
