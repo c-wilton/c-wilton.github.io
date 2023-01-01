@@ -85,6 +85,8 @@ class RulerModel {
     console.log('setIntervals intervals: ', this.#intervals)
     console.log('setIntervals getIntervals: ', this.getIntervals())
     
+    console,log('setIntervals eyeHeight: ', this.#eyeHeight)
+    
     this.calcIntervals()
     
     console.log('setIntervals intervals: ', this.#intervals)
