@@ -41,7 +41,7 @@ class RulerModel {
     console.log('setRatio getIntervals: ', this.getIntervals())
     
     for(var i=0; i<this.#intervals.length; i++){
-      console.log('calcInt[', i, ']: ', this.#intervals[i] )
+      console.log('calcInt[', i, ']: ', this.#intervals[i][i] )
     }
     
     console.log('resetting intervals with ratio', ratio)
