@@ -32,7 +32,7 @@ class RulerModel {
   }
   
   setEyeHeight(deviceHeight){
-    this.eyeHeight = deviceHeight
+    this.#eyeHeight = deviceHeight
     this.setIntervals()
   }
   
