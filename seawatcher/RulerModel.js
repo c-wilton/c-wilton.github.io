@@ -38,6 +38,11 @@ class RulerModel {
   
   setRatio(ratio, rulerDataIntervals) {
     
+    this.#intervals = null
+    console.log('setIntervals(): ', this.#intervals)
+    this.#intervals = new Array(this.#distances.length)
+    console.log('setRatio(): ', this.#intervals)
+    
     console.log('setRatio intervals: ', this.#intervals)
     console.log('setRatio getIntervals: ', this.getIntervals())
     console.log('setRatio rulerDataIntervals: ', rulerDataIntervals)
