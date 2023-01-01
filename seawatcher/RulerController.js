@@ -7,9 +7,10 @@ class RulerContoller {
     /** Initialises the model and view and create a ruler */
     this.view = view
     this.rulerModel = rulerModel
+    this.locationModel = locationModel
+    this.deviceModel = deviceModel
     
     //get device height and send it to ruler model
-    this.locationModel = locationModel
     let deviceHeight = this.getLocation()
     this.rulerModel.setEyeHeight(deviceHeight)
     
@@ -17,8 +18,11 @@ class RulerContoller {
     let rulerData = this.retrieveRulerData()
     this.createRuler(rulerData)
     
-    this.deviceModel = deviceModel
-    let deviceModelRatio = deviceModel.getDeviceHeight()
+    this.updateRuler()
+  }
+  
+  updateRuler(){
+    let deviceModelRatio = this.deviceModel.getDeviceHeight()
     this.rulerModel.setRatio(deviceModelRatio)
     rulerData = this.retrieveRulerData()
     this.createRuler(rulerData)
