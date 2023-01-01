@@ -36,6 +36,7 @@ class RulerModel {
   
   setRatio(ratio) {
     console.log('intervals: ', this.#intervals)
+    console.log('intervals: ', this.getIntervals())
     
     for(var i=0; i<this.#intervals.length; i++){
       console.log('calcInt[', i, ']: ', this.#intervals[i] )
