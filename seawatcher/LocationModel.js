@@ -37,7 +37,7 @@ class LocationModel {
     */
     let notNull = false
     if(item != null){ notNull = true }
-    console.log(item, ' ', notNull)
+    
     return notNull
   }
   
