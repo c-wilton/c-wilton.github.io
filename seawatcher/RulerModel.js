@@ -43,22 +43,12 @@ class RulerModel {
     this.#intervals = new Array(this.#distances.length)
     console.log('setRatio(): ', this.#intervals)
     
-    /*
-    console.log('setRatio intervals: ', this.#intervals)
-    console.log('setRatio getIntervals: ', this.getIntervals())
-    console.log('setRatio rulerDataIntervals: ', rulerDataIntervals)
-    
-    for(var i=0; i<this.#intervals.length; i++){
-      console.log('calcInt[', i, ']: ', this.#intervals[i] )
-    }
-    */
-    
     console.log('resetting intervals with ratio', ratio)
     console.log('setRatio rulerDataIntervals: ', rulerDataIntervals)
     
     for(var i=0; i<this.#intervals.length; i++){
-      console.log('rulerDataIntervals[', i, ']: ', this.rulerDataIntervals[i] )
-      let temp = this.rulerDataIntervals[i] * ratio
+      console.log('rulerDataIntervals[', i, ']: ', rulerDataIntervals[i] )
+      let temp = rulerDataIntervals[i] * ratio
       this.#intervals[i] = temp
       console.log('temp: ', temp, ' calcInt[', i, ']: ', this.#intervals[i] )
     }
