@@ -14,16 +14,20 @@ class RulerContoller {
     let rulerData = this.retrieveRulerData()
     this.createRuler(rulerData)
     
+    /*
     //get device height and send it to ruler model
     let deviceHeight = this.getLocation()
     this.rulerModel.setEyeHeight(deviceHeight)
+    */
     
+    /*
     //create ruler at new altitude
     rulerData = this.retrieveRulerData()
     this.createRuler(rulerData)
     
     //create ruler for device
     this.updateRuler()
+    */
   }
   
   updateRuler(){
