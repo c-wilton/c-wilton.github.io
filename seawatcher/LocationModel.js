@@ -10,7 +10,7 @@ class LocationModel {
     /** sets the location to default values, then attempts to retrieve device location */
     console.log('New Location model')
     /* set default location */
-    this.setLocation(53.225589, -4.127876, 1.8)
+    this.setLocation(53.225589, -4.127876, 20)
     /* get Geolocation */
     this.getGeoLocation()
   }
