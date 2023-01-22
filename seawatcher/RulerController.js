@@ -24,10 +24,10 @@ class RulerContoller {
     //create ruler at new altitude
     rulerData = this.retrieveRulerData()
     this.createRuler(rulerData)
+    */
     
     //create ruler for device
     this.updateRuler()
-    */
   }
   
   updateRuler(){
