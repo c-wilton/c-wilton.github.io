@@ -1,0 +1,23 @@
+.markings {
+    width: 30px;
+    height: 100px;
+    background: blue;
+    display: inline-block;
+  }
+  
+  .line-1 {
+    height: 100px;
+    width: 1px;
+    background: black;
+    display: inline-block;
+  }
+  .line-2 {
+    height: 1px;
+    width: 30px;
+    background: black;
+  }
+  .space {
+    height: 10px;
+    width: 30px;
+    background: white;
+  }
