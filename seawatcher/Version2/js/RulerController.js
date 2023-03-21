@@ -32,3 +32,5 @@ class RulerContoller {
         this.view.appendChild(body, aEntity)
     }
 }  
+
+controller = new RulerContoller(new View()/*, new RulerModel(), new LocationModel(), new DeviceModel()*/ )
