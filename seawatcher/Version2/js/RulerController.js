@@ -35,7 +35,9 @@ class RulerContoller {
         aEntity = this.view.createElement('div')
         aEntityAttr = {'class':'line-1'}
         this.view.setAttributes(aEntity, aEntityAttr)
-        this.view.appendChild(body, aEntity)
+        this.view.appendChild(markings, aEntity)
+        
+        //this.view.appendChild(body, aEntity)
     }
 }  
 
