@@ -11,6 +11,7 @@ class RulerContoller {
         this.locationModel = locationModel
         this.deviceModel = deviceModel
         */
+        this.createLines()
     }
 
     createLines(){
