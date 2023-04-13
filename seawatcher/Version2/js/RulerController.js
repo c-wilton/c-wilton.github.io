@@ -15,12 +15,13 @@ class RulerContoller {
         //get body element
         let this.body = this.view.getElement(1, 'body')
         
+        this.createRuler()
         this.createLines()
     }
     
     createRuler(){
         //create ruler line
-        let ruler = this.view.createElement('div')
+        let this.ruler = this.view.createElement('div')
         let rulerAttr = {'class':'markings'}
         this.view.setAttributes(ruler, rulerAttr)
         this.view.appendChild(this.body, ruler)
