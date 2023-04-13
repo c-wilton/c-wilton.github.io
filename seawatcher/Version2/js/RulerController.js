@@ -11,20 +11,22 @@ class RulerContoller {
         this.locationModel = locationModel
         this.deviceModel = deviceModel
         */
+        
+        //get body element
+        let this.body = this.view.getElement(1, 'body')
+        
         this.createLines()
+    }
+    
+    createRuler(){
+        //create ruler line
+        let ruler = this.view.createElement('div')
+        let rulerAttr = {'class':'markings'}
+        this.view.setAttributes(ruler, rulerAttr)
+        this.view.appendChild(this.body, ruler)
     }
 
     createLines(){
-        
-        //get body element
-        let body = this.view.getElement(1, 'body')
-        
-        //create ruler line
-        let markings = this.view.createElement('div')
-        let markingsAttr = {'class':'markings'}
-        this.view.setAttributes(markings, markingsAttr)
-        this.view.appendChild(body, markings)
-        
         //create marking
         let aEntity = this.view.createElement('div')
         let aEntityAttr = {'class':'line-2'}
