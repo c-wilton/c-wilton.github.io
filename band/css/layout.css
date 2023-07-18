@@ -21,7 +21,7 @@ html, body {
 .batala {
     font-family: 'Batala';
     font-size: 52px;
-    text-transform: uppercase
+    text-transform: uppercase;
 }
 
 
@@ -89,7 +89,7 @@ header nav a {
 
 header nav a.this-page {
     background-color: #ff5050;
-    //color: white
+    //color: white;
 }
 header nav a:hover {
     //background-color: #00E600;
