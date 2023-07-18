@@ -34,8 +34,8 @@ header, footer {
     line-height: 100px;
     width: 100%;
     margin: 0px;
-    background-color: #006600;
-    background: linear-gradient(to bottom right, #006600, green, #009900, #00b300, #ffffff);
+    background-color: black;
+    //background: linear-gradient(to bottom right, black, #400000, red);
     color: white;
     font-weight: bold;
     text-align: center;
@@ -45,17 +45,19 @@ header h1 {
     margin: 0px;
     line-height: 150px;
 
+    /*
     background-image: url(../img/background.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    */
 }
 
 /* navigation elements */
 header nav {
     margin: 0px;
     line-height: 50px;
-    background-color: #009900; 
+    background-color: red; 
 }
 
 header nav ul {
@@ -84,16 +86,16 @@ header nav a {
 }
 
 header nav a.this-page {
-    background-color: #008000;
-    color: white
+    background-color: #ff5050;
+    //color: white
 }
 header nav a:hover {
-    background-color: #00E600;
-    color: white;
+    //background-color: #00E600;
+    color: black;
 }
 
 header nav a:active {
-    background-color: #005900;
+    background-color: #590000;
     color: white;
 /*    margin-top: 6px;  
     border-bottom: solid 0px white; 
@@ -103,6 +105,7 @@ header nav a:active {
 footer {
     height: 100px;
     margin-top: 20px;
+    background-color: red;
 }
 
 footer p {
