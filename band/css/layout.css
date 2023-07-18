@@ -15,7 +15,7 @@ html, body {
 
 @font-face {
     font-family: 'Batala';
-    src: url("assets/Batala.ttf");
+    src: url("../assets/Batala.ttf");
 }
 .batala {
     font-family: 'Batala';
