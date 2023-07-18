@@ -20,6 +20,7 @@ html, body {
 .batala {
     font-family: 'Batala';
     font-size: 36px;
+    text-transform: uppercase
 }
 
 
@@ -48,7 +49,6 @@ header h1 {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    font-family: 'Batala, Ariel';
 }
 
 /* navigation elements */
