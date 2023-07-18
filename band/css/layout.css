@@ -80,6 +80,7 @@ header nav a {
     text-decoration: none;
     color: white;
     font-weight: bold;
+    font-size: 1.25em;
     text-transform: capitalize;
     padding:10px;
 /*    border-bottom: solid 6px black; 
@@ -155,6 +156,17 @@ section header {
     text-align: left;
     background-color: red;
 }
+
+section:first-of-type header {
+    padding-left: 0%;
+    background-color: white;
+    color: black;
+}
+
+h2 {
+    font-size: 1.2em;
+}
+
 .section1 {
     background-color: rgba(0, 153, 0, 0.1); 
     
