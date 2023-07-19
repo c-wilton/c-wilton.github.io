@@ -25,7 +25,6 @@ html, body {
     letter-spacing: 0.1em;
 }
 
-
 .wrapper {
     width: 900px;
     margin: auto;
@@ -41,6 +40,13 @@ header, footer {
     color: white;
     font-weight: bold;
     text-align: center;
+}
+
+img.logo {
+    vertical-align:middle;
+	height:auto;
+	max-width:120px;
+	padding:10px;
 }
 
 header h1 {
