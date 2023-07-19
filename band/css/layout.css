@@ -42,7 +42,7 @@ header, footer {
     text-align: center;
 }
 
-.logo {
+img.logo {
     vertical-align:middle;
 	height:auto;
 	max-width:120px;
