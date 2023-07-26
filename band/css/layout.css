@@ -120,6 +120,7 @@ footer {
     background-color: red;
 }
 
+/*
 footer p {
     display: flex;
     flex-flow: row wrap;
@@ -136,7 +137,7 @@ footer p .validator {
     padding-left: 10px;
     text-align: left;
     flex: 1 0 10%; 
-    /*background-color: deeppink;*/
+    //background-color: deeppink;
 }
 
 footer p .validator img { 
@@ -152,10 +153,15 @@ footer p .linkedIn {
     padding-right: 10px;
     flex: 1 0 10%; 
     
-    /*background-color: firebrick;*/
+    //background-color: firebrick;
 }
-.fa-linkedin::before { background-color: white; line-height: 100px; font-size: 2em;}
 
+.fa-linkedin::before { 
+	background-color: white; 
+	line-height: 100px; 
+	font-size: 2em;
+}
+*/
 /* END HEADER, NAV MENU AND FOOTER */
 
 /* CONTENT */
