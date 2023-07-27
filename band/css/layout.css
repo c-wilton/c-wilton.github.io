@@ -120,9 +120,14 @@ footer {
     background-color: red;
 }
 
-.footer_fb {background-color: blue;}
-.footer_siteInfo {background-color: yellow;}
-.footer_twitter {background-color: green;}
+.footerWrapper {
+	display: flex;
+	flex-flow: row nowrap;
+}
+
+.footer_fb {background-color: blue; order: 1; flex: 1 0; }
+.footer_siteInfo {background-color: yellow; order: 2; flex: 8 0 10%; }
+.footer_twitter {background-color: green; order: 3; flex: 1 0; }
 
 /*
 footer p {
