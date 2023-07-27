@@ -120,6 +120,11 @@ footer {
     background-color: red;
 }
 
+.footerWrapper {
+	display: flex;
+	flex-flow: row nowrap;
+}
+
 .footer_fb {background-color: blue;}
 .footer_siteInfo {background-color: yellow;}
 .footer_twitter {background-color: green;}
