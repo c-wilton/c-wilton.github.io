@@ -123,6 +123,8 @@ footer {
 .footerWrapper {
 	display: flex;
 	flex-flow: row nowrap;
+	justify-content: center;
+	margin: 0px;
 }
 
 .footer_fb {background-color: blue; order: 1; flex: 1 0; }
