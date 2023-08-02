@@ -129,7 +129,7 @@ footer {
 
 .footer_fb {background-color: blue; order: 1; flex: 1 0; }
 .footer_siteInfo {background-color: orange; order: 2; flex: 8 0 10%; }
-.footer_siteInfo * {line-height: 1.5em;}
+.footer_siteInfo * {line-height: 20px;}
 .footer_twitter {background-color: green; order: 3; flex: 1 0; }
 
 /*
