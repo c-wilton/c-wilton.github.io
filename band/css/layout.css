@@ -42,15 +42,24 @@ header, footer {
     text-align: center;
 }
 
+header {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	margin: 0px;
+}
+
 img.logo {
-    vertical-align:middle;
-	height:auto;
-	max-width:120px;
-	padding:10px;
+    background-color: blue; order: 1; flex: 1 0; 
+	vertical-align: middle;
+	height: auto;
+	max-width: 120px;
+	padding: 10px;
 	display: inline-block;
 }
 
 header h1 {
+	background-color: orange; order: 2; flex: 5 0 10%; 
     vertical-align: middle;
     margin: 0px;
     line-height: 150px;
@@ -128,7 +137,7 @@ footer {
 }
 
 .footer_fb {background-color: blue; order: 1; flex: 1 0; }
-.footer_siteInfo {background-color: orange; order: 2; flex: 7 0 10%; }
+.footer_siteInfo {background-color: orange; order: 2; flex: 6 0 10%; }
 .footer_siteInfo * {line-height: 20px;}
 .footer_twitter {background-color: green; order: 3; flex: 1 0; }
 
