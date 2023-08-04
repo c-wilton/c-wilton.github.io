@@ -53,19 +53,19 @@ header_wrapper {
 }
 
 img.logo {
-    background-color: blue; order: 1; flex: 1 0; 
+    background-color: blue; order: 1; flex: 0 1 200px; 
 	vertical-align: middle;
 	height: auto;
-	max-width: 120px;
+	max-width: 100px;
 	padding: 10px;
 	display: inline-block;
 }
 
 header h1 {
-	background-color: orange; order: 2; flex: 5 0 10%; 
+	background-color: orange; order: 2; flex: 1 1 0; 
     vertical-align: middle;
     margin: 0px;
-    line-height: 150px;
+    line-height: 115px;
 	display: inline-block;
 
     /*
