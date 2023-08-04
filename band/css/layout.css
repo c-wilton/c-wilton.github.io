@@ -36,16 +36,17 @@ header, footer {
     width: 100%;
     margin: 0px;
     background-color: black;
-    //background: linear-gradient(to bottom right, black, #400000, red);
+    /* background: linear-gradient(to bottom right, black, #400000, red); */
     color: white;
     font-weight: bold;
     text-align: center;
 }
 
 
-//flex shrink (what if the items are bigger than the container): 0-remain outside container; 1-shrinks to space; 2-item takes half space as item with 1.
-//flex grow (what if items are smaller than container): 0-remains size of content; 1-grows to take 1 space; 2-takes up twice space of 1.
-//flex basis (size of content box): 
+/* flex shrink (what if the items are bigger than the container): 0-remain outside container; 1-shrinks to space; 2-item takes half space as item with 1.
+	flex grow (what if items are smaller than container): 0-remains size of content; 1-grows to take 1 space; 2-takes up twice space of 1.
+	flex basis (size of content box): 
+*/
 .header_wrapper {
 	display: flex;
 	flex-flow: row nowrap;
