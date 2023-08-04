@@ -55,7 +55,6 @@ img.logo {
 	height: auto;
 	max-width: 100px;
 	padding: 10px;
-	display: inline-block;
 }
 
 header h1 {
@@ -63,8 +62,7 @@ header h1 {
     vertical-align: middle;
     margin: 0px;
     line-height: 115px;
-	display: inline-block;
-
+	
     /*
     background-image: url(../img/background.png);
     background-position: center;
