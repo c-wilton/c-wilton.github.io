@@ -55,7 +55,7 @@ header, footer {
 }
 
 .logo {
-    background-color: blue; order: 1; flex: 0 1 200px; 
+    background-color: blue; order: 1; flex: 0 1 125px; 
 	height: auto;
 	padding: 10px;
 }
