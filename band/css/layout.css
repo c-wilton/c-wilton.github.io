@@ -32,7 +32,6 @@ html, body {
 
 /* HEADER, NAV MENU AND FOOTER */
 header, footer {
-    line-height: 100px;
     width: 100%;
     margin: 0px;
     background-color: black;
@@ -51,6 +50,7 @@ header, footer {
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: center;
+    align-items: center;
 	margin: 0px;
 }
 
