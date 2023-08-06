@@ -50,12 +50,12 @@ header, footer {
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: center;
-    align-items: center;
+	align-items: center;
 	margin: 0px;
 }
 
 .logo {
-    background-color: blue; order: 1; flex: 0 1 200px; 
+	background-color: blue; order: 1; flex: 0 1 125px; 
 	height: auto;
 	padding: 10px;
 }
@@ -70,7 +70,6 @@ header h1 {
 	background-color: orange; order: 2; flex: 1 1 0; 
     vertical-align: middle;
     margin: 0px;
-    line-height: 115px;
 	
     /*
     background-image: url(../img/background.png);
