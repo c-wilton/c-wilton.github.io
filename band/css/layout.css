@@ -55,7 +55,9 @@ header, footer {
 }
 
 .logo {
-	background-color: blue; order: 1; flex: 0 1 125px; 
+	/* background-color: blue; */ 
+	order: 1; 
+	flex: 0 1 125px; 
 	height: auto;
 	padding: 10px;
 }
@@ -67,7 +69,9 @@ header, footer {
 }
 
 header h1 {
-	background-color: orange; order: 2; flex: 1 1 0; 
+	/* background-color: orange; */ 
+	order: 2; 
+	flex: 1 1 0; 
     vertical-align: middle;
     margin: 0px;
 	
@@ -142,10 +146,10 @@ footer {
 	margin: 0px;
 }
 
-.footer_fb {background-color: blue; order: 1; flex: 1 0; }
-.footer_siteInfo {background-color: orange; order: 2; flex: 6 0 10%; }
+.footer_fb {/* background-color: blue; */ order: 1; flex: 1 0; }
+.footer_siteInfo {/* background-color: orange; */ order: 2; flex: 6 0 10%; }
 .footer_siteInfo * {line-height: 20px;}
-.footer_twitter {background-color: green; order: 3; flex: 1 0; }
+.footer_twitter {/* background-color: green; */ order: 3; flex: 1 0; }
 
 /*
 footer p {
