@@ -72,22 +72,20 @@ header h1 {
 	/* background-color: orange; */ 
 	order: 2; 
 	flex: 1 1 0; 
-    vertical-align: middle;
-    margin: 0px;
-	
-    /*
-    background-image: url(../img/background.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    */
+	vertical-align: middle;
+	margin: 0px;
+	/*
+	background-image: url(../img/background.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	*/
 }
 
 /* navigation elements */
 header nav {
     margin: 0px;
     line-height: 50px;
-    text-align: center;
 	background-color: red; 
 }
 
@@ -112,6 +110,7 @@ header nav a {
     font-weight: bold;
     font-size: 1.25em;
     text-transform: capitalize;
+	text-align: center;
     padding:10px;
 /*    border-bottom: solid 6px black; 
     transition:  border-bottom 1s ease-in-out, margin-top 1s ease-in-out;   */
