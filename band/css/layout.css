@@ -87,7 +87,8 @@ header h1 {
 header nav {
     margin: 0px;
     line-height: 50px;
-    background-color: red; 
+    text-align: center;
+	background-color: red; 
 }
 
 header nav ul {
