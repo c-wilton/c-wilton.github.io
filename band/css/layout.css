@@ -256,7 +256,7 @@ h2 {
 }
 
 /* mobile with 2 row navigation */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 720px) {
     header nav ul li { flex: 0 0 50%; }
     footer p .validator { padding-right: 5px;}
     footer p .linkedIn { padding-left: 20px;}
