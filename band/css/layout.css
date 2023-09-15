@@ -97,7 +97,6 @@ header nav ul {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-	align-items: stretch;
 }
 
 header nav ul li {
@@ -258,7 +257,7 @@ h2 {
 
 /* mobile with 2 row navigation */
 @media screen and (max-width: 650px) {
-    header nav ul li { flex: 0 0 35%; }
+    header nav ul li { flex: 0 0 50%; }
     footer p .validator { padding-right: 5px;}
     footer p .linkedIn { padding-left: 20px;}
     .video { width: 100%; }
@@ -266,7 +265,8 @@ h2 {
 
 /* mobile with 4 row navigation */ 
 @media screen and (max-width: 530px) {
-    header nav ul li { flex: 0 0 100%; }
+	header nav ul { flex-direction: column; }
+    /* header nav ul li { flex: 0 0 100%; } */
     header nav { line-height: 2.25em; }
     header nav a { padding: 5px; }
     /* footer p span span { display: block; line-height: 50px; } */
