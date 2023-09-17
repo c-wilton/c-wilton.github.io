@@ -265,7 +265,9 @@ h2 {
 
 /* mobile with 4 row navigation */ 
 @media screen and (max-width: 530px) {
-	header nav ul { flex-direction: column; }
+	.header_wrapper { flex-direction: column; }
+    .logo { flex: 0 1 100px; padding-bottom: 0px; }
+    header nav ul { flex-direction: column; }
     /* header nav ul li { flex: 0 0 100%; } */
     header nav { line-height: 2.25em; }
     header nav a { padding: 5px; }
