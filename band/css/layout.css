@@ -41,7 +41,7 @@ header, footer {
 	flex grow (what if items are smaller than container): 0-remains size of content; 1-grows to take 1 space; 2-takes up twice space of 1.
 	flex basis (size of content box): 
 */
-.header_wrapper {
+header {
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: center;
@@ -69,13 +69,13 @@ header h1 {
 }
 
 /* navigation elements */
-header nav {
+nav {
     /* margin: 0px; */
     line-height: 2.8em;
 	background-color: red; 
 }
 
-header nav ul {
+nav ul {
     margin: 0px;
     padding: 0px;
     list-style-type: none;
@@ -85,11 +85,11 @@ header nav ul {
     justify-content: center;
 }
 
-header nav ul li {
+nav ul li {
     flex: 0 0 auto;
 }
 
-header nav a {
+nav a {
     text-decoration: none;
     color: white;
     font-weight: bold;
@@ -99,16 +99,16 @@ header nav a {
     padding: 0.5em;
 }
 
-header nav a.this-page {
+nav a.this-page {
     background-color: #ff0000;
     color: black;
 }
-header nav a:hover {
+nav a:hover {
     background-color: #FF9999;
     color: black;
 }
 
-header nav a:active {
+nav a:active {
     background-color: #800000;
     color: white;
 }
@@ -199,7 +199,7 @@ h2 {
 
 /* mobile with 2 row navigation */
 @media screen and (max-width: 720px) {
-    header nav ul li { flex: 0 0 50%; }
+    nav ul li { flex: 0 0 50%; }
     /*
 	footer p .validator { padding-right: 5px;}
     footer p .linkedIn { padding-left: 20px;}
@@ -209,14 +209,14 @@ h2 {
 
 /* mobile with 4 row navigation */ 
 @media screen and (max-width: 530px) {
-	.header_wrapper { flex-direction: column; }
+	header { flex-direction: column; }
     .logo { flex: 0 1 70px; padding-bottom: 0px; }
 	.logo img { max-width: 70px; max-height: 70px; }
     .batala { font-size: 36px; }
-	header nav { line-height: 2em; }
-    header nav ul { flex-direction: column; }
+	nav { line-height: 2em; }
+    nav ul { flex-direction: column; }
     /* header nav ul li { flex: 0 0 100%; } */
-    header nav a { padding: 5px; }
+    nav a { padding: 5px; }
     /* footer p span span { display: block; line-height: 50px; } */
     /*
 	footer p .validator { padding-right: 5px;}
