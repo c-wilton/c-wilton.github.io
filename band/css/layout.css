@@ -6,12 +6,9 @@ html, body {
     font-size: 1em;
 }
 
-/* color schemes 
-    triad with #009900 as base color
-    #084D08, #280F99, #009900, #994C04, #4D2404 
-    Shades with #009900 as base color
-    #005900, #00E600, #009900, #00A600, #008000
-
+/* color schemes
+	monochromatic with #FF0000 as base color: #FF4D4D, #CC0000, #800000
+	monochromatic with ##FF4D4D as base color: #FF9999, #CC3D3D, #804D4D
 */
 
 @font-face {
@@ -35,7 +32,6 @@ header, footer {
     width: 100%;
     margin: 0px;
     background-color: black;
-    /* background: linear-gradient(to bottom right, black, #400000, red); */
     color: white;
     font-weight: bold;
     text-align: center;
@@ -55,7 +51,6 @@ header, footer {
 }
 
 .logo {
-	/* background-color: blue; */ 
 	order: 1; 
 	flex: 0 1 125px; 
 	height: auto;
@@ -69,17 +64,10 @@ header, footer {
 }
 
 header h1 {
-	/* background-color: orange; */ 
 	order: 2; 
 	flex: 1 1 0; 
 	vertical-align: middle;
 	margin: 0px;
-	/*
-	background-image: url(../img/background.png);
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	*/
 }
 
 /* navigation elements */
@@ -100,7 +88,6 @@ header nav ul {
 }
 
 header nav ul li {
-    /* display: inline-block; */
     flex: 0 0 auto;
 }
 
@@ -112,8 +99,6 @@ header nav a {
     text-transform: capitalize;
 	text-align: center;
     padding:10px;
-/*    border-bottom: solid 6px black; 
-    transition:  border-bottom 1s ease-in-out, margin-top 1s ease-in-out;   */
 }
 
 header nav a.this-page {
@@ -121,16 +106,13 @@ header nav a.this-page {
     color: black;
 }
 header nav a:hover {
-    background-color: #FF8080;
+    background-color: #FF9999;
     color: black;
 }
 
 header nav a:active {
-    background-color: #590000;
+    background-color: #800000;
     color: white;
-/*    margin-top: 6px;  
-    border-bottom: solid 0px white; 
-    transition: border-bottom 1s ease-in-out, margin-top 1s ease-in-out;  */
 }
 
 footer {
@@ -146,10 +128,10 @@ footer {
 	margin: 0px;
 }
 
-.footer_fb {/* background-color: blue; */ order: 1; flex: 1 0; }
-.footer_siteInfo {/* background-color: orange; */ order: 2; flex: 6 0 10%; }
+.footer_fb { order: 1; flex: 1 0; }
+.footer_siteInfo { order: 2; flex: 6 0 10%; }
 .footer_siteInfo * {line-height: 20px;}
-.footer_twitter {/* background-color: green; */ order: 3; flex: 1 0; }
+.footer_twitter { order: 3; flex: 1 0; }
 
 /*
 footer p {
@@ -167,8 +149,7 @@ footer p * {
 footer p .validator {
     padding-left: 10px;
     text-align: left;
-    flex: 1 0 10%; 
-    //background-color: deeppink;
+    flex: 1 0 10%;
 }
 
 footer p .validator img { 
@@ -182,9 +163,7 @@ footer p .siteInfo {
 footer p .linkedIn {
     text-align: right;
     padding-right: 10px;
-    flex: 1 0 10%; 
-    
-    //background-color: firebrick;
+    flex: 1 0 10%;
 }
 
 .fa-linkedin::before { 
