@@ -10,6 +10,10 @@ html, body {
 	monochromatic with #FF0000 as base color: #FF4D4D, #CC0000, #800000
 	monochromatic with ##FF4D4D as base color: #FF9999, #CC3D3D, #804D4D
 */
+/* flex shrink (what if the items are bigger than the container): 0-remain outside container; 1-shrinks to space; 2-item takes half space as item with 1.
+	flex grow (what if items are smaller than container): 0-remains size of content; 1-grows to take 1 space; 2-takes up twice space of 1.
+	flex basis (size of content box): 
+*/
 
 @font-face {
     font-family: 'Batala';
@@ -27,7 +31,7 @@ html, body {
     margin: auto;
 }
 
-/* HEADER, NAV MENU AND FOOTER */
+/* HEADER */
 header, footer {
     width: 100%;
     background-color: black;
@@ -36,11 +40,6 @@ header, footer {
     text-align: center;
 }
 
-
-/* flex shrink (what if the items are bigger than the container): 0-remain outside container; 1-shrinks to space; 2-item takes half space as item with 1.
-	flex grow (what if items are smaller than container): 0-remains size of content; 1-grows to take 1 space; 2-takes up twice space of 1.
-	flex basis (size of content box): 
-*/
 header {
 	display: flex;
 	flex-flow: row nowrap;
@@ -68,7 +67,7 @@ header h1 {
 	margin: 0px;
 }
 
-/* navigation elements */
+/* NAVIGATION BAR */
 nav {
     /* margin: 0px; */
     line-height: 2.8em;
@@ -113,6 +112,7 @@ nav a:active {
     color: white;
 }
 
+/* FOOTER */
 footer {
     min-height: 100px;
     background-color: red;
