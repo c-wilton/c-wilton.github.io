@@ -71,7 +71,7 @@ header h1 {
 /* navigation elements */
 header nav {
     /* margin: 0px; */
-    line-height: 2.5em;
+    line-height: 2.8em;
 	background-color: red; 
 }
 
@@ -205,6 +205,7 @@ h2 {
 /* desktop */
 @media screen and (min-width:800px) {
     .wrapper { width: 90%; }
+	/*
     .carouselImage { flex: 10 0px; }
     .prevButton { flex: 1 0px; }
     .nextButton { flex: 1 0px; }
@@ -212,13 +213,16 @@ h2 {
     .carouselImage { order: 2; }
     .nextButton { order: 3; }
     .carouselCaption { order: 4; }
+	*/
 }
 
 /* tablet */
 @media screen and (max-width: 800px) {
     .wrapper { width: 90%; }
+	/*
     .prevButton { flex: 2 0px; }
     .nextButton { flex: 2 0px; }
+	*/
     footer p * { line-height: 50px; height: 50px; }
     footer p .validator img { margin-top: 9.5px; }
     footer p .linkedIn i { line-height: 50px; }
