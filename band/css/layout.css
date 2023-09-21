@@ -134,9 +134,10 @@ footer {
 
 /* CONTENT */
 section header {
-    line-height: 2em;
+    line-height: 0.25em;
     width: 99%;
     padding-left: 1%;
+	justify-content: left;
     text-align: left;
     background-color: red;
 }
