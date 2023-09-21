@@ -71,7 +71,8 @@ header h1 {
 nav {
     /* margin: 0px; */
     line-height: 2.8em;
-	background-color: red; 
+	background-color: red;
+	text-align: center;
 }
 
 nav ul {
