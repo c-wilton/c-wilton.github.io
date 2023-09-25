@@ -49,10 +49,6 @@ header, footer {
     text-align: center;
 }
 
-header {
-	align-items: center;
-}
-
 .logo {
 	order: 1; 
 	flex: 0 1 125px; 
@@ -122,20 +118,13 @@ footer {
 	font-size: 0.8em;
     line-height: 0.75em;
 }
-
-.footerWrapper {
-	align-items: center;
-}
 .footer_fb { order: 1; flex: 1 0; }
 .footer_siteInfo { order: 2; flex: 6 0 10%; }
 .footer_twitter { order: 3; flex: 1 0; }
 
-.footer_siteInfo { 
-}
 .bandInfo { order: 1; flex: 1 0; background-color: green }
 .siteInfo { order: 2; flex: 1 0;  background-color: orange }
 .siteValidation { order: 3; flex: 1 0;  background-color: purple }
-
 
 .bandInfo span a { text-decoration: none; color: white; }
 .siteInfo { color: black; }
