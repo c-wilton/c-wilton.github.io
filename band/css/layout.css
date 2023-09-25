@@ -31,6 +31,15 @@ html, body {
     margin: auto;
 }
 
+/* FLEX ELEMENTS */
+.flexRow { display: flex; flex-flow: row nowrap; }
+.flexColumn { display: flex; flex-flow: column nowrap; }
+.flexCenter { justify-content: center; }
+.flexLeft { justify-content: flex-start; }
+.flexRight { justify-content: flex-end; }
+.flexMiddle { align-items: center; }
+
+
 /* HEADER */
 header, footer {
     width: 100%;
