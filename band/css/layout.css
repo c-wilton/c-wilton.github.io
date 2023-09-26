@@ -118,13 +118,16 @@ footer {
 	font-size: 0.8em;
     line-height: 0.75em;
 }
+
+footer p { margin: 0px; }
+
 .footer_fb { order: 1; flex: 1 0; }
-.footer_siteInfo { order: 2; flex: 6 0 10%; }
+.footer_siteInfo { order: 2; flex: 6 0 10%; row-gap: 0.5em; }
 .footer_twitter { order: 3; flex: 1 0; }
 
-.bandInfo { order: 1; flex: 1 0; background-color: green }
-.siteInfo { order: 2; flex: 1 0;  background-color: orange }
-.siteValidation { order: 3; flex: 1 0;  background-color: purple }
+.bandInfo { order: 1; flex: 1 0; background-color: green; }
+.siteInfo { order: 2; flex: 1 0;  background-color: orange; }
+.siteValidation { order: 3; flex: 1 0;  background-color: purple; }
 
 .bandInfo span a { text-decoration: none; color: white; }
 .siteInfo { color: black; }
