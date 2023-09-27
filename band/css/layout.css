@@ -220,12 +220,13 @@ h2 {
 
 /* mobile with 4 row navigation */ 
 @media screen and (max-width: 530px) {
-	header { flex-direction: column; }
+	header.flexRow { flex-direction: column; }
+	main header.flexRow { flex-direction: row; }
     .logo { flex: 0 1 70px; padding-bottom: 0px; }
 	.logo img { max-width: 70px; max-height: 70px; }
     .batala { font-size: 36px; }
 	nav { line-height: 2em; }
-    nav ul { flex-direction: column; }
+    nav ul.flexRow { flex-direction: column; }
     /* header nav ul li { flex: 0 0 100%; } */
     nav a { padding: 5px; }
     /* footer p span span { display: block; line-height: 50px; } */
