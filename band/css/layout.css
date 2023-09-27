@@ -34,7 +34,7 @@ html, body {
 /* FLEX ELEMENTS */
 .flexRow { display: flex; flex-direction: row; }
 .flexColumn { display: flex; flex-direction: column; }
-.flexWrap { flex-wrap: nowrap; }
+.flexWrap { flex-wrap: wrap; }
 .flexNowrao { flex-wrap: nowrap; }
 .flexCenter { justify-content: center; }
 .flexLeft { justify-content: flex-start; }
