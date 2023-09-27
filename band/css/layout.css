@@ -129,6 +129,9 @@ footer p { margin: 0px; }
 .siteInfo { order: 2; flex: 1 0;  background-color: orange; }
 .siteValidation { order: 3; flex: 1 0;  background-color: purple; }
 
+.footer_siteInfo p span {flex: 0 1 50%;  text-align: left; }
+.footer_siteInfo p span:first-of-type { text-align: right; }
+
 .bandInfo span a { text-decoration: none; color: white; }
 .siteInfo { color: black; }
 img.validator { border:0; width:68px; height:20px; }
