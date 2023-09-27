@@ -32,8 +32,10 @@ html, body {
 }
 
 /* FLEX ELEMENTS */
-.flexRow { display: flex; flex-flow: row nowrap; }
-.flexColumn { display: flex; flex-flow: column nowrap; }
+.flexRow { display: flex; flex-direction: row; }
+.flexColumn { display: flex; flex-direction: column; }
+.flexWrap { flex-wrap: nowrap; }
+.flexNowrao { flex-wrap: nowrap; }
 .flexCenter { justify-content: center; }
 .flexLeft { justify-content: flex-start; }
 .flexRight { justify-content: flex-end; }
