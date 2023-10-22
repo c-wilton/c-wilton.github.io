@@ -142,6 +142,9 @@ img.validator { border:0; width:68px; height:20px; }
 /* END HEADER, NAV MENU AND FOOTER */
 
 /* CONTENT */
+aside {
+	width: 33.33%
+}
 main {
 	width: 66.66%
 }
