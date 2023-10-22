@@ -27,8 +27,8 @@ html, body {
 }
 
 .wrapper {
-    width: 90%;
-    margin: auto;
+    width: 100%;
+    margin: 10px;
 }
 
 /* FLEX ELEMENTS */
