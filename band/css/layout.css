@@ -28,7 +28,7 @@ html, body {
 
 .wrapper {
     width: 100%;
-    margin: 10px;
+    margin: 0px;
 }
 
 /* FLEX ELEMENTS */
@@ -142,6 +142,10 @@ img.validator { border:0; width:68px; height:20px; }
 /* END HEADER, NAV MENU AND FOOTER */
 
 /* CONTENT */
+main {
+	width: 66.66%
+}
+
 section header {
     line-height: 0.25em;
     width: 99%;
