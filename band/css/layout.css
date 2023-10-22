@@ -176,7 +176,7 @@ h2 {
 /* MEDIA QUERIES */
 /* desktop */
 @media screen and (min-width:800px) {
-    .wrapper { width: 90%; }
+    .wrapper { width: 100%; }
 	/*
     .carouselImage { flex: 10 0px; }
     .prevButton { flex: 1 0px; }
@@ -190,7 +190,7 @@ h2 {
 
 /* tablet */
 @media screen and (max-width: 800px) {
-    .wrapper { width: 90%; }
+    .wrapper { width: 100%; }
 	/*
     .prevButton { flex: 2 0px; }
     .nextButton { flex: 2 0px; }
