@@ -131,8 +131,8 @@ footer p, h4 { margin: 0px; }
 .siteInfo { order: 2; flex: 1 0; }
 .siteValidation { order: 3; flex: 1 0; }
 
-.footer_siteInfo p span {flex: 0 1 50%;  text-align: left; padding-left: 0.5em }
-.footer_siteInfo p span:first-of-type { text-align: right; padding-right: 0.5em }
+.footer_siteInfo p span, .footer_siteInfo h4 span {flex: 0 1 50%;  text-align: left; padding-left: 0.5em }
+.footer_siteInfo p span:first-of-type, .footer_siteInfo h4 span:first-of-type { text-align: right; padding-right: 0.5em }
 
 .footer_fb img, .footer_twitter img { width: 40px; height: 40px }
 .bandInfo span a { text-decoration: none; color: white; }
