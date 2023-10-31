@@ -121,7 +121,7 @@ footer {
     line-height: 0.75em;
 }
 
-footer p { margin: 0px; }
+footer p, h4 { margin: 0px; }
 
 .footer_fb { order: 1; flex: 1 0; }
 .footer_siteInfo { order: 2; flex: 6 0 10%; row-gap: 0.5em; }
