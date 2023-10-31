@@ -142,8 +142,8 @@ img.validator { border:0; width:68px; height:20px; }
 /* END HEADER, NAV MENU AND FOOTER */
 
 /* CONTENT */
-aside { width: 33.33%; }
-main { width: 66.66%; }
+main { width: 100%; }
+.section1, .section2 { width: 66.66%}
 
 section header {
     line-height: 0.25em;
