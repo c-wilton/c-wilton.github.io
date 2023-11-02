@@ -34,7 +34,7 @@
     ],
     "about": [
         {
-            "header": 'intro',
+            "header": 'About Batala',
             "content": '<p>Batala was started by Giba Gonçalves. Giba was born in Salvador, and has played with Ilê Aiyê, 
 			Olodum, and Malê Debalê, as well as touring the world with Kuoma. In 1997, he was settled in Paris, 
 			and decided to set up a samba reggae group there. The name he chose combines two things: 
@@ -49,14 +49,14 @@
 			reflecting their place of origin.</p>'
         },
         {
-            "header": 'mundo',
+            "header": 'Batala Mundo',
             "content": '<p>For more information and for links to other Batala bands in the UK and around the world,
 			<a href="https://en.wikipedia.org/wiki/Batala_(music)" onclick="target='_blank'">
 			visit Batala's page on wikipedia</a>.
 			</p>'
         },
         {
-            "header": 'documentary',
+            "header": 'Batala Documentary',
             "content": '<p>If you would like to know more about how and why Batala started, Batala's mission, and the contribution Batala
 			has to the local community along with the contribution each band makes to the economy in Salvador, watch this 3 part
 			documentary:
@@ -69,7 +69,7 @@
 			</p>'
         },
         {
-            "header": 'bangor',
+            "header": 'About Batala Bangor',
             "content": '<p>Batala Bangor started in 2003, the second UK Batala after Portsmouth, which had started the year before. 
 			Bangor already had a well-established percussion group - Samba Bangor - and it was an ex-SB member, Paul Green, 
 			who, on moving back here from Portsmouth, persuaded them to run a samba reggae workshop tutored by Giba. 
@@ -87,29 +87,30 @@
     ],
     "gallery": [
         {
-            "header": 'intro',
-            "content": ''
-        },
-        {
-            "header": 'gallery',
-            "content": ''
+            "header": 'Some of our favorite moments',
+            "content": '<a href="giphy1.gif"  onclick="target='_blank'">
+				<img src="giphy1.gif" class="band" alt="band photos"/>
+			</a>'
         }
     ],
     "contact": [
         {
-            "header": 'intro',
-            "content": ''
+            "header": 'Contact Us',
+            "content": '<div class="row separationBar"><p><b>Book Us</b></p></div>
+			<div id="bookUs"></div>'
         },
         {
-            "header": 'bookUs',
-            "content": ''
+            "header": 'Book Us',
+            "content": '<div class="row separationBar"><p><b>Join Us</b></p></div>
+			<div id="joinUs"></div>'
         },
         {
-            "header": 'joinUs',
-            "content": ''
+            "header": 'Join Us',
+            "content": '<div class="row separationBar"><p><b>Join Us</b></p></div>
+			<div id="joinUs"></div>'
         },
         {
-            "header": 'socialMedia',
+            "header": 'Social Media',
             "content": '<p>Find us on Facebook:<br>
 				<a href="https://www.facebook.com/batala.bangor" onclick="target='_blank'"> 	<!-- onclick="target='_blank'" opens the link in a new window when clicked -->
 					<img src="FB-logo.png" class="socialMedia" alt="Facebook"></a> 
@@ -122,14 +123,29 @@
     ],
     "gigs": [
         {
-            "header": 'intro',
-            "content": ''
+            "header": 'Our gigs list:',
+            "content": '<div id="yearGigList"></div>'
         }
     ],
     "members": [
         {
-            "header": 'intro',
-            "content": ''
+            "header": 'Members Only',
+            "content": '<form method="post" action="training.html" onsubmit="return myFunction()">
+			<fieldset>
+				<legend>Members Only</legend>
+				<p>Batala Bangor members login here <!-- to access learning materials -->
+				</p>
+				<br />
+				
+				<label for="password" style="margin:2px;width:20px;">Password:</label>
+				<input type="password" id="password" style="margin:2px" maxlength="15" size="15" />
+				<span style="color:red" id="passwordErr"></span>
+				<!-- submit button -->
+				<br /><input type="submit" name="submit" value="Submit"  />
+				
+				<p id="result"> </p>
+			</fieldset>
+			</form>'
         }
     ]
 }
