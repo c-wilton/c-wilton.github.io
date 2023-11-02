@@ -34,8 +34,8 @@
     ],
     "about": [
         {
-            "header": "intro",
-            "content": "<p>Batala was started by Giba Gonçalves. Giba was born in Salvador, and has played with Ilê Aiyê, 
+            "header": 'intro',
+            "content": '<p>Batala was started by Giba Gonçalves. Giba was born in Salvador, and has played with Ilê Aiyê, 
 			Olodum, and Malê Debalê, as well as touring the world with Kuoma. In 1997, he was settled in Paris, 
 			and decided to set up a samba reggae group there. The name he chose combines two things: 
 			Obatalá (the name of an orixa - spirit guide, or god - in Candomblé, the religion which came with 
@@ -46,18 +46,18 @@
 			So, as Giba’s brainchild spread across France to the UK and beyond, to become the global network it is now, 
 			the international Batala family has contributed increasingly to the local economy in Salvador. 
 			Despite this international dimension, Batala groups retain their independence and diversity, 
-			reflecting their place of origin.</p>
+			reflecting their place of origin.</p>'
         },
         {
-            "header": "mundo",
-            "content": "<p>For more information and for links to other Batala bands in the UK and around the world,
+            "header": 'mundo',
+            "content": '<p>For more information and for links to other Batala bands in the UK and around the world,
 			<a href="https://en.wikipedia.org/wiki/Batala_(music)" onclick="target='_blank'">
 			visit Batala's page on wikipedia</a>.
-			</p>"
+			</p>'
         },
         {
-            "header": "documentary",
-            "content": "<p>If you would like to know more about how and why Batala started, Batala's mission, and the contribution Batala
+            "header": 'documentary',
+            "content": '<p>If you would like to know more about how and why Batala started, Batala's mission, and the contribution Batala
 			has to the local community along with the contribution each band makes to the economy in Salvador, watch this 3 part
 			documentary:
 			<br><a href="https://www.youtube.com/watch?v=YajNgbMPKKM" onclick="target='_blank'">
@@ -66,7 +66,7 @@
 				Batala Documentary (SVE project) - When Plastic Meets Metal- Encontro Vulcanico 2011 (Part 2/3)</a>
 			<br><a href="https://www.youtube.com/watch?v=zlELdPZdbJY" onclick="target='_blank'">
 				Batala Documentary (SVE project) - When Plastic Meets Metal- Encontro Vulcanico 2011 (Part 3/3)</a>
-			</p>"
+			</p>'
         },
         {
             "header": "bangor",
