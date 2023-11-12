@@ -234,4 +234,4 @@ class Contoller {
   }
 }
 
-controller = new Contoller(new View(), new RulerModel(), new LocationModel(), new DeviceModel() )
+controller = new Contoller(new View(), new Model() ) //, new LocationModel(), new DeviceModel() )
