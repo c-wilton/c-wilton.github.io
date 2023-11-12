@@ -3,9 +3,11 @@ class RulerContoller {
     * Uses the View class to load this data to manipulate the elements on the webpage 
     */
   
-  constructor(view, rulerModel, locationModel, deviceModel) {
+  constructor(view) //, rulerModel, locationModel, deviceModel) {
     /** Initialises the model and view and create a ruler */
+    
     this.view = view
+    /*
     this.rulerModel = rulerModel
     this.locationModel = locationModel
     this.deviceModel = deviceModel
@@ -13,7 +15,7 @@ class RulerContoller {
     //create default ruler
     let rulerData = this.retrieveRulerData()
     this.createRuler(rulerData)
-    
+    */
     /*
     //get device altitude and send it to ruler model
     let deviceHeight = this.getLocation()
