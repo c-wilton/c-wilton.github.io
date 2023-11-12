@@ -60,7 +60,7 @@ class View {
     }
     else if(opt==2){
       //tag element (gets first element with the tag nane)
-      element = document.getElementsByTagName[0]
+      element = document.getElementsByTagName(selector)[0]
     }
     
     //return the html element found
