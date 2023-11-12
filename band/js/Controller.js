@@ -29,7 +29,33 @@ class Contoller {
     */
     
     //create ruler for device
-    this.updateRuler()
+    this.updateRuler();
+  }
+
+  addsection(){
+
+    //get main element
+    let main = this.view.getElement(2, 'main');
+    
+    //add section element to main
+    let section = this.view.createElement("section");
+    sectionAttr = {'class': 'section1'};
+    this.view.setAttributes(section, sectionAttr);
+    this.view.appendChild(main, section);
+
+    //add header element to section
+    let header = this.view.createElement("header");
+    sectionAttr = {'class': 'flexRow flexNowrap flexMiddle'};
+    this.view.setAttributes(section, sectionAttr);
+    this.view.appendChild(section, header);
+
+    //add h2 element to header
+    let h2 = this.view.createElement("h2");
+    this.view.appendChild(header, h2);
+    
+    //add paragraph element to section
+    let paragraph = this.view.createElement("p");
+    this.view.appendChild(section, paragraph);
   }
   
   updateRuler(){
