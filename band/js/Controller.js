@@ -6,8 +6,8 @@ class Contoller {
   constructor(view, model) //, locationModel, deviceModel) {
     /** Initialises the model and view and create a ruler */
     
-    this.view = view
-    this.model = model
+    this.view = view;
+    this.model = model;
     /*
     this.locationModel = locationModel
     this.deviceModel = deviceModel
