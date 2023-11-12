@@ -1,14 +1,14 @@
-class RulerContoller {
+class Contoller {
   /** Gets data from the ...Model classes.
     * Uses the View class to load this data to manipulate the elements on the webpage 
     */
   
-  constructor(view) //, rulerModel, locationModel, deviceModel) {
+  constructor(view, model) //, locationModel, deviceModel) {
     /** Initialises the model and view and create a ruler */
     
     this.view = view
+    this.model = model
     /*
-    this.rulerModel = rulerModel
     this.locationModel = locationModel
     this.deviceModel = deviceModel
     
