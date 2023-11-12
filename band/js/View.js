@@ -6,6 +6,7 @@ class View {
     
     //get the body element
     this.body = document.getElementById('body')
+    this.url = window.location.href
   }
   
   createElement(tag) {
