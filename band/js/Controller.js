@@ -3,7 +3,7 @@ class Contoller {
     * Uses the View class to load this data to manipulate the elements on the webpage 
     */
   
-  constructor(view, model) //, locationModel, deviceModel) {
+  constructor(view, model) { //, locationModel, deviceModel) {
     /** Initialises the model and view and create a ruler */
     
     this.view = view;
@@ -31,9 +31,9 @@ class Contoller {
     //create ruler for device
     this.updateRuler();
   }
-
+  
   addsection(){
-
+    /** add a section element with a header and a paragraph **/
     //get main element
     let main = this.view.getElement(2, 'main');
     
@@ -56,6 +56,16 @@ class Contoller {
     //add paragraph element to section
     let paragraph = this.view.createElement("p");
     this.view.appendChild(section, paragraph);
+  }
+
+  getContent(){
+    /** get content for webpage from json file via the model **/
+    let content = "";
+  }
+
+  addContent(paragraphElement, content){
+    /** add the content from json file to the webpage **/
+    paragraphElement.innerHTML = content;
   }
   
   updateRuler(){
