@@ -5,8 +5,12 @@ class View {
     /** Create an a-scene element to the body and add a-camera and a-text entities to the a-scene */
     
     //get the body element
-    this.body = document.getElementById('body')
-    this.url = window.location.href
+    this.body = document.getElementById('body');
+    this.url = window.location.href;
+  }
+
+  getUrl(){
+    return this.url;
   }
   
   createElement(tag) {
@@ -14,8 +18,8 @@ class View {
       * @param tag the html tag of the element to be created
       * @returns element the html element created
       */
-    const element = document.createElement(tag)
-    return element
+    const element = document.createElement(tag);
+    return element;
   }
   
   setAttributes(element, attributes) {
@@ -56,7 +60,7 @@ class View {
     }
     else if(opt==2){
       //tag element (gets first element with the tag nane)
-      element = document.getElementsByTagName[0]
+      element = document.getElementsByTagName(selector)[0]
     }
     
     //return the html element found

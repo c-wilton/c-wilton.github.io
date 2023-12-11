@@ -3,11 +3,11 @@ class Contoller {
     * Uses the View class to load this data to manipulate the elements on the webpage 
     */
   
-  constructor(view, model) //, locationModel, deviceModel) {
+  constructor(view, model) { //, locationModel, deviceModel) {
     /** Initialises the model and view and create a ruler */
     
-    this.view = view
-    this.model = model
+    this.view = view;
+    this.model = model;
     /*
     this.locationModel = locationModel
     this.deviceModel = deviceModel
@@ -29,7 +29,43 @@ class Contoller {
     */
     
     //create ruler for device
-    this.updateRuler()
+    this.updateRuler();
+  }
+  
+  addsection(){
+    /** add a section element with a header and a paragraph **/
+    //get main element
+    let main = this.view.getElement(2, 'main');
+    
+    //add section element to main
+    let section = this.view.createElement("section");
+    sectionAttr = {'class': 'section1'};
+    this.view.setAttributes(section, sectionAttr);
+    this.view.appendChild(main, section);
+
+    //add header element to section
+    let header = this.view.createElement("header");
+    sectionAttr = {'class': 'flexRow flexNowrap flexMiddle'};
+    this.view.setAttributes(section, sectionAttr);
+    this.view.appendChild(section, header);
+
+    //add h2 element to header
+    let h2 = this.view.createElement("h2");
+    this.view.appendChild(header, h2);
+    
+    //add paragraph element to section
+    let paragraph = this.view.createElement("p");
+    this.view.appendChild(section, paragraph);
+  }
+
+  getContent(){
+    /** get content for webpage from json file via the model **/
+    let content = "";
+  }
+
+  addContent(paragraphElement, content){
+    /** add the content from json file to the webpage **/
+    paragraphElement.innerHTML = content;
   }
   
   updateRuler(){
@@ -234,4 +270,4 @@ class Contoller {
   }
 }
 
-controller = new Contoller(new View(), new RulerModel(), new LocationModel(), new DeviceModel() )
+controller = new Contoller(new View(), new Model() ) //, new LocationModel(), new DeviceModel() )
