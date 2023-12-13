@@ -7,7 +7,7 @@ class Contoller {
     /** Initialises the model and view and create a ruler */
     
     this.view = view;
-    this.model = model;
+    //this.model = model;
     /*
     this.locationModel = locationModel
     this.deviceModel = deviceModel
@@ -27,14 +27,19 @@ class Contoller {
     rulerData = this.retrieveRulerData()
     this.createRuler(rulerData)
     */
-    
+
+    /*
     //create ruler for device
     this.updateRuler();
+    */
+
+    let sectionContent = getContent();
+    this.addSection(sectionContent);
   }
   
-  addsection(){
+  addSection(content){
     /** add a section element with a header and a paragraph **/
-    //get main element
+    //get main element by tag name (opt 2)
     let main = this.view.getElement(2, 'main');
     
     //add section element to main
@@ -55,12 +60,14 @@ class Contoller {
     
     //add paragraph element to section
     let paragraph = this.view.createElement("p");
+    this.addContent(paragraph, content);
     this.view.appendChild(section, paragraph);
   }
 
   getContent(){
     /** get content for webpage from json file via the model **/
-    let content = "";
+    let content = "New content";
+    return content;
   }
 
   addContent(paragraphElement, content){
