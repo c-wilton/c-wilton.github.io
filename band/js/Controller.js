@@ -52,6 +52,7 @@ class Contoller {
     let header = this.view.createElement("header");
     sectionAttr = {'class': 'flexRow flexNowrap flexMiddle'};
     this.view.setAttributes(header, sectionAttr);
+    this.addContent(header, content[0]);
     this.view.appendChild(section, header);
 
     //add h2 element to header
@@ -60,13 +61,14 @@ class Contoller {
     
     //add paragraph element to section
     let paragraph = this.view.createElement("p");
-    this.addContent(paragraph, content);
+    //content is in format {header:content}
+    this.addContent(paragraph, content[1]);
     this.view.appendChild(section, paragraph);
   }
 
   getContent(){
     /** get content for webpage from json file via the model **/
-    let content = "New content";
+    let content = {"New Header":"New content"};
     return content;
   }
 
