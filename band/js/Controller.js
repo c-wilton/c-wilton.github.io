@@ -44,7 +44,7 @@ class Contoller {
     
     //add section element to main
     let section = this.view.createElement("section");
-    sectionAttr = {'class': 'section1'};
+    let sectionAttr = {'class': 'section1'};
     this.view.setAttributes(section, sectionAttr);
     this.view.appendChild(main, section);
 
