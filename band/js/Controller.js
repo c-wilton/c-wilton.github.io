@@ -33,7 +33,7 @@ class Contoller {
     this.updateRuler();
     */
 
-    let sectionContent = getContent();
+    let sectionContent = this.getContent();
     this.addSection(sectionContent);
   }
   
