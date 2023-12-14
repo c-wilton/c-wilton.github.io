@@ -52,11 +52,11 @@ class Contoller {
     let header = this.view.createElement("header");
     sectionAttr = {'class': 'flexRow flexNowrap flexMiddle'};
     this.view.setAttributes(header, sectionAttr);
-    this.addContent(header, content.header);
     this.view.appendChild(section, header);
 
     //add h2 element to header
     let h2 = this.view.createElement("h2");
+    this.addContent(h2, content.header);
     this.view.appendChild(header, h2);
     
     //add paragraph element to section
