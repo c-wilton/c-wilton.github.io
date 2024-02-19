@@ -27,7 +27,7 @@ class Model {
         
         //get contents from json file
         let content = new Content();
-        this.#pages = content.getContent();
+        //this.#pages = content.getContent();
 
         /* RULER MODEL */
         this.#armLength = 70
@@ -51,10 +51,10 @@ class Model {
     getPageContent(){
         /** method description */
         let pageName = this.page
-        let pageContent = this.#pages.pageName;
+        //let pageContent = this.#pages.pageName;
         
         //return page content
-        return pageContent;
+        return pageName;
     }
     
     /** RULER MODEL */

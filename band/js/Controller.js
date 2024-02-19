@@ -38,13 +38,20 @@ class Contoller {
     //get current url, send it to model to retrieve pgae contents
     this.#currentURL = this.view.getUrl();
     this.model.setPageName(this.#currentURL);
-    
+
     let sectionContent = this.getContent();
     this.addSection(sectionContent);
     }
     
     getContent(){
         /** get content for webpage from json file via the model **/
+
+        //print contents from json file
+        let main = this.view.getElement(2, 'main');
+        let homeName = this.model.getPageContent();
+        main.innerHTML += homeName;
+
+        //print blank header and content
         let content = {"header":"New Header", content:"New content"};
         return content;
     }
