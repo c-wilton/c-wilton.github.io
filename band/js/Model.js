@@ -10,16 +10,15 @@ class Model {
     
     #pages
 
-    /**
-     * #distances
-     * #intervals
-     * #lengths
-     * 
-     * #armLength
-     * #personHeight
-     * #altitude
-     * #eyeHeight
-     */
+    /* RULER MODEL */
+    #distances
+    #intervals
+    #lengths
+    
+    #armLength
+    #personHeight
+    #altitude
+    #eyeHeight
 
     constructor(url) {
         /** Set armLength, personHeight and altitude to pre-defined values.
