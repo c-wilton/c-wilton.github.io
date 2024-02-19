@@ -8,27 +8,40 @@ class Model {
     * altitude is the height of the user above sea level in meters.
     */
   
-  #distances
-  #intervals
-  #lengths
-  
-  #armLength
-  #personHeight
-  #altitude
-  #eyeHeight
-  
-  constructor() {
+  #currentPage
+  #pages
+
+  /**
+   * #distances
+   * #intervals
+   * #lengths
+   * 
+   * #armLength
+   * #personHeight
+   * #altitude
+   * #eyeHeight
+   */
+
+  constructor(url) {
     /** Set armLength, personHeight and altitude to pre-defined values.
       * call other methods to set the values for distances and intervals.
       */
+    
+    this.#currentPage = url;
+    let content = new Content();
+    this.#pages = content.getContent();
+
+    /*
     this.#armLength = 70
     this.#personHeight = 1.675
     this.#altitude = 18.325
     this.#eyeHeight = this.#personHeight + this.#altitude
     this.setDistances()
     this.setIntervals()
+    */
   }
   
+  /** RULER MODEL */
   setEyeHeight(deviceHeight){
     this.#eyeHeight = deviceHeight
     this.setIntervals()
