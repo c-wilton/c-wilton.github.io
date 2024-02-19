@@ -10,7 +10,7 @@ class View {
   }
 
   getUrl(){
-    return this.url;
+    return window.location.href;
   }
   
   createElement(tag) {
