@@ -26,8 +26,8 @@ class Model {
          */
         
         //get current page between path and .html
-        path = "https://c-wilton.github.io/band/"
-        pageEnd = ".html"
+        let path = "https://c-wilton.github.io/band/"
+        let pageEnd = ".html"
         this.page = url.substring(path.length, path.length+end.length)
 
         //get contents from json file
