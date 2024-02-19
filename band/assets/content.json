@@ -1,34 +1,34 @@
 {
     "home": [
         {
-            "header": 'A vibrant Samba-Reggae Percussion band full of energy and uplifting spirit.',
-            "content": '<p>Batala Bangor is a Samba-Reggae percussion group.</p>'
+            "header": "A vibrant Samba-Reggae Percussion band full of energy and uplifting spirit.",
+            "content": "<p>Batala Bangor is a Samba-Reggae percussion group.</p>"
         },
         {
-            "header": 'Facebook Feed',
-            "content": '<div class="row" id="fbFeed"></div>'
+            "header": "Facebook Feed",
+            "content": "<div class=\"row\" id=\"fbFeed\"></div>"
         },
         {
-            "header": 'Book Us',
-            "content": '<div id="bookUs"></div>'
+            "header": "Book Us",
+            "content": "<div id=\"bookUs\"></div>"
         },
         {
-            "header": 'Join Us',
-            "content": '<div id="joinUs"></div>'
+            "header": "Join Us",
+            "content": "<div id=\"joinUs\"></div>"
         },
         {
-            "header": 'Come Watch Us',
-            "content": '<p>Our upcoming gigs:</p>
-				<br />
-				<div id="monthGigList"></div>'
+            "header": "Come Watch Us",
+            "content": ["<p>Our upcoming gigs:</p>",
+				"<br />",
+				"<div id=\"monthGigList\"></div>"]
         },
 		{
-            "header": 'Some Photos',
-            "content": '<div class="homePic">
-					<a href="giphy2.gif"  onclick="target='_blank'">
-						<img src="giphy2.gif" class="band" alt="band images"/><br />
-					</a>
-				</div>'
+            "header": "Some Photos",
+            "content": ["<div class=\"homePic\">",
+					"<a href=\"giphy2.gif\"  onclick=\"target='_blank'\">",
+						"<img src=\"giphy2.gif\" class=\"band\" alt=\"band images\"/><br />",
+					"</a>",
+				"</div>"]
         }
 		
     ],

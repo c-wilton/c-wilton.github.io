@@ -1,42 +1,51 @@
 class Contoller {
   /** Gets data from the ...Model classes.
     * Uses the View class to load this data to manipulate the elements on the webpage 
-    */
+  */
   
+  #currentURL
+
   constructor(view, model) { //, locationModel, deviceModel) {
-    /** Initialises the model and view and create a ruler */
-    
-    this.view = view;
-    //this.model = model;
-    /*
-    this.locationModel = locationModel
-    this.deviceModel = deviceModel
-    
-    //create default ruler
-    let rulerData = this.retrieveRulerData()
-    this.createRuler(rulerData)
-    */
-    /*
-    //get device altitude and send it to ruler model
-    let deviceHeight = this.getLocation()
-    this.rulerModel.setEyeHeight(deviceHeight)
-    */
-    
-    /*
-    //create ruler at new altitude
-    rulerData = this.retrieveRulerData()
-    this.createRuler(rulerData)
-    */
+  /** Initialises the model and view and create a ruler */
+  
+  this.view = view;
+  //this.model = model;
+  /*
+  this.locationModel = locationModel
+  this.deviceModel = deviceModel
+  
+  //create default ruler
+  let rulerData = this.retrieveRulerData()
+  this.createRuler(rulerData)
+  */
+  /*
+  //get device altitude and send it to ruler model
+  let deviceHeight = this.getLocation()
+  this.rulerModel.setEyeHeight(deviceHeight)
+  */
+  
+  /*
+  //create ruler at new altitude
+  rulerData = this.retrieveRulerData()
+  this.createRuler(rulerData)
+  */
 
-    /*
-    //create ruler for device
-    this.updateRuler();
-    */
-
-    let sectionContent = this.getContent();
-    this.addSection(sectionContent);
+  /*
+  //create ruler for device
+  this.updateRuler();
+  */
+  
+  this.#currentURL = this.view.getURL
+  let sectionContent = this.getContent();
+  this.addSection(sectionContent);
   }
   
+  getContent(){
+    /** get content for webpage from json file via the model **/
+    let content = {"header":"New Header", content:"New content"};
+    return content;
+  }
+
   addSection(content){
     /** add a section element with a header and a paragraph **/
     //get main element by tag name (opt 2)
@@ -66,19 +75,15 @@ class Contoller {
     this.view.appendChild(section, paragraph);
   }
 
-  getContent(){
-    /** get content for webpage from json file via the model **/
-    let content = {"header":"New Header", content:"New content"};
-    return content;
-  }
-
   addContent(paragraphElement, content){
     /** add the content from json file to the webpage **/
-    paragraphElement.innerHTML = content;
+    paragraphElement.innerHTML = content + '<br>' + this.#currentURL;
   }
   
+
+  /** RULER CONTROLLER */
   updateRuler(){
-    let deviceModelRatio = this.deviceModel.getDeviceHeight()
+    let deviceModelRatio = this.deviceModel.getDeviceHeight();
     /*
     let rulerData = this.retrieveRulerData()
     this.rulerModel.setRatio(deviceModelRatio, rulerData['intervals'])
