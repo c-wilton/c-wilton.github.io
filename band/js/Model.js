@@ -39,20 +39,22 @@ class Model {
         
     }
 
-    getPageName(url){
+    setPageName(url){
         /* method descripition */
-        
+
         //get current page between path and .html
         let path = "https://c-wilton.github.io/band/"
         let pageEnd = ".html"
         this.page = url.substring(path.length, path.length+pageEnd.length)
-
     }
 
     getPageContent(){
         /** method description */
         let pageName = this.page
-        letPageContent = this.#pages.pageName;
+        let pageContent = this.#pages.pageName;
+        
+        //return page content
+        return pageContent;
     }
     
     /** RULER MODEL */
