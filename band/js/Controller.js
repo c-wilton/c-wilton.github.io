@@ -77,7 +77,7 @@ class Contoller {
 
   addContent(paragraphElement, content){
     /** add the content from json file to the webpage **/
-    paragraphElement.innerHTML = content + '<br>' + this.#currentURL;
+    paragraphElement.innerHTML = content + '<br>' + window.location.href;
   }
   
 
