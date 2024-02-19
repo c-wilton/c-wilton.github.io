@@ -35,7 +35,7 @@ class Contoller {
   this.updateRuler();
   */
   
-  this.#currentURL = this.view.getURL
+  this.#currentURL = this.view.getURL();
   let sectionContent = this.getContent();
   this.addSection(sectionContent);
   }
@@ -77,7 +77,7 @@ class Contoller {
 
   addContent(paragraphElement, content){
     /** add the content from json file to the webpage **/
-    paragraphElement.innerHTML = content + '<br>' + window.location.href;
+    paragraphElement.innerHTML = content + '<br>' + this.#currentURL;
   }
   
 
