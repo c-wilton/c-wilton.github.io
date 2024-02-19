@@ -35,7 +35,7 @@ class Contoller {
   this.updateRuler();
   */
   
-  this.#currentURL = this.view.getURL();
+  this.#currentURL = this.view.getUrl();
   let sectionContent = this.getContent();
   this.addSection(sectionContent);
   }
