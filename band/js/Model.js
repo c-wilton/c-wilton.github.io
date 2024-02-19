@@ -51,10 +51,10 @@ class Model {
     getPageContent(){
         /** method description */
         let pageName = this.page
-        //let pageContent = this.#pages.pageName;
+        let pageContent = this.#pages.pageName;
         
         //return page content
-        return pageName;
+        return pageContent;
     }
     
     /** RULER MODEL */
