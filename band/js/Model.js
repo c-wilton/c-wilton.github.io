@@ -20,16 +20,11 @@ class Model {
     #altitude
     #eyeHeight
 
-    constructor(url) {
+    constructor() {
         /** Set armLength, personHeight and altitude to pre-defined values.
          * call other methods to set the values for distances and intervals.
          */
         
-        //get current page between path and .html
-        let path = "https://c-wilton.github.io/band/"
-        let pageEnd = ".html"
-        this.page = url.substring(path.length, path.length+pageEnd.length)
-
         //get contents from json file
         let content = new Content();
         this.#pages = content.getContent();
@@ -44,10 +39,18 @@ class Model {
         
     }
 
+    getPageName(url){
+        /* method descripition */
+        
+        //get current page between path and .html
+        let path = "https://c-wilton.github.io/band/"
+        let pageEnd = ".html"
+        this.page = url.substring(path.length, path.length+pageEnd.length)
+
+    }
+
     getPageContent(){
-        /**
-         * method description
-         */
+        /** method description */
         let pageName = this.page
         letPageContent = this.#pages.pageName;
     }
