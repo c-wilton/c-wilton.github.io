@@ -27,7 +27,7 @@ class Model {
         
         //get contents from json file
         let content = new Content();
-        this.#pages = content.getContent();
+        //this.#pages = content.getContent();
 
         /* RULER MODEL */
         this.#armLength = 70
