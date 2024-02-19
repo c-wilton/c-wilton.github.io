@@ -35,7 +35,10 @@ class Contoller {
     this.updateRuler();
     */
     
+    //get current url, send it to model to retrieve pgae contents
     this.#currentURL = this.view.getUrl();
+    this.model.setPageName(this.#currentURL);
+    
     let sectionContent = this.getContent();
     this.addSection(sectionContent);
     }
