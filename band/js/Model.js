@@ -35,14 +35,14 @@ class Model {
         let content = new Content();
         this.#pages = content.getContent();
 
-        /*
+        /* RULER MODEL */
         this.#armLength = 70
         this.#personHeight = 1.675
         this.#altitude = 18.325
         this.#eyeHeight = this.#personHeight + this.#altitude
         this.setDistances()
         this.setIntervals()
-        */
+        
     }
 
     getPageContent(){
