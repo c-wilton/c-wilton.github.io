@@ -37,7 +37,7 @@ class Content {
 
     getContent(){
         /** getConten description */
-        return this.#pages;
+        return "Hello";
     }
         
 } 
