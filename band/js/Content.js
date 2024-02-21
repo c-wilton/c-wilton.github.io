@@ -30,6 +30,9 @@ class Content {
     setContent(json) {
         /** setContent description */
         this.#pages = json;
+        let main = document.getElementById('main');
+        let content = json;
+        main.innerHTML += json;
     }
 
     getContent(){
