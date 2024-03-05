@@ -54,7 +54,7 @@ class Model {
         //let pageContent = this.#pages.pageName;
         
         //return page content
-        return this.#pages;
+        return this.pageName;
     }
     
     /** RULER MODEL */
