@@ -34,7 +34,7 @@ class Content {
     setContent() {
         /** setContent description */
         //this.#pages = json;
-        let main = document.getElementById('main');
+        let main = document.getElementsByTagName('main');
         let content = "content setcontent";
         main.innerHTML += content;
     }
