@@ -43,9 +43,10 @@ class Model {
         /* method descripition */
 
         //get current page between path and .html
-        let path = "https://c-wilton.github.io/band/"
-        let pageEnd = ".html"
-        this.page = url.substring(path.length, path.length+pageEnd.length)
+        let path = "https://c-wilton.github.io/band/";
+        let pageEnd = ".html";
+        this.page = url.substring(path.length, path.length+pageEnd.length);
+        this.page = url;
     }
 
     getPageContent(){
@@ -54,7 +55,7 @@ class Model {
         //let pageContent = this.#pages.pageName;
         
         //return page content
-        return this.pageName;
+        return pageName;
     }
     
     /** RULER MODEL */
