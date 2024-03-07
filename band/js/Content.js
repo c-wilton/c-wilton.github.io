@@ -37,6 +37,7 @@ class Content {
         let main = document.getElementsByTagName('main');
         let content = "content setcontent";
         main.innerHTML += content;
+        console.log("content setcontent")
     }
 
     getContent(){
