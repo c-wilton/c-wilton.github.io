@@ -38,6 +38,10 @@ class Content {
         let content = "content setcontent";
         main.innerHTML += content;
         console.log("content setcontent")
+
+        let json = this.getFetchRequest();
+        console.log(json);
+        main.innerHTML += json;
     }
 
     getContent(){
