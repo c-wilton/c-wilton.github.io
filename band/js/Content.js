@@ -23,7 +23,6 @@ class Content {
             });
         });
         */
-       console.log("Content constructor")
     }
 
     static getFetchRequest() {
@@ -35,7 +34,7 @@ class Content {
     setContent() {
         /** setContent description */
         //this.#pages = json;
-        let main = document.getElementsByTagName('main');
+        let main = document.getElementsByTagName('main')[0];
         let content = "content setcontent";
         main.innerHTML += content;
         console.log("content setcontent")
