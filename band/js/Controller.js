@@ -49,7 +49,7 @@ class Contoller {
         //print contents from json file
         let main = this.view.getElement(2, 'main');
         let homeName = this.model.getPageContent();
-        main.innerHTML += homeName;
+        main.innerHTML += "homeName";
 
         //print blank header and content
         let content = {"header":"New Header", content:"New content"};
