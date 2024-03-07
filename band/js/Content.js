@@ -23,6 +23,7 @@ class Content {
             });
         });
         */
+       console.log("Content constructor")
     }
 
     static getFetchRequest() {
