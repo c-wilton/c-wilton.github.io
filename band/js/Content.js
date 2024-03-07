@@ -39,7 +39,7 @@ class Content {
         main.innerHTML += content;
         console.log("content setcontent")
 
-        let json = Content.getFetchRequest();
+        let json = Content.getFetchRequest()["home"];
         console.log(json);
         main.innerHTML += json;
     }
