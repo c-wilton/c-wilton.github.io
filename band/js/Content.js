@@ -31,12 +31,12 @@ class Content {
         .catch( error => console.log(error.message) )
     }
 
-    setContent(json) {
+    setContent() {
         /** setContent description */
-        this.#pages = json;
+        //this.#pages = json;
         let main = document.getElementById('main');
-        let content = json;
-        main.innerHTML += json;
+        let content = "content setcontent";
+        main.innerHTML += content;
     }
 
     getContent(){
