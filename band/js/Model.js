@@ -46,7 +46,7 @@ class Model {
         let path = "https://c-wilton.github.io/band/";
         let pageEnd = ".html";
         this.page = url.substring(path.length, path.length+pageEnd.length);
-        this.page = url;
+        //this.page = url;
     }
 
     getPageContent(){
