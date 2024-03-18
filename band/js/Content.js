@@ -31,6 +31,25 @@ class Content {
         .catch( error => console.log(error.message) )
     }
 
+    getJson(){
+        //get file from address and store in 'res'
+        fetch("https://c-wilton.github.io/band/assets/content.json")
+        .then(function (res) {
+            //convert contents to a json file and store in 'json'
+            res.json()
+            .then(function(json){
+                this.setJson(json);
+            });
+        });
+    }
+
+    setJson(json){
+        let main = document.getElementsByTagName('main')[0];
+        let content = "setJson: ";
+        main.innerHTML += content;
+        console.log("setJson: ")
+    }
+
     setContent() {
         /** setContent description */
         //this.#pages = json;
