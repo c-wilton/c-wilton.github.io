@@ -47,7 +47,8 @@ class Content {
         let main = document.getElementsByTagName('main')[0];
         let content = "setJson: ";
         main.innerHTML += content;
-        console.log("setJson: ")
+        console.log("setJson: ");
+        console.log(json);
     }
 
     setContent() {
