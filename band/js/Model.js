@@ -35,8 +35,8 @@ class Model {
         this.#personHeight = 1.675
         this.#altitude = 18.325
         this.#eyeHeight = this.#personHeight + this.#altitude
-        this.setDistances()
-        this.setIntervals()
+        //this.setDistances()
+        //this.setIntervals()
         
     }
 
