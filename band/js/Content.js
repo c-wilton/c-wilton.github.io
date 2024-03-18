@@ -44,9 +44,11 @@ class Content {
     }
 
     setJson(json){
+        var sectionCount = json.home.length;
+        
         let main = document.getElementsByTagName('main')[0];
         let content = "setJson: ";
-        main.innerHTML += content;
+        main.innerHTML += content + " " + sectionCount;
         console.log("setJson: ");
         console.log(json);
     }
