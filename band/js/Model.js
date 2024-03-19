@@ -62,8 +62,8 @@ class Model {
         console.log(this.#jsonFile.home[0].header);
         console.log(this.#jsonFile.home[0].content);
         console.log(this.#jsonFile.about);
-        console.log(this.#jsonFile.home[0].header);
-        console.log(this.#jsonFile.home[0].content);
+        console.log(this.#jsonFile.about[0].header);
+        console.log(this.#jsonFile.about[0].content);
         
     }
 
