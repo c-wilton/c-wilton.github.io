@@ -62,11 +62,15 @@ class Content {
             //convert file
             var jsonFile = await result.json();
             //console.log(jsonFile);
+            this.#var1 = jsonFile
+            console.log(this.#var1);
             return jsonFile;
         }catch(e) {
             console.log("Didnt work");
             console.log(e);
         }
+
+        console.log("end meth1: ")
     }
         
 } 
