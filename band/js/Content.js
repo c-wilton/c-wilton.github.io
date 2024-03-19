@@ -11,7 +11,7 @@ class Content {
     }
 
     fetchJson(){
-        /* extract objects from json file */
+        /** extract objects from json file */
         
         //get file from address and store in 'res'
         fetch("https://c-wilton.github.io/band/assets/content.json")
@@ -29,26 +29,10 @@ class Content {
 
     setJson(json){
         this.#pages = json;
-        /*
-        var sectionCount = json.home.length;
-        
-        let main = document.getElementsByTagName('main')[0];
-        let content = "setJson: ";
-        main.innerHTML += content + " " + sectionCount;
-        console.log("pages: ");
-        console.log(this.#pages);
-        */
     }
 
     getContent(){
         /** getContent description */
-
-        //var sectionCount = this.#pages.home.length;
-        var sectionCount = 0;
-        
-        let main = document.getElementsByTagName('main')[0];
-        let content = "getContent: ";
-        main.innerHTML += content + " " + sectionCount;
         console.log("pages: ");
         console.log(this.#pages);
         
