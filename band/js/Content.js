@@ -53,5 +53,19 @@ class Content {
         
         return "Hello";
     }
+
+    async meth1() {
+        try{
+            console.log("meth1: ")
+            //get file
+            var result = await fetch("https://c-wilton.github.io/band/assets/content.json");
+            //convert file
+            var jsonFile = await result.json();
+            console.log(jsonFile);
+        }catch(e) {
+            console.log("Didnt work");
+            console.log(e);
+        }
+    }
         
 } 

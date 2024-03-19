@@ -32,6 +32,9 @@ class Model {
         console.log("Model: ");
         console.log(this.#pages);
 
+        console.log("call meth1: ")
+        content.meth1();
+
         /* RULER MODEL */
         this.#armLength = 70
         this.#personHeight = 1.675
