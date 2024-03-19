@@ -6,61 +6,36 @@ class Content {
     #pages;
 
     constructor() {
-        /** constructor description */
-
-        /* extract objects from json file */
-
-        /*
-        //get a file from this address
-        fetch("https://c-wilton.github.io/band/assets/content.json")
-        .then(function (res) {
-            //convert contents of file to json
-            res.json().then(function (json) {
-                // json object contains two arrays: a gallery array and a carousel array
-
-                // after the json objects from the file have been loaded, go to the setupCarousel func to load the elements onto the webpage
-                this.setContent(json);
-            });
-        });
-        */
-    }
-
-    static getFetchRequest() {
-        return fetch("https://c-wilton.github.io/band/assets/content.json")
-        .then( response => response.json)
-        .catch( error => console.log(error.message) );
+        this.#pages = "";
     }
 
     getJson(){
-        console.log("getJson: ");
+        /* extract objects from json file */
         
         //get file from address and store in 'res'
         fetch("https://c-wilton.github.io/band/assets/content.json")
         .then( (res) => {
-            //convert contents to a json file and store in 'json'
-            console.log("fetch json: ");
-
+            //convert res to a json file and store in 'json'
             res.json()
             .then( (json) => {
-                console.log("convert json: ");
-                console.log(json);
+                //send json file to setJson method
                 this.setJson(json);
             })
             .catch(error => console.log(error.message));
-
         })
         .catch(error => console.log(error.message));
     }
 
     setJson(json){
+        this.#pages = json;
+        
         var sectionCount = json.home.length;
-        //var sectionCount = 0
         
         let main = document.getElementsByTagName('main')[0];
         let content = "setJson: ";
         main.innerHTML += content + " " + sectionCount;
-        console.log("setJson: ");
-        console.log(json);
+        console.log("pages: ");
+        console.log(this.#pages);
     }
 
     setContent() {
