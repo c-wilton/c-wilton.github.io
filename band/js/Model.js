@@ -47,7 +47,7 @@ class Model {
     async meth2(){
         console.log("call meth1: ");
         try{ 
-            this.#jsonFile = this.content.meth1(); 
+            this.#jsonFile = await this.content.meth1(); 
             this.printJson();
         }catch(err) { console.log(err)}
 
