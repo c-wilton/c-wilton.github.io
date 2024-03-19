@@ -33,7 +33,7 @@ class Model {
         console.log(this.#pages);
 
         console.log("call meth1: ")
-        var jsonFile = content.meth1();
+        var jsonFile = await content.meth1();
         console.log(jsonFile);
 
         /* RULER MODEL */
