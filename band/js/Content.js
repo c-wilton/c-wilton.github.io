@@ -54,6 +54,7 @@ class Content {
 
     setJson(json){
         //var sectionCount = json.home.length;
+        var sectionCount = 0
         
         let main = document.getElementsByTagName('main')[0];
         let content = "setJson: ";
