@@ -39,6 +39,8 @@ class Content {
             res.json()
             .then(function(json){
                 this.setJson(json);
+                console.log("getJson: ");
+                console.log(json);
             });
         });
     }
