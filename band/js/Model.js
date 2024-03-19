@@ -27,9 +27,9 @@ class Model {
          */
         
         //get contents from json file
-        let content = new Content();
-        content.fetchJson();
-        this.#pages = content.getContent();
+        this.content = new Content();
+        this.content.fetchJson();
+        this.#pages = this.content.getContent();
         console.log("Model: ");
         console.log(this.#pages);
         this.meth2()
@@ -46,7 +46,7 @@ class Model {
 
     async meth2(){
         console.log("call meth1: ");
-        try{ this.#jsonFile = content.meth1(); }catch(err) { console.log(err)}
+        try{ this.#jsonFile = this.content.meth1(); }catch(err) { console.log(err)}
 
         console.log(this.#jsonFile);
 
