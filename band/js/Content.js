@@ -44,7 +44,7 @@ class Content {
             .then(function(json){
                 console.log("convert json: ");
                 console.log(json);
-                this.setJson(json);
+                Content.setJson(json);
             })
             .catch(error => console.log(error.message));
 
