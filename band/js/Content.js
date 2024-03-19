@@ -38,9 +38,9 @@ class Content {
             //convert contents to a json file and store in 'json'
             res.json()
             .then(function(json){
-                this.setJson(json);
                 console.log("getJson: ");
                 console.log(json);
+                this.setJson(json);
             });
         });
     }
