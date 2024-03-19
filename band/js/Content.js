@@ -36,12 +36,12 @@ class Content {
         
         //get file from address and store in 'res'
         fetch("https://c-wilton.github.io/band/assets/content.json")
-        .then(function (res) {
+        .then( (res) => {
             //convert contents to a json file and store in 'json'
             console.log("fetch json: ");
 
             res.json()
-            .then(function(json){
+            .then( (json) => {
                 console.log("convert json: ");
                 console.log(json);
                 Content.setJson(json);
