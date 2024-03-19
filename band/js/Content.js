@@ -42,7 +42,8 @@ class Content {
     getContent(){
         /** getContent description */
 
-        var sectionCount = this.#pages.home.length;
+        //var sectionCount = this.#pages.home.length;
+        var sectionCount = 0;
         
         let main = document.getElementsByTagName('main')[0];
         let content = "getContent: ";
