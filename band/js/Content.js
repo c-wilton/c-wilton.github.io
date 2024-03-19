@@ -4,6 +4,7 @@ class Content {
      */
 
     #pages;
+    #var1;
 
     constructor() {
         this.#pages = "";
