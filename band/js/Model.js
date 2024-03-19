@@ -32,7 +32,8 @@ class Model {
         this.#pages = this.content.getContent();
         console.log("Model: ");
         console.log(this.#pages);
-        this.meth2()
+        this.meth2();
+        this.printJson();
         
         /* RULER MODEL */
         this.#armLength = 70
@@ -48,8 +49,12 @@ class Model {
         console.log("call meth1: ");
         try{ this.#jsonFile = this.content.meth1(); }catch(err) { console.log(err)}
 
-        console.log(this.#jsonFile);
+        //console.log(this.#jsonFile);
+    }
 
+    printJson(){
+        console.log("print json");
+        console.log(this.#jsonFile);
     }
 
     setPageName(url){
