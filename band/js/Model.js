@@ -55,6 +55,14 @@ class Model {
     printJson(){
         console.log("print json");
         console.log(this.#jsonFile);
+
+        console.log(this.#jsonFile.home);
+        console.log(this.#jsonFile.home[0].header);
+        console.log(this.#jsonFile.home[0].content);
+        console.log(this.#jsonFile.about);
+        console.log(this.#jsonFile.home[0].header);
+        console.log(this.#jsonFile.home[0].content);
+        
     }
 
     setPageName(url){
