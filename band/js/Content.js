@@ -46,10 +46,10 @@ class Content {
                 console.log(json);
                 this.setJson(json);
             })
-            .catch(error => console.log("convert error: ", error.message));
+            .catch(error => console.log(error.message));
 
         })
-        .catch(error => console.log("fetch error: ", error.message));
+        .catch(error => console.log(error.message));
     }
 
     setJson(json){
