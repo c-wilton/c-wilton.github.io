@@ -9,7 +9,7 @@ class Content {
         this.#pages = "";
     }
 
-    getJson(){
+    fetchJson(){
         /* extract objects from json file */
         
         //get file from address and store in 'res'
@@ -28,7 +28,7 @@ class Content {
 
     setJson(json){
         this.#pages = json;
-        
+        /*
         var sectionCount = json.home.length;
         
         let main = document.getElementsByTagName('main')[0];
@@ -36,23 +36,20 @@ class Content {
         main.innerHTML += content + " " + sectionCount;
         console.log("pages: ");
         console.log(this.#pages);
-    }
-
-    setContent() {
-        /** setContent description */
-        //this.#pages = json;
-        let main = document.getElementsByTagName('main')[0];
-        let content = "content setcontent";
-        main.innerHTML += content;
-        console.log("content setcontent")
-
-        let json = Content.getFetchRequest()["home"];
-        console.log(json);
-        main.innerHTML += json;
+        */
     }
 
     getContent(){
-        /** getConten description */
+        /** getContent description */
+
+        var sectionCount = this.#pages.home.length;
+        
+        let main = document.getElementsByTagName('main')[0];
+        let content = "getContent: ";
+        main.innerHTML += content + " " + sectionCount;
+        console.log("pages: ");
+        console.log(this.#pages);
+        
         return "Hello";
     }
         

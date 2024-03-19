@@ -27,8 +27,10 @@ class Model {
         
         //get contents from json file
         let content = new Content();
-        content.getJson();
-        //this.#pages = content.getContent();
+        content.fetchJson();
+        this.#pages = content.getContent();
+        console.log("Model: ");
+        console.log(this.#pages);
 
         /* RULER MODEL */
         this.#armLength = 70
