@@ -33,7 +33,6 @@ class Model {
         console.log("Model: ");
         console.log(this.#pages);
         this.meth2();
-        this.printJson();
         
         /* RULER MODEL */
         this.#armLength = 70
@@ -47,7 +46,10 @@ class Model {
 
     async meth2(){
         console.log("call meth1: ");
-        try{ this.#jsonFile = this.content.meth1(); }catch(err) { console.log(err)}
+        try{ 
+            this.#jsonFile = this.content.meth1(); 
+            this.printJson();
+        }catch(err) { console.log(err)}
 
         //console.log(this.#jsonFile);
     }
