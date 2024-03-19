@@ -27,7 +27,7 @@ class Model {
         
         //get contents from json file
         let content = new Content();
-        content.setJson();
+        content.getJson();
         //this.#pages = content.getContent();
 
         /* RULER MODEL */
