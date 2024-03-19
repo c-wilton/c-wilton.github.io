@@ -28,7 +28,7 @@ class Content {
     static getFetchRequest() {
         return fetch("https://c-wilton.github.io/band/assets/content.json")
         .then( response => response.json)
-        .catch( error => console.log(error.message) )
+        .catch( error => console.log(error.message) );
     }
 
     getJson(){
@@ -41,8 +41,11 @@ class Content {
                 console.log("getJson: ");
                 console.log(json);
                 this.setJson(json);
-            });
-        });
+            })
+            .catch(error => console.log("convert error: ", error.message));
+
+        })
+        .catch(error => console.log("fetch error: ", error.message));
     }
 
     setJson(json){
