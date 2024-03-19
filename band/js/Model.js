@@ -31,11 +31,8 @@ class Model {
         this.#pages = content.getContent();
         console.log("Model: ");
         console.log(this.#pages);
-
-        console.log("call meth1: ")
-        var jsonFile = await content.meth1();
-        console.log(jsonFile);
-
+        this.meth2()
+        
         /* RULER MODEL */
         this.#armLength = 70
         this.#personHeight = 1.675
@@ -44,6 +41,13 @@ class Model {
         //this.setDistances()
         //this.setIntervals()
         
+    }
+
+    async meth2(){
+        console.log("call meth1: ")
+        var jsonFile = await content.meth1();
+        console.log(jsonFile);
+
     }
 
     setPageName(url){
