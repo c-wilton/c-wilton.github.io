@@ -33,7 +33,8 @@ class Model {
         console.log(this.#pages);
 
         console.log("call meth1: ")
-        content.meth1();
+        jsonFile = content.meth1();
+        console.log(jsonFile);
 
         /* RULER MODEL */
         this.#armLength = 70
